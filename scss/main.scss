@@ -28,7 +28,7 @@ $wesual-purple-hover: rgb(151, 0, 151);
 
 %base-font {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 300;
 }
 
@@ -46,7 +46,11 @@ h2 { font-size: 92px; }
 
 strong { font-weight: 700; }
 
-p { line-height: 1.5; }
+p {
+	line-height: 1.5;
+	max-width: 570px;
+	margin-bottom: 20px;
+}
 
 a {
 	@include transition(color 150ms ease);
@@ -70,17 +74,24 @@ button:focus { outline: none; }
 .base-button {
 	@extend %base-font;
 	@include appearance(none);
-	padding: 15px;
 	border: none;
-	font-size: 16px;
 }
 
 .base-button {
 	cursor: pointer;
 	background: $wesual-dark-purple;
 	text-transform: uppercase;
-	font-size: 15px;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 18px;
 	color: #fff;
+}
+
+.signup-input {
+	padding: 17px;
+	width: 360px;
+	margin-right: 10px;
+	font-size: 20px;
 }
 
 .row { 
@@ -127,10 +138,6 @@ button:focus { outline: none; }
 	height: 28px;
 }
 
-p {
-	max-width: 500px;
-}
-
 /****************************************
 * Index 
 ****************************************/
@@ -152,8 +159,8 @@ p {
 
 .hero-tv {
 	position: absolute;
-	left: 780px;
-	top: 30px;
+	left: 690px;
+	top: 100px;
 	width: 676px;
 }
 
