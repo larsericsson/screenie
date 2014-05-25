@@ -15,6 +15,49 @@ $wesual-gray: #edf1f2;
 $wesual-purple-hover: #7118b2;
 
 /****************************************
+* Icons
+****************************************/
+@font-face {
+	font-family: 'Wesual';
+	src:url('/fonts/wesual.eot?-i533wn');
+	src:url('/fonts/wesual.eot?#iefix-i533wn') format('embedded-opentype'),
+		url('/fonts/wesual.woff?-i533wn') format('woff'),
+		url('/fonts/wesual.ttf?-i533wn') format('truetype'),
+		url('/fonts/wesual.svg?-i533wn#wesual') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'Wesual';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon { display: inline-block; }
+
+.icon-star:before {
+	content: "\e600";
+}
+
+.icon-flash:before {
+	content: "\e601";
+}
+
+.icon-flag:before {
+	content: "\e602";
+}
+
+
+/****************************************
 * Util classes
 ****************************************/
 .left { float: left; }
@@ -45,7 +88,7 @@ h1, h2, h3 { @extend %header-font; }
 
 h2 { font-size: 92px; }
 
-strong { font-weight: 700; }
+strong { font-weight: 600; }
 
 p {
 	line-height: 1.5;
@@ -128,7 +171,7 @@ button:focus { outline: none; }
 	padding: 135px 28px;
 }
 
-.base-section-padding { padding: 80px; }
+.base-section-padding { padding: 110px 0 135px; }
 
 .logo {
 	text-indent: -9999px;
@@ -203,10 +246,20 @@ button:focus { outline: none; }
 .feature {
 	display: inline-block;
 	text-align: center;
-	width: 33%;
-	margin-top: 40px;
+	width: 32.5%;
+	margin-top: 70px;
 
 	strong { margin-bottom: 10px; }
+
+	i {
+		font-size: 90px;
+		margin-bottom: 65px;
+	}
+
+	p { 
+		margin: 0 auto;
+		max-width: 275px; 
+	}
 }
 
 .feature-bubble {
