@@ -111,6 +111,17 @@ button:focus { outline: none; }
 	.container { height: 100%; }
 }
 
+.hero-container {
+	width: 650px;
+}
+
+.hero-tv {
+	position: absolute;
+	left: 680px;
+	top: 300px;
+	width: 676px;
+}
+
 .feature-list {
 	text-align: center;
 }
