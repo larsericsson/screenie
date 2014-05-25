@@ -12,6 +12,7 @@
 $wesual-purple: #7118b2;
 $wesual-dark-purple: #511180;
 $wesual-gray: #edf1f2;
+$wesual-light-gray: #eff3f6;
 $wesual-purple-hover: rgb(151, 0, 151);
 
 /****************************************
@@ -80,7 +81,7 @@ button:focus { outline: none; }
 
 .base-button {
 	cursor: pointer;
-	background: $wesual-dark-purple;
+	background: $wesual-purple;
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: 700;
@@ -107,6 +108,16 @@ button:focus { outline: none; }
 	color: #000;
 }
 
+.light-gray-background {
+	background: $wesual-light-gray;
+	color: #000;
+}
+
+.dark-background {
+	background: #000;
+	color: #fff;
+}
+
 .purple-background {
 	background: $wesual-purple;
 	color: #fff;
@@ -128,7 +139,7 @@ button:focus { outline: none; }
 	padding: 135px 28px;
 }
 
-.base-section-padding { padding: 80px; }
+.base-section-padding { padding: 80px; text-align: center; }
 
 .logo {
 	text-indent: -9999px;
@@ -185,6 +196,10 @@ button:focus { outline: none; }
 	left: 690px;
 	top: 100px;
 	width: 676px;
+}
+
+.macbook {
+	width: 828px;
 }
 
 .features {
