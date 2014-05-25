@@ -18,8 +18,8 @@ wesual = {
         head.appendChild(script);
 
         var checkBanner = setInterval(function() {
-        	if ($('#mfPreviewBar').length) {
-        		$('#mfPreviewBar').remove();
+        	if ($('#mfPreviewBar, #mfPreviewBarShow').length) {
+        		$('#mfPreviewBar, #mfPreviewBarShow').remove();
         		clearInterval(checkBanner);
         	}
         }, 10);
