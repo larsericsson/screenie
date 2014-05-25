@@ -70,16 +70,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 * Icons
 ****************************************/
 @font-face {
-  font-family: 'Wesual';
-  src: url("/fonts/wesual.eot?-i533wn");
-  src: url("/fonts/wesual.eot?#iefix-i533wn") format("embedded-opentype"), url("/fonts/wesual.woff?-i533wn") format("woff"), url("/fonts/wesual.ttf?-i533wn") format("truetype"), url("/fonts/wesual.svg?-i533wn#wesual") format("svg");
+  font-family: 'wesual';
+  src: url("/fonts/wesual.eot");
+}
+
+@font-face {
+  font-family: 'wesual';
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype"), url(data:application/font-woff;charset=utf-8;base64,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) format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 32, ../../scss/main.scss */
+/* line 33, ../../scss/main.scss */
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'Wesual';
+  font-family: 'wesual';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -91,40 +95,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 46, ../../scss/main.scss */
-.icon {
-  display: inline-block;
+/* line 47, ../../scss/main.scss */
+.icon-twitter:before {
+  content: "\e603";
 }
 
-/* line 48, ../../scss/main.scss */
+/* line 51, ../../scss/main.scss */
 .icon-star:before {
   content: "\e600";
 }
 
-/* line 52, ../../scss/main.scss */
+/* line 55, ../../scss/main.scss */
 .icon-flash:before {
   content: "\e601";
 }
 
-/* line 56, ../../scss/main.scss */
+/* line 59, ../../scss/main.scss */
 .icon-flag:before {
   content: "\e602";
+}
+
+/* line 63, ../../scss/main.scss */
+.icon {
+  display: inline-block;
 }
 
 /****************************************
 * Util classes
 ****************************************/
-/* line 64, ../../scss/main.scss */
+/* line 68, ../../scss/main.scss */
 .left {
   float: left;
 }
 
-/* line 66, ../../scss/main.scss */
+/* line 70, ../../scss/main.scss */
 .right {
   float: right;
 }
 
-/* line 68, ../../scss/main.scss */
+/* line 72, ../../scss/main.scss */
 .block {
   display: block;
 }
@@ -132,7 +141,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /****************************************
 * Typography
 ****************************************/
-/* line 74, ../../scss/main.scss */
+/* line 78, ../../scss/main.scss */
 html, body, .base-input,
 .base-button {
   font-family: 'Open Sans', sans-serif;
@@ -140,31 +149,31 @@ html, body, .base-input,
   font-weight: 300;
 }
 
-/* line 80, ../../scss/main.scss */
+/* line 84, ../../scss/main.scss */
 h1, h2, h3 {
   font-family: 'Grumpy Black 24', serif;
   line-height: 1.1;
   letter-spacing: -2px;
 }
 
-/* line 90, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 h2 {
   font-size: 92px;
 }
 
-/* line 92, ../../scss/main.scss */
+/* line 96, ../../scss/main.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 94, ../../scss/main.scss */
+/* line 98, ../../scss/main.scss */
 p {
   line-height: 1.5;
   max-width: 570px;
   margin-bottom: 20px;
 }
 
-/* line 100, ../../scss/main.scss */
+/* line 104, ../../scss/main.scss */
 a {
   -webkit-transition: color 150ms ease;
   -moz-transition: color 150ms ease;
@@ -176,22 +185,22 @@ a {
 /****************************************
 * Framework
 ****************************************/
-/* line 108, ../../scss/main.scss */
+/* line 112, ../../scss/main.scss */
 ::selection {
   background: #7118b2;
 }
 
-/* line 109, ../../scss/main.scss */
+/* line 113, ../../scss/main.scss */
 ::-moz-selection {
   background: #7118b2;
 }
 
-/* line 111, ../../scss/main.scss */
+/* line 115, ../../scss/main.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 116, ../../scss/main.scss */
+/* line 120, ../../scss/main.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -199,7 +208,7 @@ button:focus {
   outline: none;
 }
 
-/* line 119, ../../scss/main.scss */
+/* line 123, ../../scss/main.scss */
 .base-input,
 .base-button {
   -webkit-appearance: none;
@@ -213,17 +222,17 @@ button:focus {
   border: none;
 }
 
-/* line 127, ../../scss/main.scss */
+/* line 131, ../../scss/main.scss */
 .base-input {
   border: 3px solid #fff;
   font-size: 18px;
 }
-/* line 131, ../../scss/main.scss */
+/* line 135, ../../scss/main.scss */
 .base-input:hover {
   border: 3px solid #d0d0d0;
 }
 
-/* line 134, ../../scss/main.scss */
+/* line 138, ../../scss/main.scss */
 .base-button {
   cursor: pointer;
   background: #7118b2;
@@ -234,85 +243,85 @@ button:focus {
   color: #fff;
   border: 3px solid #7118b2;
 }
-/* line 144, ../../scss/main.scss */
+/* line 148, ../../scss/main.scss */
 .base-button:hover {
   color: #7118b2;
   background: rgba(255, 255, 255, 0);
 }
 
-/* line 150, ../../scss/main.scss */
+/* line 154, ../../scss/main.scss */
 .signup-input {
   width: 360px;
   margin-right: 10px;
 }
 
-/* line 155, ../../scss/main.scss */
+/* line 159, ../../scss/main.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
 
-/* line 160, ../../scss/main.scss */
+/* line 164, ../../scss/main.scss */
 .purple {
   color: #7118b2;
 }
 
-/* line 162, ../../scss/main.scss */
+/* line 166, ../../scss/main.scss */
 .grey-background {
   background: #edf1f2;
   color: #000;
 }
 
-/* line 167, ../../scss/main.scss */
+/* line 171, ../../scss/main.scss */
 .light-gray-background {
   background: #eff3f6;
   color: #000;
 }
 
-/* line 172, ../../scss/main.scss */
+/* line 176, ../../scss/main.scss */
 .dark-background {
   background: #000;
   color: #fff;
 }
 
-/* line 177, ../../scss/main.scss */
+/* line 181, ../../scss/main.scss */
 .purple-background {
   background: #7118b2;
   color: #fff;
 }
-/* line 181, ../../scss/main.scss */
+/* line 185, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 182, ../../scss/main.scss */
+/* line 186, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 185, ../../scss/main.scss */
+/* line 189, ../../scss/main.scss */
 .container {
   max-width: 980px;
   margin: 0 auto;
 }
 
-/* line 190, ../../scss/main.scss */
+/* line 194, ../../scss/main.scss */
 .header-padding {
   padding: 28px;
 }
 
-/* line 194, ../../scss/main.scss */
+/* line 198, ../../scss/main.scss */
 .hero-padding {
   padding: 135px 28px;
 }
 
-/* line 198, ../../scss/main.scss */
+/* line 202, ../../scss/main.scss */
 .base-section-padding {
   text-align: center;
   padding: 110px 0 135px;
 }
 
-/* line 203, ../../scss/main.scss */
+/* line 207, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
   background-image: url("/img/wesual.png");
@@ -325,22 +334,22 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
-/* line 216, ../../scss/main.scss */
+/* line 220, ../../scss/main.scss */
 .menu-header {
   overflow: visible;
 }
 
-/* line 221, ../../scss/main.scss */
+/* line 225, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin-left: 15px;
 }
-/* line 225, ../../scss/main.scss */
+/* line 229, ../../scss/main.scss */
 .menu li a {
   position: relative;
   color: #7118b2;
 }
-/* line 230, ../../scss/main.scss */
+/* line 234, ../../scss/main.scss */
 .menu li a:after {
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -361,11 +370,11 @@ button:focus {
   background: #7118b2;
   content: '';
 }
-/* line 243, ../../scss/main.scss */
+/* line 247, ../../scss/main.scss */
 .menu li a:hover {
   color: #7118b2;
 }
-/* line 246, ../../scss/main.scss */
+/* line 250, ../../scss/main.scss */
 .menu li a:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
@@ -376,17 +385,17 @@ button:focus {
   transform: translate3d(0, 2px, 0);
 }
 
-/* line 254, ../../scss/main.scss */
+/* line 258, ../../scss/main.scss */
 .relative {
   position: relative;
 }
 
-/* line 258, ../../scss/main.scss */
+/* line 262, ../../scss/main.scss */
 .hero-container {
   width: 650px;
 }
 
-/* line 262, ../../scss/main.scss */
+/* line 266, ../../scss/main.scss */
 .hero-tv {
   position: absolute;
   left: 690px;
@@ -394,18 +403,18 @@ button:focus {
   width: 676px;
 }
 
-/* line 269, ../../scss/main.scss */
+/* line 273, ../../scss/main.scss */
 .macbook {
   margin-top: 50px;
   width: 828px;
 }
 
-/* line 274, ../../scss/main.scss */
+/* line 278, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 278, ../../scss/main.scss */
+/* line 282, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
@@ -413,22 +422,22 @@ button:focus {
   min-width: 300px;
   margin-top: 70px;
 }
-/* line 285, ../../scss/main.scss */
+/* line 289, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
-/* line 287, ../../scss/main.scss */
+/* line 291, ../../scss/main.scss */
 .feature i {
   font-size: 90px;
   margin-bottom: 65px;
 }
-/* line 292, ../../scss/main.scss */
+/* line 296, ../../scss/main.scss */
 .feature p {
   margin: 0 auto;
   max-width: 275px;
 }
 
-/* line 298, ../../scss/main.scss */
+/* line 302, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -440,10 +449,22 @@ button:focus {
   margin: 0 auto 30px;
 }
 
+/* line 309, ../../scss/main.scss */
+.telegraphic h2 {
+  margin-bottom: 50px;
+}
+
+/* line 311, ../../scss/main.scss */
+.slider {
+  width: 100%;
+  height: 500px;
+  background: #fff;
+}
+
 /****************************************
 * Misc.
 ****************************************/
-/* line 309, ../../scss/main.scss */
+/* line 325, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
