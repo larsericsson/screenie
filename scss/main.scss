@@ -2,6 +2,7 @@
 @import "compass/css3/appearance";
 @import "compass/css3/transition";
 @import "compass/css3/transform";
+@import "compass/css3/border-radius";
 @import "compass/utilities/general/clearfix";
 
 /****************************************
@@ -27,12 +28,12 @@ $wesual-purple-hover: rgb(151, 0, 151);
 	font-weight: 300;	
 }
 
-html, body {
-	@extend %base-font;
+::selection { background: rgba(151, 0, 151, 0.5); }
+::-moz-selection { background: rgba(151, 0, 151, 0.5); }
 
-	&::selection,
-	&::-moz-selection { background: rgba(151, 0, 151, 0.5); }
-}
+* { box-sizing: border-box; }
+
+html, body { @extend %base-font; }
 
 a {
 	@include transition(color 150ms ease);
@@ -106,6 +107,22 @@ button:focus { outline: none; }
 	height: 800px;
 
 	.container { height: 100%; }
+}
+
+.feature-list {
+	text-align: center;
+}
+
+.feature {
+	display: inline-block;
+	text-align: center;
+	width: 33%;
+}
+
+.feature-bubble {
+	@include border-radius(50%);
+	width: 120px;
+	height: 120px;
 }
 
 /****************************************
