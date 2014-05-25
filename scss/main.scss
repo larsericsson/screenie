@@ -123,13 +123,20 @@ button:focus { outline: none; }
 }
 
 .base-button {
+	@include transition(all 75ms ease);
 	cursor: pointer;
 	background: $wesual-purple;
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: 700;
-	padding: 18px;
+	padding: 15px;
 	color: #fff;
+	border: 3px solid $wesual-purple;
+
+	&:hover {
+		color: $wesual-purple;
+		background: #fff;
+	}
 }
 
 .signup-input {
