@@ -332,27 +332,28 @@ button:focus {
 
 /* line 210, ../../scss/main.scss */
 .macbook {
+  margin-top: 50px;
   width: 828px;
 }
 
-/* line 214, ../../scss/main.scss */
+/* line 215, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 218, ../../scss/main.scss */
+/* line 219, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
   width: 33%;
   margin-top: 40px;
 }
-/* line 224, ../../scss/main.scss */
+/* line 225, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
 
-/* line 227, ../../scss/main.scss */
+/* line 228, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -367,7 +368,7 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
-/* line 238, ../../scss/main.scss */
+/* line 239, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
