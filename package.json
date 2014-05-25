@@ -20,6 +20,14 @@
   },
   "dependencies": {
     "logfmt": "~1.1.2",
-    "express": "~4.3.1"
+    "express": "3.8.0",
+    "jade": "*",
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-less": "*"
   }
 }
+
+
+
