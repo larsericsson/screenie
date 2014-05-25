@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,4 +61,98 @@ a img {
 /* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+/****************************************
+* Variables
+****************************************/
+/****************************************
+* Util classes
+****************************************/
+/* line 14, ../../scss/main.scss */
+.left {
+  float: left;
+}
+
+/* line 16, ../../scss/main.scss */
+.right {
+  float: right;
+}
+
+/****************************************
+* Framework
+****************************************/
+/* line 21, ../../scss/main.scss */
+a {
+  -webkit-transition: color 150ms ease;
+  -moz-transition: color 150ms ease;
+  -o-transition: color 150ms ease;
+  transition: color 150ms ease;
+  text-decoration: none;
+}
+
+/* line 27, ../../scss/main.scss */
+.row {
+  overflow: hidden;
+  *zoom: 1;
+  width: 100%;
+}
+
+/* line 32, ../../scss/main.scss */
+.purple-background {
+  background: #970097;
+  color: #fff;
+}
+/* line 36, ../../scss/main.scss */
+.purple-background a {
+  color: #fff;
+}
+/* line 37, ../../scss/main.scss */
+.purple-background a:hover {
+  color: #000;
+}
+
+/* line 40, ../../scss/main.scss */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 45, ../../scss/main.scss */
+.logo {
+  text-indent: -9999px;
+  background-image: url("");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/****************************************
+* Index 
+****************************************/
+/* line 56, ../../scss/main.scss */
+.menu-header {
+  line-height: 80px;
+}
+
+/* line 61, ../../scss/main.scss */
+.menu li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* line 67, ../../scss/main.scss */
+.hero {
+  height: 800px;
+}
+/* line 70, ../../scss/main.scss */
+.hero .container {
+  height: 100%;
+}
+
+/****************************************
+* Misc.
+****************************************/
+/* line 77, ../../scss/main.scss */
+#mfPreviewBar, #mfPreviewBarShow {
+  display: none !important;
 }

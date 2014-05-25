@@ -1,6 +1,77 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import "compass/utilities/general/clearfix";
+
+/****************************************
+* Variables
+****************************************/
+$wesual-purple: #970097;
+
+/****************************************
+* Util classes
+****************************************/
+.left { float: left; }
+
+.right { float: right; }
+
+/****************************************
+* Framework
+****************************************/
+a {
+	@include transition(color 150ms ease);
+	text-decoration: none;
+}
+
+
+.row { 
+	@include clearfix;
+	width: 100%; 
+}
+
+.purple-background {
+	background: $wesual-purple;
+	color: #fff;
+
+	a { color: #fff; }
+	a:hover { color: #000; }
+}
+
+.container { 
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.logo {
+	text-indent: -9999px;
+	background-image: url('');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+/****************************************
+* Index 
+****************************************/
+
+.menu-header {
+	line-height: 80px;
+}
+
+.menu {
+	li {
+		display: inline-block;
+		margin-right: 5px;
+	}
+}
+
+.hero {
+	height: 800px;
+
+	.container { height: 100%; }
+}
+
+/****************************************
+* Misc.
+****************************************/
+
+#mfPreviewBar, #mfPreviewBarShow { display: none !important; }
