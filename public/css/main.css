@@ -261,37 +261,47 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
-/* line 158, ../../scss/main.scss */
+/* line 157, ../../scss/main.scss */
+.menu-header {
+  overflow: visible;
+}
+
+/* line 162, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin-left: 15px;
 }
-/* line 162, ../../scss/main.scss */
+/* line 166, ../../scss/main.scss */
 .menu li a {
   position: relative;
+  color: #7118b2;
 }
-/* line 164, ../../scss/main.scss */
+/* line 171, ../../scss/main.scss */
 .menu li a:after {
-  -webkit-transition: all 150ms ease;
-  -moz-transition: all 150ms ease;
-  -o-transition: all 150ms ease;
-  transition: all 150ms ease;
-  -webkit-transform: translate3d(0, 7px, 0);
-  -moz-transform: translate3d(0, 7px, 0);
-  -ms-transform: translate3d(0, 7px, 0);
-  -o-transform: translate3d(0, 7px, 0);
-  transform: translate3d(0, 7px, 0);
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  -webkit-transform: translate3d(0, 8px, 0);
+  -moz-transform: translate3d(0, 8px, 0);
+  -ms-transform: translate3d(0, 8px, 0);
+  -o-transform: translate3d(0, 8px, 0);
+  transform: translate3d(0, 8px, 0);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: #7118b2;
   content: '';
 }
-/* line 177, ../../scss/main.scss */
+/* line 184, ../../scss/main.scss */
+.menu li a:hover {
+  color: #7118b2;
+}
+/* line 187, ../../scss/main.scss */
 .menu li a:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
@@ -302,17 +312,17 @@ button:focus {
   transform: translate3d(0, 2px, 0);
 }
 
-/* line 186, ../../scss/main.scss */
+/* line 195, ../../scss/main.scss */
 .relative {
   position: relative;
 }
 
-/* line 190, ../../scss/main.scss */
+/* line 199, ../../scss/main.scss */
 .hero-container {
   width: 650px;
 }
 
-/* line 194, ../../scss/main.scss */
+/* line 203, ../../scss/main.scss */
 .hero-tv {
   position: absolute;
   left: 690px;
@@ -320,29 +330,29 @@ button:focus {
   width: 676px;
 }
 
-/* line 201, ../../scss/main.scss */
+/* line 210, ../../scss/main.scss */
 .macbook {
   width: 828px;
 }
 
-/* line 205, ../../scss/main.scss */
+/* line 214, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 209, ../../scss/main.scss */
+/* line 218, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
   width: 33%;
   margin-top: 40px;
 }
-/* line 215, ../../scss/main.scss */
+/* line 224, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
 
-/* line 218, ../../scss/main.scss */
+/* line 227, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -357,7 +367,7 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
-/* line 229, ../../scss/main.scss */
+/* line 238, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
