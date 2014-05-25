@@ -172,10 +172,9 @@ button:focus {
   font-weight: 700;
   padding: 18px;
   color: #fff;
-  padding: 18px 18px 17px 18px;
 }
 
-/* line 92, ../../scss/main.scss */
+/* line 91, ../../scss/main.scss */
 .signup-input {
   padding: 17px;
   width: 360px;
@@ -183,60 +182,60 @@ button:focus {
   font-size: 20px;
 }
 
-/* line 99, ../../scss/main.scss */
+/* line 98, ../../scss/main.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
 
-/* line 104, ../../scss/main.scss */
+/* line 103, ../../scss/main.scss */
 .purple {
   color: #7118b2;
 }
 
-/* line 106, ../../scss/main.scss */
+/* line 105, ../../scss/main.scss */
 .grey-background {
   background: #edf1f2;
   color: #000;
 }
 
-/* line 111, ../../scss/main.scss */
+/* line 110, ../../scss/main.scss */
 .purple-background {
   background: #7118b2;
   color: #fff;
 }
-/* line 115, ../../scss/main.scss */
+/* line 114, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 116, ../../scss/main.scss */
+/* line 115, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 119, ../../scss/main.scss */
+/* line 118, ../../scss/main.scss */
 .container {
   max-width: 980px;
   margin: 0 auto;
 }
 
-/* line 124, ../../scss/main.scss */
+/* line 123, ../../scss/main.scss */
 .header-padding {
   padding: 28px;
 }
 
-/* line 128, ../../scss/main.scss */
+/* line 127, ../../scss/main.scss */
 .hero-padding {
   padding: 135px 28px;
 }
 
-/* line 132, ../../scss/main.scss */
+/* line 131, ../../scss/main.scss */
 .base-section-padding {
   padding: 80px;
 }
 
-/* line 134, ../../scss/main.scss */
+/* line 133, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
   background-image: url("/img/wesual.png");
@@ -249,22 +248,22 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
-/* line 147, ../../scss/main.scss */
+/* line 146, ../../scss/main.scss */
 .menu-header {
   overflow: visible;
 }
 
-/* line 152, ../../scss/main.scss */
+/* line 151, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin-left: 15px;
 }
-/* line 156, ../../scss/main.scss */
+/* line 155, ../../scss/main.scss */
 .menu li a {
   position: relative;
   color: #7118b2;
 }
-/* line 161, ../../scss/main.scss */
+/* line 160, ../../scss/main.scss */
 .menu li a:after {
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -285,11 +284,11 @@ button:focus {
   background: #7118b2;
   content: '';
 }
-/* line 174, ../../scss/main.scss */
+/* line 173, ../../scss/main.scss */
 .menu li a:hover {
   color: #7118b2;
 }
-/* line 177, ../../scss/main.scss */
+/* line 176, ../../scss/main.scss */
 .menu li a:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
@@ -300,17 +299,17 @@ button:focus {
   transform: translate3d(0, 2px, 0);
 }
 
-/* line 185, ../../scss/main.scss */
+/* line 184, ../../scss/main.scss */
 .relative {
   position: relative;
 }
 
-/* line 189, ../../scss/main.scss */
+/* line 188, ../../scss/main.scss */
 .hero-container {
   width: 650px;
 }
 
-/* line 193, ../../scss/main.scss */
+/* line 192, ../../scss/main.scss */
 .hero-tv {
   position: absolute;
   left: 690px;
@@ -318,24 +317,24 @@ button:focus {
   width: 676px;
 }
 
-/* line 200, ../../scss/main.scss */
+/* line 199, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 204, ../../scss/main.scss */
+/* line 203, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
   width: 33%;
   margin-top: 40px;
 }
-/* line 210, ../../scss/main.scss */
+/* line 209, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
 
-/* line 213, ../../scss/main.scss */
+/* line 212, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -350,7 +349,7 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
-/* line 224, ../../scss/main.scss */
+/* line 223, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
