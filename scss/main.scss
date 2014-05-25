@@ -76,8 +76,12 @@ button:focus { outline: none; }
 }
 
 .container { 
-	max-width: 960px;
+	max-width: 980px;
 	margin: 0 auto;
+}
+
+.header-padding {
+	padding: 28px;
 }
 
 .logo {
@@ -93,10 +97,6 @@ button:focus { outline: none; }
 * Index 
 ****************************************/
 
-.menu-header {
-	padding-top: 28px;
-}
-
 .menu {
 	li {
 		display: inline-block;
@@ -104,9 +104,12 @@ button:focus { outline: none; }
 	}
 }
 
+.relative {
+	position: relative;
+}
+
 .hero {
 	height: 800px;
-	position: relative;
 
 	.container { height: 100%; }
 }
@@ -117,8 +120,8 @@ button:focus { outline: none; }
 
 .hero-tv {
 	position: absolute;
-	left: 680px;
-	top: 300px;
+	left: 780px;
+	top: 30px;
 	width: 676px;
 }
 

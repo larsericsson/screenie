@@ -165,11 +165,16 @@ button:focus {
 
 /* line 78, ../../scss/main.scss */
 .container {
-  max-width: 960px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
 /* line 83, ../../scss/main.scss */
+.header-padding {
+  padding: 28px;
+}
+
+/* line 87, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
   background-image: url("/img/wesual.png");
@@ -182,11 +187,6 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
-/* line 96, ../../scss/main.scss */
-.menu-header {
-  padding-top: 28px;
-}
-
 /* line 101, ../../scss/main.scss */
 .menu li {
   display: inline-block;
@@ -194,28 +194,45 @@ button:focus {
 }
 
 /* line 107, ../../scss/main.scss */
-.hero {
-  height: 800px;
+.relative {
   position: relative;
 }
+
 /* line 111, ../../scss/main.scss */
+.hero {
+  height: 800px;
+}
+/* line 114, ../../scss/main.scss */
 .hero .container {
   height: 100%;
 }
 
-/* line 114, ../../scss/main.scss */
+/* line 117, ../../scss/main.scss */
+.hero-container {
+  width: 650px;
+}
+
+/* line 121, ../../scss/main.scss */
+.hero-tv {
+  position: absolute;
+  left: 780px;
+  top: 30px;
+  width: 676px;
+}
+
+/* line 128, ../../scss/main.scss */
 .feature-list {
   text-align: center;
 }
 
-/* line 118, ../../scss/main.scss */
+/* line 132, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
   width: 33%;
 }
 
-/* line 124, ../../scss/main.scss */
+/* line 138, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -229,7 +246,7 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
-/* line 134, ../../scss/main.scss */
+/* line 148, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
