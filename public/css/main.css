@@ -1,4 +1,4 @@
-/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -79,10 +79,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   float: right;
 }
 
+/* line 22, ../../scss/main.scss */
+.block {
+  display: block;
+}
+
 /****************************************
-* Framework
+* Typography
 ****************************************/
-/* line 25, ../../scss/main.scss */
+/* line 28, ../../scss/main.scss */
 html, body, .base-input,
 .base-button {
   font-family: 'Open Sans', sans-serif;
@@ -90,22 +95,29 @@ html, body, .base-input,
   font-weight: 300;
 }
 
-/* line 31, ../../scss/main.scss */
-::selection {
-  background: rgba(151, 0, 151, 0.5);
-}
-
-/* line 32, ../../scss/main.scss */
-::-moz-selection {
-  background: rgba(151, 0, 151, 0.5);
-}
-
 /* line 34, ../../scss/main.scss */
-* {
-  box-sizing: border-box;
+h1, h2, h3 {
+  font-family: 'Grumpy Black 24', serif;
+  line-height: 1.1;
+  letter-spacing: -2px;
 }
 
-/* line 38, ../../scss/main.scss */
+/* line 44, ../../scss/main.scss */
+h2 {
+  font-size: 92px;
+}
+
+/* line 46, ../../scss/main.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 48, ../../scss/main.scss */
+p {
+  line-height: 1.5;
+}
+
+/* line 50, ../../scss/main.scss */
 a {
   -webkit-transition: color 150ms ease;
   -moz-transition: color 150ms ease;
@@ -114,7 +126,25 @@ a {
   text-decoration: none;
 }
 
-/* line 46, ../../scss/main.scss */
+/****************************************
+* Framework
+****************************************/
+/* line 58, ../../scss/main.scss */
+::selection {
+  background: rgba(151, 0, 151, 0.5);
+}
+
+/* line 59, ../../scss/main.scss */
+::-moz-selection {
+  background: rgba(151, 0, 151, 0.5);
+}
+
+/* line 61, ../../scss/main.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 66, ../../scss/main.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -122,7 +152,7 @@ button:focus {
   outline: none;
 }
 
-/* line 49, ../../scss/main.scss */
+/* line 69, ../../scss/main.scss */
 .base-input,
 .base-button {
   -webkit-appearance: none;
@@ -133,7 +163,7 @@ button:focus {
   font-size: 16px;
 }
 
-/* line 57, ../../scss/main.scss */
+/* line 77, ../../scss/main.scss */
 .base-button {
   cursor: pointer;
   background: #511180;
@@ -142,39 +172,53 @@ button:focus {
   color: #fff;
 }
 
-/* line 65, ../../scss/main.scss */
+/* line 85, ../../scss/main.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
 
-/* line 70, ../../scss/main.scss */
+/* line 90, ../../scss/main.scss */
+.purple {
+  color: #7118b2;
+}
+
+/* line 92, ../../scss/main.scss */
 .purple-background {
   background: #7118b2;
   color: #fff;
 }
-/* line 74, ../../scss/main.scss */
+/* line 96, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 75, ../../scss/main.scss */
+/* line 97, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 78, ../../scss/main.scss */
+/* line 100, ../../scss/main.scss */
 .container {
   max-width: 980px;
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 /* line 83, ../../scss/main.scss */
 .header-padding {
   padding: 28px;
 }
 
 /* line 87, ../../scss/main.scss */
+=======
+/* line 105, ../../scss/main.scss */
+.base-section-padding {
+  padding: 80px;
+}
+
+/* line 107, ../../scss/main.scss */
+>>>>>>> 52a4b7cb375ab156c8c213801bb9fd0435d39164
 .logo {
   text-indent: -9999px;
   background-image: url("/img/wesual.png");
@@ -187,12 +231,22 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
+<<<<<<< HEAD
 /* line 101, ../../scss/main.scss */
+=======
+/* line 120, ../../scss/main.scss */
+.menu-header {
+  padding-top: 28px;
+}
+
+/* line 125, ../../scss/main.scss */
+>>>>>>> 52a4b7cb375ab156c8c213801bb9fd0435d39164
 .menu li {
   display: inline-block;
   margin-left: 15px;
 }
 
+<<<<<<< HEAD
 /* line 107, ../../scss/main.scss */
 .relative {
   position: relative;
@@ -203,10 +257,19 @@ button:focus {
   height: 800px;
 }
 /* line 114, ../../scss/main.scss */
+=======
+/* line 131, ../../scss/main.scss */
+.hero {
+  height: 800px;
+  position: relative;
+}
+/* line 135, ../../scss/main.scss */
+>>>>>>> 52a4b7cb375ab156c8c213801bb9fd0435d39164
 .hero .container {
   height: 100%;
 }
 
+<<<<<<< HEAD
 /* line 117, ../../scss/main.scss */
 .hero-container {
   width: 650px;
@@ -222,31 +285,56 @@ button:focus {
 
 /* line 128, ../../scss/main.scss */
 .feature-list {
+=======
+/* line 138, ../../scss/main.scss */
+.features {
+>>>>>>> 52a4b7cb375ab156c8c213801bb9fd0435d39164
   text-align: center;
 }
+/* line 141, ../../scss/main.scss */
+.features h2 {
+  margin: 0 auto 50px;
+}
 
+<<<<<<< HEAD
 /* line 132, ../../scss/main.scss */
+=======
+/* line 144, ../../scss/main.scss */
+>>>>>>> 52a4b7cb375ab156c8c213801bb9fd0435d39164
 .feature {
   display: inline-block;
   text-align: center;
   width: 33%;
 }
+/* line 149, ../../scss/main.scss */
+.feature strong {
+  margin-bottom: 10px;
+}
 
+<<<<<<< HEAD
 /* line 138, ../../scss/main.scss */
+=======
+/* line 152, ../../scss/main.scss */
+>>>>>>> 52a4b7cb375ab156c8c213801bb9fd0435d39164
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 30px;
 }
 
 /****************************************
 * Misc.
 ****************************************/
+<<<<<<< HEAD
 /* line 148, ../../scss/main.scss */
+=======
+/* line 163, ../../scss/main.scss */
+>>>>>>> 52a4b7cb375ab156c8c213801bb9fd0435d39164
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
