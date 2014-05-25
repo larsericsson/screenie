@@ -1,0 +1,25 @@
+{
+  "name": "screenie",
+  "version": "0.0.0",
+  "description": "Your team visualized",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/larsericsson/screenie.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "author": "larsericsson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larsericsson/screenie/issues"
+  },
+  "dependencies": {
+    "logfmt": "~1.1.2",
+    "express": "~4.3.1"
+  }
+}
