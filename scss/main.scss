@@ -100,10 +100,13 @@ button:focus { outline: none; }
 }
 
 .container { 
-	max-width: 960px;
+	max-width: 980px;
 	margin: 0 auto;
 }
 
+.header-padding {
+	padding: 28px;
+}
 .base-section-padding { padding: 80px; }
 
 .logo {
@@ -119,10 +122,6 @@ button:focus { outline: none; }
 * Index 
 ****************************************/
 
-.menu-header {
-	padding-top: 28px;
-}
-
 .menu {
 	li {
 		display: inline-block;
@@ -130,14 +129,31 @@ button:focus { outline: none; }
 	}
 }
 
+.relative {
+	position: relative;
+}
+
 .hero {
 	height: 800px;
-	position: relative;
 
 	.container { height: 100%; }
 }
 
-.features { text-align: center; }
+
+.hero-container {
+	width: 650px;
+}
+
+.hero-tv {
+	position: absolute;
+	left: 780px;
+	top: 30px;
+	width: 676px;
+}
+
+.features {
+	text-align: center;
+}	
 
 .feature {
 	display: inline-block;

@@ -202,16 +202,21 @@ button:focus {
 
 /* line 102, ../../scss/main.scss */
 .container {
-  max-width: 960px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
 /* line 107, ../../scss/main.scss */
+.header-padding {
+  padding: 28px;
+}
+
+/* line 110, ../../scss/main.scss */
 .base-section-padding {
   padding: 80px;
 }
 
-/* line 109, ../../scss/main.scss */
+/* line 112, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
   background-image: url("/img/wesual.png");
@@ -224,45 +229,57 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
-/* line 122, ../../scss/main.scss */
-.menu-header {
-  padding-top: 28px;
-}
-
-/* line 127, ../../scss/main.scss */
+/* line 126, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin-left: 15px;
 }
 
-/* line 133, ../../scss/main.scss */
-.hero {
-  height: 800px;
+/* line 132, ../../scss/main.scss */
+.relative {
   position: relative;
 }
-/* line 137, ../../scss/main.scss */
+
+/* line 136, ../../scss/main.scss */
+.hero {
+  height: 800px;
+}
+/* line 139, ../../scss/main.scss */
 .hero .container {
   height: 100%;
 }
 
-/* line 140, ../../scss/main.scss */
+/* line 143, ../../scss/main.scss */
+.hero-container {
+  width: 650px;
+}
+
+/* line 147, ../../scss/main.scss */
+.hero-tv {
+  position: absolute;
+  left: 780px;
+  top: 30px;
+  width: 676px;
+}
+
+/* line 154, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 142, ../../scss/main.scss */
+/* line 158, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
   width: 33%;
   margin-top: 40px;
 }
-/* line 148, ../../scss/main.scss */
+/* line 164, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
 
-/* line 151, ../../scss/main.scss */
+/* line 167, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -277,7 +294,7 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
-/* line 162, ../../scss/main.scss */
+/* line 178, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
