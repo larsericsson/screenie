@@ -120,12 +120,13 @@ button:focus { outline: none; }
 	@extend %base-font;
 	@include appearance(none);
 	@include transition(all 100ms ease);
-	padding: 15px;
+	padding: 17px;
 	border: none;
 }
 
 .base-input {
 	border: 3px solid #fff;
+	font-size: 18px;
 
 	&:hover { border: 3px solid #d0d0d0; }
 }
@@ -134,22 +135,21 @@ button:focus { outline: none; }
 	cursor: pointer;
 	background: $wesual-purple;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 600;
-	padding: 16px;
+	padding: 18px 36px 17px;
 	color: #fff;
 	border: 3px solid $wesual-purple;
 
 	&:hover {
 		color: $wesual-purple;
-		background: #fff;
+		background: rgba(255, 255, 255, 0);
 	}
 }
 
 .signup-input {
 	width: 360px;
 	margin-right: 10px;
-	font-size: 20px;
 }
 
 .row { 

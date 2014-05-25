@@ -209,41 +209,41 @@ button:focus {
   -moz-transition: all 100ms ease;
   -o-transition: all 100ms ease;
   transition: all 100ms ease;
-  padding: 15px;
+  padding: 17px;
   border: none;
 }
 
 /* line 127, ../../scss/main.scss */
 .base-input {
   border: 3px solid #fff;
+  font-size: 18px;
 }
-/* line 130, ../../scss/main.scss */
+/* line 131, ../../scss/main.scss */
 .base-input:hover {
   border: 3px solid #d0d0d0;
 }
 
-/* line 133, ../../scss/main.scss */
+/* line 134, ../../scss/main.scss */
 .base-button {
   cursor: pointer;
   background: #7118b2;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 16px;
+  padding: 18px 36px 17px;
   color: #fff;
   border: 3px solid #7118b2;
 }
-/* line 143, ../../scss/main.scss */
+/* line 144, ../../scss/main.scss */
 .base-button:hover {
   color: #7118b2;
-  background: #fff;
+  background: rgba(255, 255, 255, 0);
 }
 
-/* line 149, ../../scss/main.scss */
+/* line 150, ../../scss/main.scss */
 .signup-input {
   width: 360px;
   margin-right: 10px;
-  font-size: 20px;
 }
 
 /* line 155, ../../scss/main.scss */
