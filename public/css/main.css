@@ -98,24 +98,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 47, ../../scss/main.scss */
 .icon-twitter:before {
   content: "\e603";
+  color: #2dabdf;
+  font-size: 30px;
 }
 
-/* line 51, ../../scss/main.scss */
+/* line 53, ../../scss/main.scss */
 .icon-star:before {
   content: "\e600";
 }
 
-/* line 55, ../../scss/main.scss */
+/* line 57, ../../scss/main.scss */
 .icon-flash:before {
   content: "\e601";
 }
 
-/* line 59, ../../scss/main.scss */
+/* line 61, ../../scss/main.scss */
 .icon-flag:before {
   content: "\e602";
 }
 
-/* line 63, ../../scss/main.scss */
+/* line 65, ../../scss/main.scss */
 .icon {
   display: inline-block;
 }
@@ -123,25 +125,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /****************************************
 * Util classes
 ****************************************/
-/* line 68, ../../scss/main.scss */
+/* line 70, ../../scss/main.scss */
 .left {
   float: left;
 }
 
-/* line 70, ../../scss/main.scss */
+/* line 72, ../../scss/main.scss */
 .right {
   float: right;
 }
 
-/* line 72, ../../scss/main.scss */
+/* line 74, ../../scss/main.scss */
 .block {
   display: block;
+}
+
+/* line 76, ../../scss/main.scss */
+.margin-bottom-m {
+  margin-bottom: 15px;
 }
 
 /****************************************
 * Typography
 ****************************************/
-/* line 78, ../../scss/main.scss */
+/* line 82, ../../scss/main.scss */
 html, body, .base-input,
 .base-button {
   font-family: 'Open Sans', sans-serif;
@@ -149,31 +156,30 @@ html, body, .base-input,
   font-weight: 300;
 }
 
-/* line 84, ../../scss/main.scss */
+/* line 88, ../../scss/main.scss */
 h1, h2, h3 {
   font-family: 'Grumpy Black 24', serif;
   line-height: 1.1;
   letter-spacing: -2px;
 }
 
-/* line 94, ../../scss/main.scss */
+/* line 98, ../../scss/main.scss */
 h2 {
   font-size: 92px;
 }
 
-/* line 96, ../../scss/main.scss */
+/* line 100, ../../scss/main.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 98, ../../scss/main.scss */
+/* line 102, ../../scss/main.scss */
 p {
   line-height: 1.5;
-  max-width: 570px;
   margin-bottom: 20px;
 }
 
-/* line 104, ../../scss/main.scss */
+/* line 107, ../../scss/main.scss */
 a {
   -webkit-transition: color 150ms ease;
   -moz-transition: color 150ms ease;
@@ -185,22 +191,22 @@ a {
 /****************************************
 * Framework
 ****************************************/
-/* line 112, ../../scss/main.scss */
+/* line 115, ../../scss/main.scss */
 ::selection {
   background: #7118b2;
 }
 
-/* line 113, ../../scss/main.scss */
+/* line 116, ../../scss/main.scss */
 ::-moz-selection {
   background: #7118b2;
 }
 
-/* line 115, ../../scss/main.scss */
+/* line 118, ../../scss/main.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 120, ../../scss/main.scss */
+/* line 123, ../../scss/main.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -208,7 +214,7 @@ button:focus {
   outline: none;
 }
 
-/* line 123, ../../scss/main.scss */
+/* line 126, ../../scss/main.scss */
 .base-input,
 .base-button {
   -webkit-appearance: none;
@@ -222,17 +228,17 @@ button:focus {
   border: none;
 }
 
-/* line 131, ../../scss/main.scss */
+/* line 134, ../../scss/main.scss */
 .base-input {
   border: 2px solid #fff;
   font-size: 18px;
 }
-/* line 135, ../../scss/main.scss */
+/* line 138, ../../scss/main.scss */
 .base-input:hover {
   border: 2px solid #d0d0d0;
 }
 
-/* line 138, ../../scss/main.scss */
+/* line 141, ../../scss/main.scss */
 .base-button {
   cursor: pointer;
   background: #7118b2;
@@ -243,86 +249,86 @@ button:focus {
   color: #fff;
   border: 3px solid #7118b2;
 }
-/* line 148, ../../scss/main.scss */
+/* line 151, ../../scss/main.scss */
 .base-button:hover {
   color: #fff;
   background: #8e1edf;
   border-color: #8e1edf;
 }
 
-/* line 155, ../../scss/main.scss */
+/* line 158, ../../scss/main.scss */
 .signup-input {
   width: 360px;
   margin-right: 10px;
 }
 
-/* line 160, ../../scss/main.scss */
+/* line 163, ../../scss/main.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
 
-/* line 165, ../../scss/main.scss */
+/* line 168, ../../scss/main.scss */
 .purple {
   color: #7118b2;
 }
 
-/* line 167, ../../scss/main.scss */
+/* line 170, ../../scss/main.scss */
 .grey-background {
   background: #edf1f2;
   color: #000;
 }
 
-/* line 172, ../../scss/main.scss */
+/* line 175, ../../scss/main.scss */
 .light-gray-background {
   background: #eff3f6;
   color: #000;
 }
 
-/* line 177, ../../scss/main.scss */
+/* line 180, ../../scss/main.scss */
 .dark-background {
   background: #000;
   color: #fff;
 }
 
-/* line 182, ../../scss/main.scss */
+/* line 185, ../../scss/main.scss */
 .purple-background {
   background: #7118b2;
   color: #fff;
 }
-/* line 186, ../../scss/main.scss */
+/* line 189, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 187, ../../scss/main.scss */
+/* line 190, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 190, ../../scss/main.scss */
+/* line 193, ../../scss/main.scss */
 .container {
   max-width: 980px;
   margin: 0 auto;
 }
 
-/* line 195, ../../scss/main.scss */
+/* line 198, ../../scss/main.scss */
 .header-padding {
   padding: 28px;
 }
 
-/* line 199, ../../scss/main.scss */
+/* line 202, ../../scss/main.scss */
 .hero-padding {
   padding: 135px 28px;
 }
 
-/* line 203, ../../scss/main.scss */
+/* line 206, ../../scss/main.scss */
 .base-section-padding {
   text-align: center;
   padding: 110px 0 135px;
 }
 
-/* line 208, ../../scss/main.scss */
+/* line 211, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
   background-image: url("/img/wesual.png");
@@ -335,22 +341,22 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
-/* line 221, ../../scss/main.scss */
+/* line 224, ../../scss/main.scss */
 .menu-header {
   overflow: visible;
 }
 
-/* line 226, ../../scss/main.scss */
+/* line 229, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin-left: 15px;
 }
-/* line 230, ../../scss/main.scss */
+/* line 233, ../../scss/main.scss */
 .menu li a {
   position: relative;
   color: #7118b2;
 }
-/* line 235, ../../scss/main.scss */
+/* line 238, ../../scss/main.scss */
 .menu li a:after {
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -371,11 +377,11 @@ button:focus {
   background: #7118b2;
   content: '';
 }
-/* line 248, ../../scss/main.scss */
+/* line 251, ../../scss/main.scss */
 .menu li a:hover {
   color: #7118b2;
 }
-/* line 251, ../../scss/main.scss */
+/* line 254, ../../scss/main.scss */
 .menu li a:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
@@ -386,17 +392,21 @@ button:focus {
   transform: translate3d(0, 2px, 0);
 }
 
-/* line 259, ../../scss/main.scss */
+/* line 262, ../../scss/main.scss */
 .relative {
   position: relative;
 }
 
-/* line 263, ../../scss/main.scss */
+/* line 266, ../../scss/main.scss */
 .hero-container {
   width: 650px;
 }
+/* line 269, ../../scss/main.scss */
+.hero-container p {
+  max-width: 570px;
+}
 
-/* line 267, ../../scss/main.scss */
+/* line 274, ../../scss/main.scss */
 .hero-tv {
   position: absolute;
   left: 690px;
@@ -404,18 +414,18 @@ button:focus {
   width: 676px;
 }
 
-/* line 274, ../../scss/main.scss */
+/* line 281, ../../scss/main.scss */
 .macbook {
   margin-top: 50px;
   width: 828px;
 }
 
-/* line 279, ../../scss/main.scss */
+/* line 286, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 283, ../../scss/main.scss */
+/* line 290, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
@@ -423,22 +433,22 @@ button:focus {
   min-width: 300px;
   margin-top: 70px;
 }
-/* line 290, ../../scss/main.scss */
+/* line 297, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
-/* line 292, ../../scss/main.scss */
+/* line 299, ../../scss/main.scss */
 .feature i {
   font-size: 90px;
   margin-bottom: 65px;
 }
-/* line 297, ../../scss/main.scss */
+/* line 304, ../../scss/main.scss */
 .feature p {
   margin: 0 auto;
   max-width: 275px;
 }
 
-/* line 303, ../../scss/main.scss */
+/* line 310, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -450,27 +460,27 @@ button:focus {
   margin: 0 auto 30px;
 }
 
-/* line 310, ../../scss/main.scss */
+/* line 317, ../../scss/main.scss */
 .telegraphic h2 {
   margin-bottom: 50px;
 }
 
-/* line 312, ../../scss/main.scss */
+/* line 319, ../../scss/main.scss */
 .slider {
   width: 100%;
   height: 500px;
 }
 
-/* line 317, ../../scss/main.scss */
+/* line 324, ../../scss/main.scss */
 .slider-viewport {
   background: #fff;
 }
 
-/* line 321, ../../scss/main.scss */
+/* line 328, ../../scss/main.scss */
 .slider-pagination {
   text-align: center;
 }
-/* line 324, ../../scss/main.scss */
+/* line 331, ../../scss/main.scss */
 .slider-pagination li {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -486,7 +496,7 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
-/* line 337, ../../scss/main.scss */
+/* line 344, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
