@@ -19,26 +19,46 @@ $wesual-purple-hover: rgb(151, 0, 151);
 
 .right { float: right; }
 
+.block { display: block; }
+
 /****************************************
-* Framework
+* Typography
 ****************************************/
+
 %base-font {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	font-weight: 300;	
+	font-weight: 300;
 }
 
-::selection { background: rgba(151, 0, 151, 0.5); }
-::-moz-selection { background: rgba(151, 0, 151, 0.5); }
-
-* { box-sizing: border-box; }
+%header-font {
+	font-family: 'Grumpy Black 24', serif;
+	line-height: 1.1;
+	letter-spacing: -2px;
+}
 
 html, body { @extend %base-font; }
+
+h1, h2, h3 { @extend %header-font; }
+
+h2 { font-size: 92px; }
+
+strong { font-weight: 700; }
+
+p { line-height: 1.5; }
 
 a {
 	@include transition(color 150ms ease);
 	text-decoration: none;
 }
+
+/****************************************
+* Framework
+****************************************/
+::selection { background: rgba(151, 0, 151, 0.5); }
+::-moz-selection { background: rgba(151, 0, 151, 0.5); }
+
+* { box-sizing: border-box; }
 
 input:focus,
 select:focus,
@@ -65,6 +85,8 @@ button:focus { outline: none; }
 	width: 100%; 
 }
 
+.purple { color: $wesual-purple; }
+
 .purple-background {
 	background: $wesual-purple;
 	color: #fff;
@@ -77,6 +99,8 @@ button:focus { outline: none; }
 	max-width: 960px;
 	margin: 0 auto;
 }
+
+.base-section-padding { padding: 80px; }
 
 .logo {
 	text-indent: -9999px;
@@ -109,20 +133,25 @@ button:focus { outline: none; }
 	.container { height: 100%; }
 }
 
-.feature-list {
+.features { 
 	text-align: center;
-}
+
+	h2 { margin: 0 auto 50px; }
+}	
 
 .feature {
 	display: inline-block;
 	text-align: center;
 	width: 33%;
+
+	strong { margin-bottom: 10px; }
 }
 
 .feature-bubble {
 	@include border-radius(50%);
-	width: 120px;
-	height: 120px;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 30px;
 }
 
 /****************************************
