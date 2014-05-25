@@ -160,30 +160,32 @@ button:focus {
 /* line 80, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
-  background-image: url("");
+  background-image: url("/img/wesual.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  width: 128px;
+  height: 28px;
 }
 
 /****************************************
 * Index 
 ****************************************/
-/* line 91, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .menu-header {
   line-height: 80px;
 }
 
-/* line 96, ../../scss/main.scss */
+/* line 98, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin-right: 5px;
 }
 
-/* line 102, ../../scss/main.scss */
+/* line 104, ../../scss/main.scss */
 .hero {
   height: 800px;
 }
-/* line 105, ../../scss/main.scss */
+/* line 107, ../../scss/main.scss */
 .hero .container {
   height: 100%;
 }
@@ -191,7 +193,7 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
-/* line 112, ../../scss/main.scss */
+/* line 114, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
