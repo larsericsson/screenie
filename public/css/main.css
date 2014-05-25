@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -90,6 +90,7 @@ html, body, .base-input,
   font-weight: 300;
 }
 
+<<<<<<< HEAD
 /* line 30, ../../scss/main.scss */
 ::selection {
   background: rgba(151, 0, 151, 0.5);
@@ -105,6 +106,13 @@ html, body, .base-input,
   box-sizing: border-box;
 }
 
+=======
+/* line 34, ../../scss/main.scss */
+html::selection, html::-moz-selection, body::selection, body::-moz-selection {
+  background: rgba(151, 0, 151, 0.5);
+}
+
+>>>>>>> FETCH_HEAD
 /* line 37, ../../scss/main.scss */
 a {
   -webkit-transition: color 150ms ease;
@@ -136,63 +144,107 @@ button:focus {
 /* line 56, ../../scss/main.scss */
 .base-button {
   cursor: pointer;
-  background: #fff;
+  background: #511180;
+  color: #fff;
 }
 
+<<<<<<< HEAD
 /* line 61, ../../scss/main.scss */
+=======
+/* line 62, ../../scss/main.scss */
+>>>>>>> FETCH_HEAD
 .row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
 
+<<<<<<< HEAD
 /* line 66, ../../scss/main.scss */
+=======
+/* line 67, ../../scss/main.scss */
+>>>>>>> FETCH_HEAD
 .purple-background {
-  background: #970097;
+  background: #7118b2;
   color: #fff;
 }
+<<<<<<< HEAD
 /* line 70, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
 /* line 71, ../../scss/main.scss */
+=======
+/* line 71, ../../scss/main.scss */
+.purple-background a {
+  color: #fff;
+}
+/* line 72, ../../scss/main.scss */
+>>>>>>> FETCH_HEAD
 .purple-background a:hover {
   color: #000;
 }
 
+<<<<<<< HEAD
 /* line 74, ../../scss/main.scss */
+=======
+/* line 75, ../../scss/main.scss */
+>>>>>>> FETCH_HEAD
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 /* line 79, ../../scss/main.scss */
+=======
+/* line 80, ../../scss/main.scss */
+>>>>>>> FETCH_HEAD
 .logo {
   text-indent: -9999px;
-  background-image: url("");
+  background-image: url("/img/wesual.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  width: 128px;
+  height: 28px;
 }
 
 /****************************************
 * Index 
 ****************************************/
+<<<<<<< HEAD
 /* line 90, ../../scss/main.scss */
+=======
+/* line 93, ../../scss/main.scss */
+>>>>>>> FETCH_HEAD
 .menu-header {
+  padding-top: 28px;
   line-height: 80px;
 }
 
+<<<<<<< HEAD
 /* line 95, ../../scss/main.scss */
+=======
+/* line 99, ../../scss/main.scss */
+>>>>>>> FETCH_HEAD
 .menu li {
   display: inline-block;
   margin-right: 5px;
 }
 
+<<<<<<< HEAD
 /* line 101, ../../scss/main.scss */
 .hero {
   height: 800px;
 }
 /* line 104, ../../scss/main.scss */
+=======
+/* line 105, ../../scss/main.scss */
+.hero {
+  height: 800px;
+}
+/* line 108, ../../scss/main.scss */
+>>>>>>> FETCH_HEAD
 .hero .container {
   height: 100%;
 }
@@ -223,7 +275,11 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
+<<<<<<< HEAD
 /* line 127, ../../scss/main.scss */
+=======
+/* line 115, ../../scss/main.scss */
+>>>>>>> FETCH_HEAD
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }

@@ -8,7 +8,8 @@
 /****************************************
 * Variables
 ****************************************/
-$wesual-purple: rgb(151, 0, 151);
+$wesual-purple: #7118b2;
+$wesual-dark-purple: #511180;
 $wesual-purple-hover: rgb(151, 0, 151);
 
 /****************************************
@@ -55,7 +56,8 @@ button:focus { outline: none; }
 
 .base-button {
 	cursor: pointer;
-	background: #fff;
+	background: $wesual-dark-purple;
+	color: #fff;
 }
 
 .row { 
@@ -78,9 +80,11 @@ button:focus { outline: none; }
 
 .logo {
 	text-indent: -9999px;
-	background-image: url('');
+	background-image: url('/img/wesual.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
+	width: 128px;
+	height: 28px;
 }
 
 /****************************************
@@ -88,6 +92,7 @@ button:focus { outline: none; }
 ****************************************/
 
 .menu-header {
+	padding-top: 28px;
 	line-height: 80px;
 }
 
