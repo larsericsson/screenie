@@ -67,6 +67,8 @@ $wesual-purple-hover: #7118b2;
 
 .block { display: block; }
 
+.margin-bottom-m { margin-bottom: 15px; }
+
 /****************************************
 * Typography
 ****************************************/
@@ -93,7 +95,6 @@ strong { font-weight: 600; }
 
 p {
 	line-height: 1.5;
-	max-width: 570px;
 	margin-bottom: 20px;
 }
 
@@ -257,6 +258,10 @@ button:focus { outline: none; }
 
 .hero-container {
 	width: 650px;
+
+	p {
+		max-width: 570px;
+	}
 }
 
 .hero-tv {

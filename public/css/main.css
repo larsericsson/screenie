@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -129,10 +129,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 70, ../../scss/main.scss */
+.margin-bottom-m {
+  margin-bottom: 15px;
+}
+
 /****************************************
 * Typography
 ****************************************/
-/* line 74, ../../scss/main.scss */
+/* line 76, ../../scss/main.scss */
 html, body, .base-input,
 .base-button {
   font-family: 'Open Sans', sans-serif;
@@ -140,31 +145,30 @@ html, body, .base-input,
   font-weight: 300;
 }
 
-/* line 80, ../../scss/main.scss */
+/* line 82, ../../scss/main.scss */
 h1, h2, h3 {
   font-family: 'Grumpy Black 24', serif;
   line-height: 1.1;
   letter-spacing: -2px;
 }
 
-/* line 90, ../../scss/main.scss */
+/* line 92, ../../scss/main.scss */
 h2 {
   font-size: 92px;
 }
 
-/* line 92, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 94, ../../scss/main.scss */
+/* line 96, ../../scss/main.scss */
 p {
   line-height: 1.5;
-  max-width: 570px;
   margin-bottom: 20px;
 }
 
-/* line 100, ../../scss/main.scss */
+/* line 101, ../../scss/main.scss */
 a {
   -webkit-transition: color 150ms ease;
   -moz-transition: color 150ms ease;
@@ -176,22 +180,22 @@ a {
 /****************************************
 * Framework
 ****************************************/
-/* line 108, ../../scss/main.scss */
+/* line 109, ../../scss/main.scss */
 ::selection {
   background: #7118b2;
 }
 
-/* line 109, ../../scss/main.scss */
+/* line 110, ../../scss/main.scss */
 ::-moz-selection {
   background: #7118b2;
 }
 
-/* line 111, ../../scss/main.scss */
+/* line 112, ../../scss/main.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 116, ../../scss/main.scss */
+/* line 117, ../../scss/main.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -199,7 +203,7 @@ button:focus {
   outline: none;
 }
 
-/* line 119, ../../scss/main.scss */
+/* line 120, ../../scss/main.scss */
 .base-input,
 .base-button {
   -webkit-appearance: none;
@@ -213,17 +217,17 @@ button:focus {
   border: none;
 }
 
-/* line 127, ../../scss/main.scss */
+/* line 128, ../../scss/main.scss */
 .base-input {
   border: 3px solid #fff;
   font-size: 18px;
 }
-/* line 131, ../../scss/main.scss */
+/* line 132, ../../scss/main.scss */
 .base-input:hover {
   border: 3px solid #d0d0d0;
 }
 
-/* line 134, ../../scss/main.scss */
+/* line 135, ../../scss/main.scss */
 .base-button {
   cursor: pointer;
   background: #7118b2;
@@ -234,85 +238,85 @@ button:focus {
   color: #fff;
   border: 3px solid #7118b2;
 }
-/* line 144, ../../scss/main.scss */
+/* line 145, ../../scss/main.scss */
 .base-button:hover {
   color: #7118b2;
   background: rgba(255, 255, 255, 0);
 }
 
-/* line 150, ../../scss/main.scss */
+/* line 151, ../../scss/main.scss */
 .signup-input {
   width: 360px;
   margin-right: 10px;
 }
 
-/* line 155, ../../scss/main.scss */
+/* line 156, ../../scss/main.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
 
-/* line 160, ../../scss/main.scss */
+/* line 161, ../../scss/main.scss */
 .purple {
   color: #7118b2;
 }
 
-/* line 162, ../../scss/main.scss */
+/* line 163, ../../scss/main.scss */
 .grey-background {
   background: #edf1f2;
   color: #000;
 }
 
-/* line 167, ../../scss/main.scss */
+/* line 168, ../../scss/main.scss */
 .light-gray-background {
   background: #eff3f6;
   color: #000;
 }
 
-/* line 172, ../../scss/main.scss */
+/* line 173, ../../scss/main.scss */
 .dark-background {
   background: #000;
   color: #fff;
 }
 
-/* line 177, ../../scss/main.scss */
+/* line 178, ../../scss/main.scss */
 .purple-background {
   background: #7118b2;
   color: #fff;
 }
-/* line 181, ../../scss/main.scss */
+/* line 182, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 182, ../../scss/main.scss */
+/* line 183, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 185, ../../scss/main.scss */
+/* line 186, ../../scss/main.scss */
 .container {
   max-width: 980px;
   margin: 0 auto;
 }
 
-/* line 190, ../../scss/main.scss */
+/* line 191, ../../scss/main.scss */
 .header-padding {
   padding: 28px;
 }
 
-/* line 194, ../../scss/main.scss */
+/* line 195, ../../scss/main.scss */
 .hero-padding {
   padding: 135px 28px;
 }
 
-/* line 198, ../../scss/main.scss */
+/* line 199, ../../scss/main.scss */
 .base-section-padding {
   text-align: center;
   padding: 110px 0 135px;
 }
 
-/* line 203, ../../scss/main.scss */
+/* line 204, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
   background-image: url("/img/wesual.png");
@@ -325,22 +329,22 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
-/* line 216, ../../scss/main.scss */
+/* line 217, ../../scss/main.scss */
 .menu-header {
   overflow: visible;
 }
 
-/* line 221, ../../scss/main.scss */
+/* line 222, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin-left: 15px;
 }
-/* line 225, ../../scss/main.scss */
+/* line 226, ../../scss/main.scss */
 .menu li a {
   position: relative;
   color: #7118b2;
 }
-/* line 230, ../../scss/main.scss */
+/* line 231, ../../scss/main.scss */
 .menu li a:after {
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -361,11 +365,11 @@ button:focus {
   background: #7118b2;
   content: '';
 }
-/* line 243, ../../scss/main.scss */
+/* line 244, ../../scss/main.scss */
 .menu li a:hover {
   color: #7118b2;
 }
-/* line 246, ../../scss/main.scss */
+/* line 247, ../../scss/main.scss */
 .menu li a:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
@@ -376,17 +380,21 @@ button:focus {
   transform: translate3d(0, 2px, 0);
 }
 
-/* line 254, ../../scss/main.scss */
+/* line 255, ../../scss/main.scss */
 .relative {
   position: relative;
 }
 
-/* line 258, ../../scss/main.scss */
+/* line 259, ../../scss/main.scss */
 .hero-container {
   width: 650px;
 }
-
 /* line 262, ../../scss/main.scss */
+.hero-container p {
+  max-width: 570px;
+}
+
+/* line 267, ../../scss/main.scss */
 .hero-tv {
   position: absolute;
   left: 690px;
@@ -394,18 +402,18 @@ button:focus {
   width: 676px;
 }
 
-/* line 269, ../../scss/main.scss */
+/* line 274, ../../scss/main.scss */
 .macbook {
   margin-top: 50px;
   width: 828px;
 }
 
-/* line 274, ../../scss/main.scss */
+/* line 279, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 278, ../../scss/main.scss */
+/* line 283, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
@@ -413,22 +421,22 @@ button:focus {
   min-width: 300px;
   margin-top: 70px;
 }
-/* line 285, ../../scss/main.scss */
+/* line 290, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
-/* line 287, ../../scss/main.scss */
+/* line 292, ../../scss/main.scss */
 .feature i {
   font-size: 90px;
   margin-bottom: 65px;
 }
-/* line 292, ../../scss/main.scss */
+/* line 297, ../../scss/main.scss */
 .feature p {
   margin: 0 auto;
   max-width: 275px;
 }
 
-/* line 298, ../../scss/main.scss */
+/* line 303, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -443,7 +451,7 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
-/* line 309, ../../scss/main.scss */
+/* line 314, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
