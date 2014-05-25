@@ -69,12 +69,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /****************************************
 * Util classes
 ****************************************/
-/* line 16, ../../scss/main.scss */
+/* line 17, ../../scss/main.scss */
 .left {
   float: left;
 }
 
-/* line 18, ../../scss/main.scss */
+/* line 19, ../../scss/main.scss */
 .right {
   float: right;
 }
@@ -82,7 +82,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /****************************************
 * Framework
 ****************************************/
-/* line 23, ../../scss/main.scss */
+/* line 24, ../../scss/main.scss */
 html, body, .base-input,
 .base-button {
   font-family: 'Open Sans', sans-serif;
@@ -90,12 +90,22 @@ html, body, .base-input,
   font-weight: 300;
 }
 
-/* line 33, ../../scss/main.scss */
-html::selection, html::-moz-selection, body::selection, body::-moz-selection {
+/* line 30, ../../scss/main.scss */
+::selection {
   background: rgba(151, 0, 151, 0.5);
 }
 
-/* line 36, ../../scss/main.scss */
+/* line 31, ../../scss/main.scss */
+::-moz-selection {
+  background: rgba(151, 0, 151, 0.5);
+}
+
+/* line 33, ../../scss/main.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 37, ../../scss/main.scss */
 a {
   -webkit-transition: color 150ms ease;
   -moz-transition: color 150ms ease;
@@ -104,7 +114,7 @@ a {
   text-decoration: none;
 }
 
-/* line 44, ../../scss/main.scss */
+/* line 45, ../../scss/main.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -112,7 +122,7 @@ button:focus {
   outline: none;
 }
 
-/* line 47, ../../scss/main.scss */
+/* line 48, ../../scss/main.scss */
 .base-input,
 .base-button {
   -webkit-appearance: none;
@@ -123,40 +133,40 @@ button:focus {
   font-size: 16px;
 }
 
-/* line 55, ../../scss/main.scss */
+/* line 56, ../../scss/main.scss */
 .base-button {
   cursor: pointer;
   background: #fff;
 }
 
-/* line 60, ../../scss/main.scss */
+/* line 61, ../../scss/main.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
 
-/* line 65, ../../scss/main.scss */
+/* line 66, ../../scss/main.scss */
 .purple-background {
   background: #970097;
   color: #fff;
 }
-/* line 69, ../../scss/main.scss */
+/* line 70, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 70, ../../scss/main.scss */
+/* line 71, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 73, ../../scss/main.scss */
+/* line 74, ../../scss/main.scss */
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
-/* line 78, ../../scss/main.scss */
+/* line 79, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
   background-image: url("");
@@ -167,30 +177,53 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
-/* line 89, ../../scss/main.scss */
+/* line 90, ../../scss/main.scss */
 .menu-header {
   line-height: 80px;
 }
 
-/* line 94, ../../scss/main.scss */
+/* line 95, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin-right: 5px;
 }
 
-/* line 100, ../../scss/main.scss */
+/* line 101, ../../scss/main.scss */
 .hero {
   height: 800px;
 }
-/* line 103, ../../scss/main.scss */
+/* line 104, ../../scss/main.scss */
 .hero .container {
   height: 100%;
+}
+
+/* line 107, ../../scss/main.scss */
+.feature-list {
+  text-align: center;
+}
+
+/* line 111, ../../scss/main.scss */
+.feature {
+  display: inline-block;
+  text-align: center;
+  width: 33%;
+}
+
+/* line 117, ../../scss/main.scss */
+.feature-bubble {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
 }
 
 /****************************************
 * Misc.
 ****************************************/
-/* line 110, ../../scss/main.scss */
+/* line 127, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
