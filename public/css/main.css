@@ -167,47 +167,49 @@ button:focus {
 .base-button {
   cursor: pointer;
   background: #511180;
+  text-transform: uppercase;
+  font-size: 15px;
   color: #fff;
 }
 
-/* line 83, ../../scss/main.scss */
+/* line 85, ../../scss/main.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
 
-/* line 88, ../../scss/main.scss */
+/* line 90, ../../scss/main.scss */
 .purple {
   color: #7118b2;
 }
 
-/* line 90, ../../scss/main.scss */
+/* line 92, ../../scss/main.scss */
 .purple-background {
   background: #7118b2;
   color: #fff;
 }
-/* line 94, ../../scss/main.scss */
+/* line 96, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 95, ../../scss/main.scss */
+/* line 97, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 98, ../../scss/main.scss */
+/* line 100, ../../scss/main.scss */
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
-/* line 103, ../../scss/main.scss */
+/* line 105, ../../scss/main.scss */
 .base-section-padding {
   padding: 80px;
 }
 
-/* line 105, ../../scss/main.scss */
+/* line 107, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
   background-image: url("/img/wesual.png");
@@ -220,48 +222,48 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
-/* line 118, ../../scss/main.scss */
+/* line 120, ../../scss/main.scss */
 .menu-header {
   padding-top: 28px;
-  line-height: 80px;
 }
 
-/* line 124, ../../scss/main.scss */
+/* line 125, ../../scss/main.scss */
 .menu li {
   display: inline-block;
-  margin-right: 5px;
+  margin-left: 15px;
 }
 
-/* line 130, ../../scss/main.scss */
+/* line 131, ../../scss/main.scss */
 .hero {
   height: 800px;
+  position: relative;
 }
-/* line 133, ../../scss/main.scss */
+/* line 135, ../../scss/main.scss */
 .hero .container {
   height: 100%;
 }
 
-/* line 136, ../../scss/main.scss */
+/* line 138, ../../scss/main.scss */
 .features {
   text-align: center;
 }
-/* line 139, ../../scss/main.scss */
+/* line 141, ../../scss/main.scss */
 .features h2 {
   margin: 0 auto 50px;
 }
 
-/* line 142, ../../scss/main.scss */
+/* line 144, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
   width: 33%;
 }
-/* line 147, ../../scss/main.scss */
+/* line 149, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
 
-/* line 150, ../../scss/main.scss */
+/* line 152, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -276,7 +278,7 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
-/* line 161, ../../scss/main.scss */
+/* line 163, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }

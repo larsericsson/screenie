@@ -77,6 +77,8 @@ button:focus { outline: none; }
 .base-button {
 	cursor: pointer;
 	background: $wesual-dark-purple;
+	text-transform: uppercase;
+	font-size: 15px;
 	color: #fff;
 }
 
@@ -117,18 +119,18 @@ button:focus { outline: none; }
 
 .menu-header {
 	padding-top: 28px;
-	line-height: 80px;
 }
 
 .menu {
 	li {
 		display: inline-block;
-		margin-right: 5px;
+		margin-left: 15px;
 	}
 }
 
 .hero {
 	height: 800px;
+	position: relative;
 
 	.container { height: 100%; }
 }
