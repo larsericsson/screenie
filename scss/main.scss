@@ -12,7 +12,7 @@
 $wesual-purple: #7118b2;
 $wesual-dark-purple: #511180;
 $wesual-gray: #edf1f2;
-$wesual-purple-hover: rgb(151, 0, 151);
+$wesual-purple-hover: #7118b2;
 
 /****************************************
 * Util classes
@@ -144,43 +144,46 @@ button:focus { outline: none; }
 * Index 
 ****************************************/
 
+.menu-header {
+	overflow: visible;
+}
+
 .menu {
 	li {
 		display: inline-block;
 		margin-left: 15px;
 
-		a { position: relative; }
+		a { 
+			position: relative; 
+			color: $wesual-purple;
+		}
 
 		a:after {
-			@include transition(all 150ms ease);
-			@include transform(translate3d(0, 7px, 0));
+			@include transition(all 200ms ease);
+			@include transform(translate3d(0, 8px, 0));
 			@include opacity(0);
 			position: absolute;
 			top: 100%;
 			left: 0;
 			width: 100%;
-			height: 1px;
+			height: 2px;
 			background: $wesual-purple;
 			content: '';
 		}
 
-		a:hover:after {
-			@include opacity(0.25);
-			@include transform(translate3d(0, 2px, 0));
+		a:hover {
+			color: $wesual-purple-hover;
+
+			&:after {
+				@include opacity(0.25);
+				@include transform(translate3d(0, 2px, 0));
+			}
 		}
 	}
 }
 
-
-
 .relative {
 	position: relative;
-}
-
-.hero {
-	height: 800px;
-
-	.container { height: 100%; }
 }
 
 .hero-container {
