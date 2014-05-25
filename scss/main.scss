@@ -10,6 +10,7 @@
 ****************************************/
 $wesual-purple: #7118b2;
 $wesual-dark-purple: #511180;
+$wesual-gray: #edf1f2;
 $wesual-purple-hover: rgb(151, 0, 151);
 
 /****************************************
@@ -89,6 +90,11 @@ button:focus { outline: none; }
 
 .purple { color: $wesual-purple; }
 
+.grey-background {
+	background: $wesual-gray;
+	color: #000;
+}
+
 .purple-background {
 	background: $wesual-purple;
 	color: #fff;
@@ -105,6 +111,11 @@ button:focus { outline: none; }
 .header-padding {
 	padding: 28px;
 }
+
+.hero-padding {
+	padding: 135px 28px;
+}
+
 .base-section-padding { padding: 80px; }
 
 .logo {
@@ -114,6 +125,10 @@ button:focus { outline: none; }
 	background-repeat: no-repeat;
 	width: 128px;
 	height: 28px;
+}
+
+p {
+	max-width: 500px;
 }
 
 /****************************************
@@ -129,12 +144,6 @@ button:focus { outline: none; }
 
 .relative {
 	position: relative;
-}
-
-.hero {
-	height: 800px;
-
-	.container { height: 100%; }
 }
 
 .hero-container {
