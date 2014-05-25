@@ -137,37 +137,39 @@ button:focus {
 .base-button {
   cursor: pointer;
   background: #511180;
+  text-transform: uppercase;
+  font-size: 15px;
   color: #fff;
 }
 
-/* line 63, ../../scss/main.scss */
+/* line 65, ../../scss/main.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
 
-/* line 68, ../../scss/main.scss */
+/* line 70, ../../scss/main.scss */
 .purple-background {
   background: #7118b2;
   color: #fff;
 }
-/* line 72, ../../scss/main.scss */
+/* line 74, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 73, ../../scss/main.scss */
+/* line 75, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 76, ../../scss/main.scss */
+/* line 78, ../../scss/main.scss */
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
-/* line 81, ../../scss/main.scss */
+/* line 83, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
   background-image: url("/img/wesual.png");
@@ -180,39 +182,40 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
-/* line 94, ../../scss/main.scss */
+/* line 96, ../../scss/main.scss */
 .menu-header {
   padding-top: 28px;
 }
 
-/* line 99, ../../scss/main.scss */
+/* line 101, ../../scss/main.scss */
 .menu li {
   display: inline-block;
-  margin-right: 5px;
+  margin-left: 15px;
 }
 
-/* line 105, ../../scss/main.scss */
+/* line 107, ../../scss/main.scss */
 .hero {
   height: 800px;
+  position: relative;
 }
-/* line 108, ../../scss/main.scss */
+/* line 111, ../../scss/main.scss */
 .hero .container {
   height: 100%;
 }
 
-/* line 111, ../../scss/main.scss */
+/* line 114, ../../scss/main.scss */
 .feature-list {
   text-align: center;
 }
 
-/* line 115, ../../scss/main.scss */
+/* line 118, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
   width: 33%;
 }
 
-/* line 121, ../../scss/main.scss */
+/* line 124, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -226,7 +229,7 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
-/* line 131, ../../scss/main.scss */
+/* line 134, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
