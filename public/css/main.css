@@ -214,22 +214,22 @@ button:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-transition: all 100ms ease;
-  -moz-transition: all 100ms ease;
-  -o-transition: all 100ms ease;
-  transition: all 100ms ease;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
   padding: 17px;
   border: none;
 }
 
 /* line 131, ../../scss/main.scss */
 .base-input {
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   font-size: 18px;
 }
 /* line 135, ../../scss/main.scss */
 .base-input:hover {
-  border: 3px solid #d0d0d0;
+  border: 2px solid #d0d0d0;
 }
 
 /* line 138, ../../scss/main.scss */
@@ -245,83 +245,84 @@ button:focus {
 }
 /* line 148, ../../scss/main.scss */
 .base-button:hover {
-  color: #7118b2;
-  background: rgba(255, 255, 255, 0);
+  color: #fff;
+  background: #8e1edf;
+  border-color: #8e1edf;
 }
 
-/* line 154, ../../scss/main.scss */
+/* line 155, ../../scss/main.scss */
 .signup-input {
   width: 360px;
   margin-right: 10px;
 }
 
-/* line 159, ../../scss/main.scss */
+/* line 160, ../../scss/main.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
 
-/* line 164, ../../scss/main.scss */
+/* line 165, ../../scss/main.scss */
 .purple {
   color: #7118b2;
 }
 
-/* line 166, ../../scss/main.scss */
+/* line 167, ../../scss/main.scss */
 .grey-background {
   background: #edf1f2;
   color: #000;
 }
 
-/* line 171, ../../scss/main.scss */
+/* line 172, ../../scss/main.scss */
 .light-gray-background {
   background: #eff3f6;
   color: #000;
 }
 
-/* line 176, ../../scss/main.scss */
+/* line 177, ../../scss/main.scss */
 .dark-background {
   background: #000;
   color: #fff;
 }
 
-/* line 181, ../../scss/main.scss */
+/* line 182, ../../scss/main.scss */
 .purple-background {
   background: #7118b2;
   color: #fff;
 }
-/* line 185, ../../scss/main.scss */
+/* line 186, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 186, ../../scss/main.scss */
+/* line 187, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 189, ../../scss/main.scss */
+/* line 190, ../../scss/main.scss */
 .container {
   max-width: 980px;
   margin: 0 auto;
 }
 
-/* line 194, ../../scss/main.scss */
+/* line 195, ../../scss/main.scss */
 .header-padding {
   padding: 28px;
 }
 
-/* line 198, ../../scss/main.scss */
+/* line 199, ../../scss/main.scss */
 .hero-padding {
   padding: 135px 28px;
 }
 
-/* line 202, ../../scss/main.scss */
+/* line 203, ../../scss/main.scss */
 .base-section-padding {
   text-align: center;
   padding: 110px 0 135px;
 }
 
-/* line 207, ../../scss/main.scss */
+/* line 208, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
   background-image: url("/img/wesual.png");
@@ -334,22 +335,22 @@ button:focus {
 /****************************************
 * Index 
 ****************************************/
-/* line 220, ../../scss/main.scss */
+/* line 221, ../../scss/main.scss */
 .menu-header {
   overflow: visible;
 }
 
-/* line 225, ../../scss/main.scss */
+/* line 226, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin-left: 15px;
 }
-/* line 229, ../../scss/main.scss */
+/* line 230, ../../scss/main.scss */
 .menu li a {
   position: relative;
   color: #7118b2;
 }
-/* line 234, ../../scss/main.scss */
+/* line 235, ../../scss/main.scss */
 .menu li a:after {
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -370,11 +371,11 @@ button:focus {
   background: #7118b2;
   content: '';
 }
-/* line 247, ../../scss/main.scss */
+/* line 248, ../../scss/main.scss */
 .menu li a:hover {
   color: #7118b2;
 }
-/* line 250, ../../scss/main.scss */
+/* line 251, ../../scss/main.scss */
 .menu li a:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
@@ -385,17 +386,17 @@ button:focus {
   transform: translate3d(0, 2px, 0);
 }
 
-/* line 258, ../../scss/main.scss */
+/* line 259, ../../scss/main.scss */
 .relative {
   position: relative;
 }
 
-/* line 262, ../../scss/main.scss */
+/* line 263, ../../scss/main.scss */
 .hero-container {
   width: 650px;
 }
 
-/* line 266, ../../scss/main.scss */
+/* line 267, ../../scss/main.scss */
 .hero-tv {
   position: absolute;
   left: 690px;
@@ -403,18 +404,18 @@ button:focus {
   width: 676px;
 }
 
-/* line 273, ../../scss/main.scss */
+/* line 274, ../../scss/main.scss */
 .macbook {
   margin-top: 50px;
   width: 828px;
 }
 
-/* line 278, ../../scss/main.scss */
+/* line 279, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 282, ../../scss/main.scss */
+/* line 283, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
@@ -422,22 +423,22 @@ button:focus {
   min-width: 300px;
   margin-top: 70px;
 }
-/* line 289, ../../scss/main.scss */
+/* line 290, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
-/* line 291, ../../scss/main.scss */
+/* line 292, ../../scss/main.scss */
 .feature i {
   font-size: 90px;
   margin-bottom: 65px;
 }
-/* line 296, ../../scss/main.scss */
+/* line 297, ../../scss/main.scss */
 .feature p {
   margin: 0 auto;
   max-width: 275px;
 }
 
-/* line 302, ../../scss/main.scss */
+/* line 303, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -449,22 +450,43 @@ button:focus {
   margin: 0 auto 30px;
 }
 
-/* line 309, ../../scss/main.scss */
+/* line 310, ../../scss/main.scss */
 .telegraphic h2 {
   margin-bottom: 50px;
 }
 
-/* line 311, ../../scss/main.scss */
+/* line 312, ../../scss/main.scss */
 .slider {
   width: 100%;
   height: 500px;
+}
+
+/* line 317, ../../scss/main.scss */
+.slider-viewport {
   background: #fff;
+}
+
+/* line 321, ../../scss/main.scss */
+.slider-pagination {
+  text-align: center;
+}
+/* line 324, ../../scss/main.scss */
+.slider-pagination li {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
 }
 
 /****************************************
 * Misc.
 ****************************************/
-/* line 325, ../../scss/main.scss */
+/* line 337, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }

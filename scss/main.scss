@@ -123,16 +123,16 @@ button:focus { outline: none; }
 .base-button {
 	@extend %base-font;
 	@include appearance(none);
-	@include transition(all 100ms ease);
+	@include transition(all 150ms ease);
 	padding: 17px;
 	border: none;
 }
 
 .base-input {
-	border: 3px solid #fff;
+	border: 2px solid #fff;
 	font-size: 18px;
 
-	&:hover { border: 3px solid #d0d0d0; }
+	&:hover { border: 2px solid #d0d0d0; }
 }
 
 .base-button {
@@ -146,8 +146,9 @@ button:focus { outline: none; }
 	border: 3px solid $wesual-purple;
 
 	&:hover {
-		color: $wesual-purple;
-		background: rgba(255, 255, 255, 0);
+		color: #fff;
+		background: lighten($wesual-purple, 10%);
+		border-color: lighten($wesual-purple, 10%);
 	}
 }
 
@@ -311,11 +312,22 @@ button:focus { outline: none; }
 .slider {
 	width: 100%;
 	height: 500px;
+}
+
+.slider-viewport {
 	background: #fff;
 }
 
 .slider-pagination {
+	text-align: center;
 
+	li {
+		@include border-radius(50%);
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #fff;
+	}
 }
 
 /****************************************
