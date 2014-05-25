@@ -91,7 +91,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 html, body, .base-input,
 .base-button {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -115,9 +115,11 @@ strong {
 /* line 50, ../../scss/main.scss */
 p {
   line-height: 1.5;
+  max-width: 570px;
+  margin-bottom: 20px;
 }
 
-/* line 52, ../../scss/main.scss */
+/* line 56, ../../scss/main.scss */
 a {
   -webkit-transition: color 150ms ease;
   -moz-transition: color 150ms ease;
@@ -129,22 +131,22 @@ a {
 /****************************************
 * Framework
 ****************************************/
-/* line 60, ../../scss/main.scss */
+/* line 64, ../../scss/main.scss */
 ::selection {
   background: #7118b2;
 }
 
-/* line 61, ../../scss/main.scss */
+/* line 65, ../../scss/main.scss */
 ::-moz-selection {
   background: #7118b2;
 }
 
-/* line 63, ../../scss/main.scss */
+/* line 67, ../../scss/main.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 68, ../../scss/main.scss */
+/* line 72, ../../scss/main.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -152,82 +154,89 @@ button:focus {
   outline: none;
 }
 
-/* line 71, ../../scss/main.scss */
+/* line 75, ../../scss/main.scss */
 .base-input,
 .base-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 15px;
   border: none;
-  font-size: 16px;
 }
 
-/* line 79, ../../scss/main.scss */
+/* line 81, ../../scss/main.scss */
 .base-button {
   cursor: pointer;
   background: #511180;
   text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 18px;
   color: #fff;
   padding: 18px 18px 17px 18px;
 }
 
-/* line 89, ../../scss/main.scss */
+/* line 92, ../../scss/main.scss */
+.signup-input {
+  padding: 17px;
+  width: 360px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* line 99, ../../scss/main.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
   width: 100%;
 }
 
-/* line 94, ../../scss/main.scss */
+/* line 104, ../../scss/main.scss */
 .purple {
   color: #7118b2;
 }
 
-/* line 96, ../../scss/main.scss */
+/* line 106, ../../scss/main.scss */
 .grey-background {
   background: #edf1f2;
   color: #000;
 }
 
-/* line 101, ../../scss/main.scss */
+/* line 111, ../../scss/main.scss */
 .purple-background {
   background: #7118b2;
   color: #fff;
 }
-/* line 105, ../../scss/main.scss */
+/* line 115, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 106, ../../scss/main.scss */
+/* line 116, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 109, ../../scss/main.scss */
+/* line 119, ../../scss/main.scss */
 .container {
   max-width: 980px;
   margin: 0 auto;
 }
 
-/* line 114, ../../scss/main.scss */
+/* line 124, ../../scss/main.scss */
 .header-padding {
   padding: 28px;
 }
 
-/* line 118, ../../scss/main.scss */
+/* line 128, ../../scss/main.scss */
 .hero-padding {
   padding: 135px 28px;
 }
 
-/* line 122, ../../scss/main.scss */
+/* line 132, ../../scss/main.scss */
 .base-section-padding {
   padding: 80px;
 }
 
-/* line 124, ../../scss/main.scss */
+/* line 134, ../../scss/main.scss */
 .logo {
   text-indent: -9999px;
   background-image: url("/img/wesual.png");
@@ -237,24 +246,19 @@ button:focus {
   height: 28px;
 }
 
-/* line 133, ../../scss/main.scss */
-p {
-  max-width: 500px;
-}
-
 /****************************************
 * Index 
 ****************************************/
-/* line 142, ../../scss/main.scss */
+/* line 148, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin-left: 15px;
 }
-/* line 146, ../../scss/main.scss */
+/* line 152, ../../scss/main.scss */
 .menu li a {
   position: relative;
 }
-/* line 148, ../../scss/main.scss */
+/* line 154, ../../scss/main.scss */
 .menu li a:after {
   -webkit-transition: all 150ms ease;
   -moz-transition: all 150ms ease;
@@ -275,7 +279,7 @@ p {
   background: #7118b2;
   content: '';
 }
-/* line 161, ../../scss/main.scss */
+/* line 167, ../../scss/main.scss */
 .menu li a:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
@@ -286,51 +290,51 @@ p {
   transform: translate3d(0, 2px, 0);
 }
 
-/* line 170, ../../scss/main.scss */
+/* line 176, ../../scss/main.scss */
 .relative {
   position: relative;
 }
 
-/* line 174, ../../scss/main.scss */
+/* line 180, ../../scss/main.scss */
 .hero {
   height: 800px;
 }
-/* line 177, ../../scss/main.scss */
+/* line 183, ../../scss/main.scss */
 .hero .container {
   height: 100%;
 }
 
-/* line 180, ../../scss/main.scss */
+/* line 186, ../../scss/main.scss */
 .hero-container {
   width: 650px;
 }
 
-/* line 184, ../../scss/main.scss */
+/* line 190, ../../scss/main.scss */
 .hero-tv {
   position: absolute;
-  left: 780px;
-  top: 30px;
+  left: 690px;
+  top: 100px;
   width: 676px;
 }
 
-/* line 191, ../../scss/main.scss */
+/* line 197, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 195, ../../scss/main.scss */
+/* line 201, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
   width: 33%;
   margin-top: 40px;
 }
-/* line 201, ../../scss/main.scss */
+/* line 207, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
 
-/* line 204, ../../scss/main.scss */
+/* line 210, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -345,7 +349,7 @@ p {
 /****************************************
 * Misc.
 ****************************************/
-/* line 215, ../../scss/main.scss */
+/* line 221, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
