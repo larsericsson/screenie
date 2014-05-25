@@ -78,8 +78,10 @@ button:focus { outline: none; }
 	cursor: pointer;
 	background: $wesual-dark-purple;
 	text-transform: uppercase;
-	font-size: 15px;
+	font-size: 13px;
+	font-weight: 600;
 	color: #fff;
+	padding: 18px 18px 17px 18px;
 }
 
 .row { 
@@ -135,16 +137,13 @@ button:focus { outline: none; }
 	.container { height: 100%; }
 }
 
-.features { 
-	text-align: center;
-
-	h2 { margin: 0 auto 50px; }
-}	
+.features { text-align: center; }
 
 .feature {
 	display: inline-block;
 	text-align: center;
 	width: 33%;
+	margin-top: 40px;
 
 	strong { margin-bottom: 10px; }
 }
