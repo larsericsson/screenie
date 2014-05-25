@@ -2,10 +2,10 @@ var wesual = wesual || {};
 
 wesual = {
 	init: function() {
-		this.initFont()
+		this.initMyFonts()
 	},
 
-	initFont: function() {
+	initMyFonts: function() {
         var head = document.getElementsByTagName('head')[0];
         	path = '//easy.myfonts.net/v2/js?sid=196848(font-family=Grumpy+Black+24)&key=zYSUJW1plZ',
             protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
