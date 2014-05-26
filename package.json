@@ -1,5 +1,5 @@
 {
-  "name": "screenie",
+  "name": "wesual",
   "version": "0.0.0",
   "description": "Your team visualized",
   "main": "app.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/larsericsson/screenie.git"
+    "url": "git://github.com/larsericsson/wesual.git"
   },
   "keywords": [
     "heroku"
@@ -16,7 +16,7 @@
   "author": "larsericsson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/larsericsson/screenie/issues"
+    "url": "https://github.com/larsericsson/wesual/issues"
   },
   "dependencies": {
     "logfmt": "~1.1.2",
