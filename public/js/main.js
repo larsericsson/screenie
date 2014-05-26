@@ -5,6 +5,7 @@ wesual = {
 		this.initMyFonts();
     this.slider.init();
     this.bindEvents();
+    this.mailChimpForm.init();
 	},
 
   bindEvents: function() {
@@ -31,6 +32,20 @@ wesual = {
     }, 10);
 	}
 };
+
+wesual.mailChimpForm = {
+  init: function() {
+    $('#mc-embedded-subscribe-form').on('submit', $.proxy(this.onFormPost, this));
+  },
+
+  onFormPost: function(e) {
+    e.preventDefault();
+    var postUrl = $('#mc-embedded-subscribe-form-2').attr('action');
+    $.ajax(postUrl, {"dataType": "jsonp"}).done(function(data) {
+      console.log(data);
+    });
+  }
+}
 
 wesual.slider = {
   $el: $('.js-slider'),
