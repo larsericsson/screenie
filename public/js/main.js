@@ -2,16 +2,47 @@ var wesual = wesual || {};
 
 wesual = {
 	init: function() {
-		this.initMyFonts();
+    this.preloader.init();
+		this.fonts.init();
     this.slider.init();
     this.bindEvents();
 	},
 
   bindEvents: function() {
 
-  },
+  }
+};
 
-	initMyFonts: function() {
+wesual.preloader = {
+  images: [
+    'img/tv.png',
+    'img/mbr.png',
+    'img/slide-1.jpg',
+    'img/slide-2.jpg',
+    'img/slide-3.jpg',
+    'img/slide-4.jpg',
+    'img/slide-5.jpg'
+  ],
+
+  init: function() {
+    var pxLoader = new PxLoader();
+
+    for (var i = 0; i < this.images.length; ++i) {
+      pxLoader.addImage(this.images[i]);
+    }
+
+    pxLoader.addCompletionListener(function() {
+      setTimeout(function() {
+        $('.hero').addClass('active');
+      }, 100);
+    });
+
+    pxLoader.start();
+  }
+};
+
+wesual.fonts = {
+  init: function() {
     var head = document.getElementsByTagName('head')[0],
         path = '//easy.myfonts.net/v2/js?sid=196848(font-family=Grumpy+Black+24)&key=zYSUJW1plZ',
         protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
@@ -29,7 +60,7 @@ wesual = {
         clearInterval(checkBanner);
       }
     }, 10);
-	}
+  }
 };
 
 wesual.slider = {
@@ -75,7 +106,7 @@ wesual.slider = {
   },
 
   goToSlideIndex: function(index) {
-    var self = this,
+    var self = this, transitionOutClass, animMs,
         goingFowards = (this.currentIndex < index) ? true : false;
 
     this.inTransition = true;
@@ -83,16 +114,28 @@ wesual.slider = {
     this.currentIndex = index;
 
     if (goingFowards) {
-      this.$slides.filter('.active').addClass('remove-forwards');
-      this.$slides.eq(index).addClass('next');
-
-      setTimeout(function() {
-        self.$slides.eq(index).addClass('active').removeClass('next');
-        self.$slides.filter('.remove-forwards').removeClass('active remove-forwards');
-
-        self.inTransition = false;
-      }, 1200);
+      transitionOutClass = 'remove-forwards';
+      transitionInClass = 'next';
+      animMs = 1300;
+    } else {
+      transitionOutClass = 'remove-backwards';
+      transitionInClass = 'prev';
+      animMs = 1300;
     }
+
+    if (!goingFowards) {
+      this.$slides.eq(index).addClass('prepare-prev');
+    }
+
+    this.$slides.filter('.active').addClass(transitionOutClass);
+    this.$slides.eq(index).addClass(transitionInClass);
+
+    setTimeout(function() {
+      self.$slides.eq(index).addClass('active').removeClass('next prev prepare-prev');
+      self.$slides.filter('.' + transitionOutClass).removeClass('active ' + transitionOutClass);
+
+      self.inTransition = false;
+    }, animMs);
   }
 };
 
