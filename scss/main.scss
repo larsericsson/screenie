@@ -73,6 +73,8 @@ $wesual-purple-hover: #7118b2;
 
 .block { display: block; }
 
+.clearfix { @include clearfix; }
+
 .margin-bottom-m { margin-bottom: 15px; }
 
 /****************************************
@@ -122,7 +124,7 @@ select:focus,
 textarea:focus,
 button:focus { outline: none; }
 
-.base-input, 
+.base-input,
 .base-button {
 	@extend %base-font;
 	@include appearance(none);
@@ -160,9 +162,9 @@ button:focus { outline: none; }
 	margin-right: 10px;
 }
 
-.row { 
+.row {
 	@include clearfix;
-	width: 100%; 
+	width: 100%;
 }
 
 .purple { color: $wesual-purple; }
@@ -190,7 +192,7 @@ button:focus { outline: none; }
 	a:hover { color: #000; }
 }
 
-.container { 
+.container {
 	max-width: 980px;
 	margin: 0 auto;
 }
@@ -203,9 +205,9 @@ button:focus { outline: none; }
 	padding: 135px 28px;
 }
 
-.base-section-padding { 
+.base-section-padding {
 	text-align: center;
-	padding: 110px 0 135px; 
+	padding: 110px 0 135px;
 }
 
 .logo {
@@ -218,7 +220,7 @@ button:focus { outline: none; }
 }
 
 /****************************************
-* Index 
+* Index
 ****************************************/
 
 .menu-header {
@@ -230,8 +232,8 @@ button:focus { outline: none; }
 		display: inline-block;
 		margin-left: 15px;
 
-		a { 
-			position: relative; 
+		a {
+			position: relative;
 			color: $wesual-purple;
 		}
 
@@ -285,7 +287,7 @@ button:focus { outline: none; }
 
 .features {
 	text-align: center;
-}	
+}
 
 .feature {
 	display: inline-block;
@@ -301,9 +303,9 @@ button:focus { outline: none; }
 		margin-bottom: 65px;
 	}
 
-	p { 
+	p {
 		margin: 0 auto;
-		max-width: 275px; 
+		max-width: 275px;
 	}
 }
 
@@ -318,22 +320,93 @@ button:focus { outline: none; }
 
 .slider {
 	width: 100%;
-	height: 500px;
 }
 
 .slider-viewport {
-	background: #fff;
+  @include perspective(2000);
+  position: relative;
+  height: 100%;
+
+  li {
+    @include transition(all 1100ms ease);
+    @include opacity(0);
+    @include transform(translate3d(0, 50px, 0) rotateX(40deg) scale(0.85));
+    @include transform-origin(50%, 100%);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    &.next {
+      @include opacity(1);
+      @include transform(translate3d(0, 0, 0) rotateX(0deg) scale(1));
+      @include transition-delay(300ms);
+    }
+
+    &.active {
+      @include opacity(1);
+      @include transform(translate3d(0, 0, 0) rotateX(0deg) scale(1));
+      z-index: 2;
+      position: relative;
+      float: left;
+    }
+
+    &.remove-forwards {
+      @include transition(all 600ms ease);
+      @include transform(translate3d(0, 40px, 0));
+      @include opacity(0);
+    }
+  }
 }
 
 .slider-pagination {
 	text-align: center;
+  cursor: default;
 
 	li {
 		@include border-radius(50%);
+    @include transition(background 10ms linear);
+    @include transition-delay(200ms);
+    position: relative;
 		display: inline-block;
-		width: 20px;
-		height: 20px;
-		border: 2px solid #fff;
+		width: 15px;
+		height: 15px;
+    margin: 20px 5px 0 0;
+		border: 1px solid #fff;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:after {
+      @include transition(all 150ms ease);
+      @include transform(translate3d(0, 5px, 0) scale(0));
+      @include border-radius(50%);
+      @include opacity(0);
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+    }
+
+    &:hover:after {
+      @include transform(translate3d(0, 0, 0) scale(0.4));
+      @include opacity(1);
+    }
+
+    &.active {
+      &:after {
+        @include transform(scale(1.1));
+        @include opacity(1);
+      }
+    }
 	}
 }
 
