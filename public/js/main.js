@@ -66,13 +66,23 @@ wesual.fonts = {
 
 wesual.mailChimpForm = {
   init: function() {
-    $('#mc-embedded-subscribe-form').on('submit', $.proxy(this.onFormPost, this));
+    $('.js-mailchimp').on('submit', $.proxy(this.onFormPost, this));
   },
 
   onFormPost: function(e) {
     e.preventDefault();
-    var postUrl = $('#mc-embedded-subscribe-form-2').attr('action');
-    $.ajax(postUrl, {"dataType": "jsonp"}).done(function(data) {
+
+    var email = $(e.target).find('input[name="EMAIL"]').val();
+    var parser = document.createElement('a');
+    parser.href = $('#mc-embedded-subscribe-form').attr('action');
+    parser.pathname += "-json";
+    $.ajax(parser.href, {
+      "dataType": "jsonp",
+      "jsonp": "c",
+      "data": {
+        "EMAIL": email
+      }
+    }).done(function(data) {
       console.log(data);
     });
   }
