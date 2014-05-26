@@ -18,5 +18,5 @@ App.configure(function() {
 });
 
 http.createServer(App).listen(App.get('port'), function() {
-	console.log('Started on 5000');
+	console.log('Started Wesual on port 5000');
 });

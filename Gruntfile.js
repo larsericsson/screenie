@@ -1,16 +1,15 @@
 'use strict';
 
 module.exports = function(grunt) {
-
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       scss: {
-        files: ['static/**/*.scss'],
+        files: ['scss/**/*.scss'],
         tasks: ['compass']
       },
       js: {
-        files: ['<%= sdn.js %>/**/*.js'],
+        files: ['public/**/*.js'],
         tasks: ['uglify']
       }
     },
