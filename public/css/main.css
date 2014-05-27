@@ -539,20 +539,21 @@ button:focus {
 ****************************************/
 /* line 325, ../../scss/main.scss */
 .menu-header {
-  overflow: visible;
+  position: relative;
+  z-index: 10;
 }
 
-/* line 330, ../../scss/main.scss */
+/* line 331, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin: 5px 0 0 15px;
 }
-/* line 334, ../../scss/main.scss */
+/* line 335, ../../scss/main.scss */
 .menu li a {
   position: relative;
   color: #7118b2;
 }
-/* line 339, ../../scss/main.scss */
+/* line 340, ../../scss/main.scss */
 .menu li a:after {
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -573,11 +574,11 @@ button:focus {
   background: #7118b2;
   content: '';
 }
-/* line 352, ../../scss/main.scss */
+/* line 353, ../../scss/main.scss */
 .menu li a:hover {
   color: #7118b2;
 }
-/* line 355, ../../scss/main.scss */
+/* line 356, ../../scss/main.scss */
 .menu li a:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
@@ -588,21 +589,21 @@ button:focus {
   transform: translate3d(0, 2px, 0);
 }
 
-/* line 363, ../../scss/main.scss */
+/* line 364, ../../scss/main.scss */
 .relative {
   position: relative;
 }
 
-/* line 367, ../../scss/main.scss */
+/* line 368, ../../scss/main.scss */
 .hero-container {
   width: 650px;
 }
-/* line 370, ../../scss/main.scss */
+/* line 371, ../../scss/main.scss */
 .hero-container p {
   max-width: 570px;
 }
 
-/* line 375, ../../scss/main.scss */
+/* line 376, ../../scss/main.scss */
 .hero-tv {
   position: absolute;
   left: 690px;
@@ -610,35 +611,35 @@ button:focus {
   width: 676px;
 }
 
-/* line 382, ../../scss/main.scss */
+/* line 383, ../../scss/main.scss */
 .macbook {
   position: relative;
   width: 828px;
   margin: 50px auto 0;
 }
-/* line 387, ../../scss/main.scss */
+/* line 388, ../../scss/main.scss */
 .macbook .macbook-viewport {
-  z-index: 2;
   position: absolute;
+  z-index: 2;
   width: 75.8%;
   height: 72.8%;
   top: 14.5%;
   left: 12.1%;
   overflow: hidden;
 }
-/* line 397, ../../scss/main.scss */
+/* line 398, ../../scss/main.scss */
 .macbook img {
-  z-index: 1;
   position: relative;
+  z-index: 1;
   width: 100%;
 }
 
-/* line 404, ../../scss/main.scss */
+/* line 405, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 408, ../../scss/main.scss */
+/* line 409, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
@@ -646,22 +647,22 @@ button:focus {
   min-width: 300px;
   margin-top: 70px;
 }
-/* line 415, ../../scss/main.scss */
+/* line 416, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
-/* line 417, ../../scss/main.scss */
+/* line 418, ../../scss/main.scss */
 .feature i {
   font-size: 90px;
   margin-bottom: 65px;
 }
-/* line 422, ../../scss/main.scss */
+/* line 423, ../../scss/main.scss */
 .feature p {
   margin: 0 auto;
   max-width: 275px;
 }
 
-/* line 428, ../../scss/main.scss */
+/* line 429, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -673,17 +674,17 @@ button:focus {
   margin: 0 auto 30px;
 }
 
-/* line 435, ../../scss/main.scss */
+/* line 436, ../../scss/main.scss */
 .telegraphic h2 {
   margin-bottom: 50px;
 }
 
-/* line 437, ../../scss/main.scss */
+/* line 438, ../../scss/main.scss */
 .slider {
   width: 100%;
 }
 
-/* line 441, ../../scss/main.scss */
+/* line 442, ../../scss/main.scss */
 .slider-viewport {
   -webkit-perspective: 1500;
   -moz-perspective: 1500;
@@ -693,7 +694,7 @@ button:focus {
   position: relative;
   height: 100%;
 }
-/* line 446, ../../scss/main.scss */
+/* line 447, ../../scss/main.scss */
 .slider-viewport li {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -707,17 +708,17 @@ button:focus {
   -ms-transform-origin: 50% 100%;
   -o-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
-  z-index: 1;
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
 }
-/* line 455, ../../scss/main.scss */
+/* line 456, ../../scss/main.scss */
 .slider-viewport li img {
   display: block;
   width: 100%;
 }
-/* line 460, ../../scss/main.scss */
+/* line 461, ../../scss/main.scss */
 .slider-viewport li.is-next {
   -webkit-transition: all 1000ms ease;
   -moz-transition: all 1000ms ease;
@@ -735,7 +736,7 @@ button:focus {
   -o-transition-delay: 275ms;
   transition-delay: 275ms;
 }
-/* line 467, ../../scss/main.scss */
+/* line 468, ../../scss/main.scss */
 .slider-viewport li.active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -744,11 +745,11 @@ button:focus {
   -ms-transform: translate3d(0, 0, 0) rotateX(0deg) scale(1);
   -o-transform: translate3d(0, 0, 0) rotateX(0deg) scale(1);
   transform: translate3d(0, 0, 0) rotateX(0deg) scale(1);
-  z-index: 2;
   position: relative;
+  z-index: 2;
   float: left;
 }
-/* line 475, ../../scss/main.scss */
+/* line 476, ../../scss/main.scss */
 .slider-viewport li.remove {
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
@@ -763,12 +764,12 @@ button:focus {
   opacity: 0;
 }
 
-/* line 483, ../../scss/main.scss */
+/* line 484, ../../scss/main.scss */
 .slider-pagination {
   text-align: center;
   cursor: default;
 }
-/* line 487, ../../scss/main.scss */
+/* line 488, ../../scss/main.scss */
 .slider-pagination li {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -788,7 +789,7 @@ button:focus {
   cursor: pointer;
   overflow: hidden;
 }
-/* line 499, ../../scss/main.scss */
+/* line 500, ../../scss/main.scss */
 .slider-pagination li.active {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -801,7 +802,7 @@ button:focus {
 /****************************************
 * Misc.
 ****************************************/
-/* line 510, ../../scss/main.scss */
+/* line 511, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }

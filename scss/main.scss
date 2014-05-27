@@ -323,7 +323,8 @@ button:focus { outline: none; }
 * Index
 ****************************************/
 .menu-header {
-	overflow: visible;
+  position: relative;
+  z-index: 10;
 }
 
 .menu {
@@ -385,8 +386,8 @@ button:focus { outline: none; }
 	margin: 50px auto 0;
 
   .macbook-viewport {
-    z-index: 2;
     position: absolute;
+    z-index: 2;
     width: 75.8%;
     height: 72.8%;
     top: 14.5%;
@@ -395,8 +396,8 @@ button:focus { outline: none; }
   }
 
   img {
-    z-index: 1;
     position: relative;
+    z-index: 1;
     width: 100%;
   }
 }
@@ -447,8 +448,8 @@ button:focus { outline: none; }
     @include opacity(0);
     @include transform(translate3d(0, 52.5px, 0) rotateX(40deg) scale(0.825));
     @include transform-origin(50%, 100%);
-    z-index: 1;
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
 
@@ -467,8 +468,8 @@ button:focus { outline: none; }
     &.active {
       @include opacity(1);
       @include transform(translate3d(0, 0, 0) rotateX(0deg) scale(1));
-      z-index: 2;
       position: relative;
+      z-index: 2;
       float: left;
     }
 
