@@ -6,6 +6,7 @@ wesual = {
     this.fonts.init();
     this.slider.init();
     this.bindEvents();
+    this.mailChimpForm.init();
 	},
 
   bindEvents: function() {
@@ -79,6 +80,30 @@ wesual.fonts = {
     }, 10);
   }
 };
+
+wesual.mailChimpForm = {
+  init: function() {
+    $('.js-mailchimp').on('submit', $.proxy(this.onFormPost, this));
+  },
+
+  onFormPost: function(e) {
+    e.preventDefault();
+
+    var email = $(e.target).find('input[name="EMAIL"]').val();
+    var parser = document.createElement('a');
+    parser.href = $('#mc-embedded-subscribe-form').attr('action');
+    parser.pathname += "-json";
+    $.ajax(parser.href, {
+      "dataType": "jsonp",
+      "jsonp": "c",
+      "data": {
+        "EMAIL": email
+      }
+    }).done(function(data) {
+      console.log(data);
+    });
+  }
+}
 
 wesual.slider = {
   $el: $('.js-slider'),
