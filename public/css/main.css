@@ -325,7 +325,7 @@ button:focus {
 
 /* line 204, ../../scss/main.scss */
 .hero-padding {
-  padding: 135px 28px;
+  padding: 120px 28px 135px;
 }
 
 /* line 208, ../../scss/main.scss */
@@ -469,7 +469,7 @@ button:focus {
 /* line 294, ../../scss/main.scss */
 .menu li {
   display: inline-block;
-  margin-left: 15px;
+  margin: 5px 0 0 15px;
 }
 /* line 298, ../../scss/main.scss */
 .menu li a {
@@ -530,7 +530,7 @@ button:focus {
 .hero-tv {
   position: absolute;
   left: 690px;
-  top: 100px;
+  top: 90px;
   width: 676px;
 }
 
