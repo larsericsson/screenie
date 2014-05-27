@@ -155,29 +155,15 @@ wesual.slider = {
 
     this.currentIndex = index;
 
-    if (goingFowards) {
-      transitionOutClass = 'remove-forwards';
-      transitionInClass = 'next';
-      animMs = 1300;
-    } else {
-      transitionOutClass = 'remove-backwards';
-      transitionInClass = 'prev';
-      animMs = 1300;
-    }
-
-    if (!goingFowards) {
-      this.$slides.eq(index).addClass('prepare-prev');
-    }
-
-    this.$slides.filter('.active').addClass(transitionOutClass);
-    this.$slides.eq(index).addClass(transitionInClass);
+    this.$slides.filter('.active').addClass('remove');
+    this.$slides.eq(index).addClass('is-next');
 
     setTimeout(function() {
       self.$slides.eq(index).addClass('active').removeClass('next prev prepare-prev');
-      self.$slides.filter('.' + transitionOutClass).removeClass('active ' + transitionOutClass);
+      self.$slides.filter('.remove').removeClass('active ' + transitionOutClass);
 
       self.inTransition = false;
-    }, animMs);
+    }, 1300);
   }
 };
 
