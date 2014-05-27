@@ -162,6 +162,10 @@ button:focus { outline: none; }
 	margin-right: 10px;
 }
 
+.input-error {
+	border-color: #f00;
+}
+
 .row {
 	width: 100%;
 }
