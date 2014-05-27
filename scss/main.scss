@@ -163,7 +163,7 @@ button:focus { outline: none; }
 }
 
 .input-error {
-	border-color: #ff0000;
+	border-color: #f00;
 }
 
 .row {
@@ -206,7 +206,7 @@ button:focus { outline: none; }
 }
 
 .hero-padding {
-	padding: 135px 28px;
+	padding: 120px 28px 135px;
 }
 
 .base-section-padding {
@@ -228,55 +228,54 @@ button:focus { outline: none; }
 ****************************************/
 
 .js {
-  // Hero initial states
-  .menu-header .container,
+  // Initial states
   .hero-header-first,
   .hero-header-second,
   .hero-container p,
   .hero-container .sign-up,
-  .hero-tv { @include opacity(0); }
+  .hero-tv,
+  section .container { @include opacity(0); }
 
   .hero-header-first,
   .hero-header-second { @include transform(translate3d(0, 7.5px, 0)); }
 
   .hero-tv { @include transform(translate3d(15px, 0, 0)); }
 
-  // Hero transitions
-  .menu-header .container {
+  // Transitions
+  section .container {
     @include transition(opacity 400ms ease);
-    @include transition-delay(150ms);
+    @include transition-delay(50ms);
   }
 
   .hero-header-first {
     @include transition(all 700ms ease);
-    @include transition-delay(450ms);
+    @include transition-delay(300ms);
   }
 
   .hero-header-second {
     @include transition(all 700ms ease);
-    @include transition-delay(700ms);
+    @include transition-delay(600ms);
   }
 
   .hero-container p,
   .hero-container .sign-up {
     @include transition(opacity 1000ms ease);
-    @include transition-delay(1050ms);
+    @include transition-delay(900ms);
   }
 
   .hero-tv {
     @include transition(all 1000ms ease);
-    @include transition-delay(1050ms);
+    @include transition-delay(900ms);
   }
-
 
   // Hero active state
   &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
-    .menu-header .container,
     .hero-header-first,
     .hero-header-second,
     .hero-container p,
     .hero-container .sign-up,
-    .hero-tv { @include opacity(1); }
+    .hero-tv,
+    section .container { @include opacity(1); }
 
     .hero-header-first,
     .hero-header-second { @include transform(translate3d(0, 0, 0)); }
@@ -297,7 +296,7 @@ button:focus { outline: none; }
 .menu {
 	li {
 		display: inline-block;
-		margin-left: 15px;
+    margin: 5px 0 0 15px;
 
 		a {
 			position: relative;
@@ -343,7 +342,7 @@ button:focus { outline: none; }
 .hero-tv {
 	position: absolute;
 	left: 690px;
-	top: 100px;
+	top: 90px;
 	width: 676px;
 }
 
@@ -408,24 +407,11 @@ button:focus { outline: none; }
       width: 100%;
     }
 
-    &.next {
+    &.is-next {
       @include transition(all 1050ms ease);
       @include opacity(1);
       @include transform(translate3d(0, 0, 0) rotateX(0deg) scale(1));
       @include transition-delay(250ms);
-    }
-
-    &.prepare-prev {
-      @include transition(none);
-      @include transform(translate3d(0, 40px, 0));
-      @include opacity(0);
-    }
-
-    &.prev {
-      @include transition(all 600ms ease);
-      @include opacity(1);
-      @include transform(translate3d(0, 0, 0) rotateX(0deg) scale(1));
-      @include transition-delay(625ms);
     }
 
     &.active {
@@ -436,15 +422,9 @@ button:focus { outline: none; }
       float: left;
     }
 
-    &.remove-forwards {
+    &.remove {
       @include transition(all 500ms ease);
       @include transform(translate3d(0, 30px, 0));
-      @include opacity(0);
-    }
-
-    &.remove-backwards {
-      @include transition(all 1000ms ease);
-      @include transform(translate3d(0, 50px, 0) rotateX(40deg) scale(0.85));
       @include opacity(0);
     }
   }
