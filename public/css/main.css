@@ -499,24 +499,24 @@ button:focus {
 }
 /* line 303, ../../scss/main.scss */
 .js .features .feature-first {
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+/* line 305, ../../scss/main.scss */
+.js .features .feature-second {
   -webkit-transition-delay: 400ms;
   -moz-transition-delay: 400ms;
   -o-transition-delay: 400ms;
   transition-delay: 400ms;
 }
-/* line 305, ../../scss/main.scss */
-.js .features .feature-second {
-  -webkit-transition-delay: 700ms;
-  -moz-transition-delay: 700ms;
-  -o-transition-delay: 700ms;
-  transition-delay: 700ms;
-}
 /* line 307, ../../scss/main.scss */
 .js .features .feature-third {
-  -webkit-transition-delay: 1000ms;
-  -moz-transition-delay: 1000ms;
-  -o-transition-delay: 1000ms;
-  transition-delay: 1000ms;
+  -webkit-transition-delay: 600ms;
+  -moz-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  transition-delay: 600ms;
 }
 /* line 314, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .features.active h2,

@@ -300,11 +300,11 @@ button:focus { outline: none; }
 
     .feature { @include transition(all 750ms ease); }
 
-    .feature-first { @include transition-delay(400ms); }
+    .feature-first { @include transition-delay(200ms); }
 
-    .feature-second { @include transition-delay(700ms); }
+    .feature-second { @include transition-delay(400ms); }
 
-    .feature-third { @include transition-delay(1000ms); }
+    .feature-third { @include transition-delay(600ms); }
   }
 
   // Features section active states
