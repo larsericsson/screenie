@@ -1,23 +1,53 @@
 var wesual = wesual || {};
 
 wesual = {
+  $sections: $('section'),
+
+  sectionOffsets: [],
+
 	init: function() {
     this.preloader.init();
     this.fonts.init();
     this.slider.init();
     this.bindEvents();
+    this.getSectionOffsets();
     this.mailChimpForm.init();
 	},
 
   bindEvents: function() {
+    $(window).on('scroll', $.proxy(this.onScroll, this));
+  },
 
+  getSectionOffsets: function() {
+    var self = this;
+
+    this.$sections.each(function() {
+      self.sectionOffsets.push($(this).offset().top);
+    });
+  },
+
+  onScroll: function(e) {
+    var tweakOffset = 300,
+        viewportBottom = $(window).scrollTop() + $(window).innerHeight() - tweakOffset;
+
+    for (var i = 0; i <= this.sectionOffsets.length; ++i) {
+      if (viewportBottom >= this.sectionOffsets[i]) {
+        this.$sections.not('.active').first().addClass('active');
+        this.sectionOffsets.shift();
+        break;
+      }
+    }
+
+    if (!this.sectionOffsets.length) {
+      $(window).off('scroll');
+    }
   }
 };
 
 wesual.preloader = {
   images: [
     'img/tv.png',
-    'img/mbr.png',
+    'img/mbp.png',
     'img/slide-1.jpg',
     'img/slide-2.jpg',
     'img/slide-3.jpg',
@@ -103,7 +133,7 @@ wesual.mailChimpForm = {
       console.log(data);
     });
   }
-}
+};
 
 wesual.slider = {
   $el: $('.js-slider'),
@@ -119,8 +149,6 @@ wesual.slider = {
   },
 
   bindEvents: function() {
-    var self = this;
-
     this.$pagination.on('click', 'li', $.proxy(this.onPaginationClick, this));
   },
 
@@ -148,8 +176,7 @@ wesual.slider = {
   },
 
   goToSlideIndex: function(index) {
-    var self = this, transitionOutClass, animMs,
-        goingFowards = (this.currentIndex < index) ? true : false;
+    var self = this;
 
     this.inTransition = true;
 
@@ -159,11 +186,11 @@ wesual.slider = {
     this.$slides.eq(index).addClass('is-next');
 
     setTimeout(function() {
-      self.$slides.eq(index).addClass('active').removeClass('next prev prepare-prev');
-      self.$slides.filter('.remove').removeClass('active ' + transitionOutClass);
+      self.$slides.eq(index).addClass('active').removeClass('is-next');
+      self.$slides.filter('.remove').removeClass('active remove');
 
       self.inTransition = false;
-    }, 1300);
+    }, 1200);
   }
 };
 

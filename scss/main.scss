@@ -163,7 +163,6 @@ button:focus { outline: none; }
 }
 
 .row {
-	@include clearfix;
 	width: 100%;
 }
 
@@ -208,6 +207,10 @@ button:focus { outline: none; }
 .base-section-padding {
 	text-align: center;
 	padding: 110px 0 135px;
+
+  &.telegraphic {
+    padding-bottom: 80px;
+  }
 }
 
 .logo {
@@ -220,28 +223,27 @@ button:focus { outline: none; }
 }
 
 /****************************************
-* Intro anim
+* Intro animations
 ****************************************/
 
 .js {
-  // Initial states
+  // Initial states on page load
   .hero-header-first,
   .hero-header-second,
   .hero-container p,
   .hero-container .sign-up,
-  .hero-tv,
-  section .container { @include opacity(0); }
+  .hero-tv { @include opacity(0); }
 
   .hero-header-first,
   .hero-header-second { @include transform(translate3d(0, 7.5px, 0)); }
 
-  .hero-tv { @include transform(translate3d(15px, 0, 0)); }
-
-  // Transitions
-  section .container {
-    @include transition(opacity 400ms ease);
-    @include transition-delay(50ms);
+  .hero-tv {
+    @include transform(translate3d(30px, 0, 0) scale(0.95) rotateY(-10deg));
+    @include transform-origin(100%, 50%);
   }
+
+  // Transitions and perspectives for page load
+  .hero { @include perspective(1100); }
 
   .hero-header-first {
     @include transition(all 700ms ease);
@@ -256,31 +258,62 @@ button:focus { outline: none; }
   .hero-container p,
   .hero-container .sign-up {
     @include transition(opacity 1000ms ease);
-    @include transition-delay(900ms);
+    @include transition-delay(1000ms);
   }
 
   .hero-tv {
-    @include transition(all 1000ms ease);
-    @include transition-delay(900ms);
+    @include transition(all 1200ms ease);
+    @include transition-delay(1000ms);
   }
 
-  // Hero active state
   &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
+    // Active states on page load
     .hero-header-first,
     .hero-header-second,
     .hero-container p,
     .hero-container .sign-up,
-    .hero-tv,
-    section .container { @include opacity(1); }
+    .hero-tv { @include opacity(1); }
 
     .hero-header-first,
     .hero-header-second { @include transform(translate3d(0, 0, 0)); }
 
-    .hero-tv { @include transform(translate3d(0, 0, 0)); }
+    .hero-tv { @include transform(translate3d(0, 0, 0) scale(1) rotateY(0deg)); }
+  }
+
+  .features {
+    // Features section state on page load
+    h2,
+    .feature { @include opacity(0); }
+
+    h2,
+    .feature { @include transform(translate3d(0, 15px, 0)); }
+
+    // Transitions and perspectives Features section
+    h2 {
+      @include transition(all 750ms ease);
+      @include transition-delay(100ms);
+    }
+
+    .feature { @include transition(all 750ms ease); }
+
+    .feature-first { @include transition-delay(400ms); }
+
+    .feature-second { @include transition-delay(700ms); }
+
+    .feature-third { @include transition-delay(1000ms); }
+  }
+
+  // Features section active states
+  &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
+    .features.active {
+      h2,
+      .feature { @include opacity(1); }
+
+      h2,
+      .feature { @include transform(translate3d(0, 0, 0)); }
+    }
   }
 }
-
-
 
 /****************************************
 * Index
@@ -343,8 +376,25 @@ button:focus { outline: none; }
 }
 
 .macbook {
-	margin-top: 50px;
-	width: 828px;
+  position: relative;
+  width: 828px;
+	margin: 50px auto 0;
+
+  .macbook-viewport {
+    z-index: 2;
+    position: absolute;
+    width: 75.8%;
+    height: 72.8%;
+    top: 14.5%;
+    left: 12.1%;
+    overflow: hidden;
+  }
+
+  img {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+  }
 }
 
 .features {
@@ -404,10 +454,10 @@ button:focus { outline: none; }
     }
 
     &.is-next {
-      @include transition(all 1050ms ease);
+      @include transition(all 1000ms ease);
       @include opacity(1);
       @include transform(translate3d(0, 0, 0) rotateX(0deg) scale(1));
-      @include transition-delay(250ms);
+      @include transition-delay(275ms);
     }
 
     &.active {
@@ -419,7 +469,7 @@ button:focus { outline: none; }
     }
 
     &.remove {
-      @include transition(all 500ms ease);
+      @include transition(all 600ms ease);
       @include transform(translate3d(0, 30px, 0));
       @include opacity(0);
     }
@@ -432,42 +482,19 @@ button:focus { outline: none; }
 
 	li {
 		@include border-radius(50%);
-    @include transition(background 10ms linear);
-    @include transition-delay(200ms);
+    @include transition(all 300ms ease);
     position: relative;
 		display: inline-block;
 		width: 15px;
 		height: 15px;
-    margin: 20px 5px 0 0;
+    margin: 30px 6px 0 0;
 		border: 1px solid #fff;
     cursor: pointer;
     overflow: hidden;
 
-    &:after {
-      @include transition(all 150ms ease);
-      @include transform(translate3d(0, 5px, 0) scale(0));
-      @include border-radius(50%);
-      @include opacity(0);
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #fff;
-    }
-
-    &:hover:after {
-      @include transform(translate3d(0, 0, 0) scale(0.5));
-      @include opacity(1);
-    }
-
     &.active {
-      &:after {
-        @include transform(scale(1.1));
-        @include opacity(1);
-      }
+      @include transform(scale(1.20));
+      background: #fff;
     }
 	}
 }
