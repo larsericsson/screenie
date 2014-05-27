@@ -89,18 +89,23 @@ wesual.mailChimpForm = {
   onFormPost: function(e) {
     e.preventDefault();
 
-    var email = $(e.target).find('input[name="EMAIL"]').val();
+
+    var $emailInput = $(e.target).find('input[name="EMAIL"]');
     var parser = document.createElement('a');
     parser.href = $('#mc-embedded-subscribe-form').attr('action');
-    parser.pathname += "-json";
+    parser.pathname += '-json';
     $.ajax(parser.href, {
-      "dataType": "jsonp",
-      "jsonp": "c",
-      "data": {
-        "EMAIL": email
+      'dataType': 'jsonp',
+      'jsonp': 'c',
+      'data': {
+        'EMAIL': $emailInput.val()
       }
     }).done(function(data) {
-      console.log(data);
+      if (data.result == 'success') {
+        $(e.target).after('Thanks! Check your inbox to verify.').remove();
+      } else if (data.result == 'error') {
+        $emailInput.addClass('input-error');
+      }
     });
   }
 }
