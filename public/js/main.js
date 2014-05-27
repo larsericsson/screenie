@@ -3,7 +3,7 @@ var wesual = wesual || {};
 wesual = {
 	init: function() {
     this.preloader.init();
-		this.fonts.init();
+    this.fonts.init();
     this.slider.init();
     this.bindEvents();
 	},
@@ -43,6 +43,23 @@ wesual.preloader = {
 
 wesual.fonts = {
   init: function() {
+    this.initWebFontLoader();
+  },
+
+  initWebFontLoader: function() {
+    WebFont.load({
+      google: {
+        families: ['Open Sans']
+      },
+      custom: {
+        families: ['Grumpy Black 24']
+      }
+    });
+
+    this.initMyFonts();
+  },
+
+  initMyFonts: function() {
     var head = document.getElementsByTagName('head')[0],
         path = '//easy.myfonts.net/v2/js?sid=196848(font-family=Grumpy+Black+24)&key=zYSUJW1plZ',
         protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),

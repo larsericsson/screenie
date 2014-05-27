@@ -114,8 +114,8 @@ a {
 /****************************************
 * Framework
 ****************************************/
-::selection { background: $wesual-purple; }
-::-moz-selection { background: $wesual-purple; }
+::selection { background: rgba(113, 24, 178, 0.025); }
+::-moz-selection { background: rgba(113, 24, 178, 0.025); }
 
 * { box-sizing: border-box; }
 
@@ -220,9 +220,72 @@ button:focus { outline: none; }
 }
 
 /****************************************
-* Index
+* Intro anim
 ****************************************/
 
+.js {
+  // Hero initial states
+  .menu-header .container,
+  .hero-header-first,
+  .hero-header-second,
+  .hero-container p,
+  .hero-container .sign-up,
+  .hero-tv { @include opacity(0); }
+
+  .hero-header-first,
+  .hero-header-second { @include transform(translate3d(0, 7.5px, 0)); }
+
+  .hero-tv { @include transform(translate3d(15px, 0, 0)); }
+
+  // Hero transitions
+  .menu-header .container {
+    @include transition(opacity 400ms ease);
+    @include transition-delay(150ms);
+  }
+
+  .hero-header-first {
+    @include transition(all 700ms ease);
+    @include transition-delay(450ms);
+  }
+
+  .hero-header-second {
+    @include transition(all 700ms ease);
+    @include transition-delay(700ms);
+  }
+
+  .hero-container p,
+  .hero-container .sign-up {
+    @include transition(opacity 1000ms ease);
+    @include transition-delay(1050ms);
+  }
+
+  .hero-tv {
+    @include transition(all 1000ms ease);
+    @include transition-delay(1050ms);
+  }
+
+
+  // Hero active state
+  &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
+    .menu-header .container,
+    .hero-header-first,
+    .hero-header-second,
+    .hero-container p,
+    .hero-container .sign-up,
+    .hero-tv { @include opacity(1); }
+
+    .hero-header-first,
+    .hero-header-second { @include transform(translate3d(0, 0, 0)); }
+
+    .hero-tv { @include transform(translate3d(0, 0, 0)); }
+  }
+}
+
+
+
+/****************************************
+* Index
+****************************************/
 .menu-header {
 	overflow: visible;
 }
