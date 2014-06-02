@@ -236,7 +236,11 @@ button:focus { outline: none; }
 }
 
 .hero-padding {
-	padding: 30px 28px 430px;
+	padding: 30px 28px 230px;
+
+	@media screen and (min-width: $break-small) {
+		padding: 30px 28px 430px;
+	}	
 }
 
 .base-section-padding {
@@ -516,32 +520,33 @@ button:focus { outline: none; }
 }
 
 .hero-tv {
-	width: 829px;
+	width: 100%;
+	max-width: 829px;
 	position: absolute;
 	left: 50%;
 	@include transform(translateX(-50%));
 }
 
 .macbook {
-  position: relative;
-  width: 828px;
+	position: relative;
+	max-width: 828px;
 	margin: 50px auto 0;
 
-  .macbook-viewport {
-    position: absolute;
-    z-index: 2;
-    width: 75.8%;
-    height: 72.8%;
-    top: 14.5%;
-    left: 12.1%;
-    overflow: hidden;
-  }
+	.macbook-viewport {
+		position: absolute;
+		z-index: 2;
+		width: 75.8%;
+		height: 72.8%;
+		top: 14.5%;
+		left: 12.1%;
+		overflow: hidden;
+	}
 
-  img {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-  }
+	img {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+	}
 }
 
 .features {
@@ -558,8 +563,13 @@ button:focus { outline: none; }
 	strong { margin-bottom: 10px; }
 
 	i {
-		font-size: 90px;
-		margin-bottom: 65px;
+		font-size: 70px;
+		margin-bottom: 15px;
+
+		@media screen and (min-width: $break-small) {
+			font-size: 90px;
+			margin-bottom: 65px;
+		}
 	}
 
 	p {
