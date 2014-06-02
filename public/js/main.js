@@ -20,7 +20,7 @@ wesual = {
     setTimeout(function() {
       $(window).on('scroll', $.proxy(self.onScroll, self));
       $(window).trigger('scroll');
-    }, 1900);
+    }, 2000);
   },
 
   getSectionOffsets: function() {
@@ -32,7 +32,7 @@ wesual = {
   },
 
   onScroll: function(e) {
-    var tweakOffset = 400,
+    var tweakOffset = 250,
         viewportBottom = $(window).scrollTop() + $(window).innerHeight() - tweakOffset;
 
     for (var i = 0; i <= this.sectionOffsets.length; ++i) {
