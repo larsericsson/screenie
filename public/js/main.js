@@ -15,7 +15,12 @@ wesual = {
 	},
 
   bindEvents: function() {
-    $(window).on('scroll', $.proxy(this.onScroll, this));
+    var self = this;
+
+    setTimeout(function() {
+      $(window).on('scroll', $.proxy(self.onScroll, self));
+      $(window).trigger('scroll');
+    }, 1900);
   },
 
   getSectionOffsets: function() {
@@ -155,6 +160,7 @@ wesual.slider = {
 
   bindEvents: function() {
     this.$pagination.on('click', 'li', $.proxy(this.onPaginationClick, this));
+    this.$slides.on('click', $.proxy(this.showNextSlide, this));
   },
 
   buildPagination: function() {
@@ -173,17 +179,34 @@ wesual.slider = {
 
     if (this.currentIndex === index || this.inTransition) return false;
 
-    this.$pagination.find('.active').removeClass('active');
-
-    $this.addClass('active');
-
     this.goToSlideIndex(index);
+
+    this.updatePagination(index);
+  },
+
+  updatePagination: function(index) {
+    if (index > this.$slides.length - 1) index = 0;
+
+    this.$pagination.find('.active').removeClass('active');
+    this.$pagination.children().eq(index).addClass('active');
+  },
+
+  showNextSlide: function() {
+    var currentIndex = this.$slides.filter('.active').index();
+
+    if (this.inTransition) return false;
+
+    this.goToSlideIndex(currentIndex + 1);
+
+    this.updatePagination(currentIndex + 1);
   },
 
   goToSlideIndex: function(index) {
     var self = this;
 
     this.inTransition = true;
+
+    if (index > this.$slides.length - 1) index = 0;
 
     this.currentIndex = index;
 
