@@ -168,6 +168,19 @@ button:focus { outline: none; }
 	&:active, &:focus { border: 2px solid #d0d0d0; }
 }
 
+.success-msg-container {
+	padding-top: 22px;
+	padding-bottom: 24px;
+}
+
+.success-msg {
+	@include border-radius(30px);
+	color: $wesual-purple;
+	border: 1px solid $wesual-purple;
+	padding: 15px 50px;
+	font-size: 18px;
+}
+
 .row {
 	width: 100%;
 }

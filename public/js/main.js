@@ -137,7 +137,8 @@ wesual.mailChimpForm = {
       }
     }).done(function(data) {
       if (data.result == 'success') {
-        $(e.target).after("Thanks! We'll keep you posted.").remove();
+        $('.js-sign-up-form').remove();
+        $('.success-msg-container-js').show();
         ga('send', 'event', 'signup', 'success');
       } else if (data.result == 'error') {
         $emailInput.addClass('input-error');
