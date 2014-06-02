@@ -146,7 +146,7 @@ button:focus { outline: none; }
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 600;
-	padding: 18px 36px 16px;
+	padding: 17px 36px 16px;
 	color: #fff;
 	border: 3px solid $wesual-purple;
 
@@ -208,7 +208,7 @@ button:focus { outline: none; }
 }
 
 .hero-padding {
-	padding: 30px 28px 100px;
+	padding: 30px 28px 370px;
 }
 
 .base-section-padding {
@@ -245,10 +245,10 @@ button:focus { outline: none; }
   .hero-header-first,
   .hero-header-second { @include transform(translate3d(0, 7.5px, 0)); }
 
-  .hero-tv {
-    @include transform(translate3d(35px, 0, 0) scale(0.925) rotateY(-10deg));
-    @include transform-origin(100%, 50%);
-  }
+  // .hero-tv {
+  //   @include transform(translate3d(35px, 0, 0) scale(0.925) rotateY(-10deg));
+  //   @include transform-origin(100%, 50%);
+  // }
 
   // Transitions and perspectives for page load
   .hero { @include perspective(1100); }
@@ -269,11 +269,11 @@ button:focus { outline: none; }
     @include transition-delay(1000ms);
   }
 
-  .hero-tv {
-    @include transition(all 1250ms ease);
-    @include transition-delay(1000ms);
-    -webkit-backface-visibility: hidden;
-  }
+  // .hero-tv {
+  //   @include transition(all 1250ms ease);
+  //   @include transition-delay(1000ms);
+  //   -webkit-backface-visibility: hidden;
+  // }
 
   &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
     // Active states on page load
@@ -286,7 +286,7 @@ button:focus { outline: none; }
     .hero-header-first,
     .hero-header-second { @include transform(translate3d(0, 0, 0)); }
 
-    .hero-tv { @include transform(translate3d(0, 0, 0) scale(1) rotateY(0deg)); }
+    //.hero-tv { @include transform(translate3d(0, 0, 0) scale(1) rotateY(0deg)); }
   }
 
   .features {
@@ -373,15 +373,23 @@ button:focus { outline: none; }
 .hero-container {
 	margin: 0 auto;
 	width: 650px;
+	padding-bottom: 30px;
 
 	p {
 		max-width: 570px;
 	}
 }
 
+.on-top {
+	z-index: 99;
+	position: relative;
+}
+
 .hero-tv {
-	margin-top: 30px;
 	width: 676px;
+	position: absolute;
+	left: 50%;
+	@include transform(translateX(-50%));
 }
 
 .macbook {
