@@ -15,7 +15,12 @@ wesual = {
 	},
 
   bindEvents: function() {
-    $(window).on('scroll', $.proxy(this.onScroll, this));
+    var self = this;
+
+    setTimeout(function() {
+      $(window).on('scroll', $.proxy(self.onScroll, self));
+      $(window).trigger('scroll');
+    }, 2500);
   },
 
   getSectionOffsets: function() {
@@ -155,6 +160,7 @@ wesual.slider = {
 
   bindEvents: function() {
     this.$pagination.on('click', 'li', $.proxy(this.onPaginationClick, this));
+    this.$slides.on('click', $.proxy(this.showNextSlide, this));
   },
 
   buildPagination: function() {
@@ -173,11 +179,22 @@ wesual.slider = {
 
     if (this.currentIndex === index || this.inTransition) return false;
 
-    this.$pagination.find('.active').removeClass('active');
-
-    $this.addClass('active');
-
     this.goToSlideIndex(index);
+
+    this.updatePagination(index);
+  },
+
+  updatePagination: function(index) {
+    this.$pagination.children().eq(index).addClass('active');
+    this.$pagination.find('.active').removeClass('active');
+  },
+
+  showNextSlide: function() {
+    var currentIndex = this.$slides.filter('.active').index();
+
+    this.goToSlideIndex(currentIndex + 1);
+
+    this.updatePagination(currentIndex + 1);
   },
 
   goToSlideIndex: function(index) {

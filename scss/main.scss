@@ -242,7 +242,7 @@ button:focus { outline: none; }
   .hero-header-second { @include transform(translate3d(0, 7.5px, 0)); }
 
   .hero-tv {
-    @include transform(translate3d(30px, 0, 0) scale(0.95) rotateY(-10deg));
+    @include transform(translate3d(35px, 0, 0) scale(0.925) rotateY(-10deg));
     @include transform-origin(100%, 50%);
   }
 
@@ -266,8 +266,9 @@ button:focus { outline: none; }
   }
 
   .hero-tv {
-    @include transition(all 1200ms ease);
+    @include transition(all 1250ms ease);
     @include transition-delay(1000ms);
+    -webkit-backface-visibility: hidden;
   }
 
   &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
@@ -448,6 +449,7 @@ button:focus { outline: none; }
     @include opacity(0);
     @include transform(translate3d(0, 52.5px, 0) rotateX(40deg) scale(0.825));
     @include transform-origin(50%, 100%);
+    cursor: pointer;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -498,7 +500,7 @@ button:focus { outline: none; }
     overflow: hidden;
 
     &.active {
-      @include transform(scale(1.20));
+      @include transform(scale(1.1));
       background: #fff;
     }
 	}
