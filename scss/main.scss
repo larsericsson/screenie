@@ -47,7 +47,7 @@ $wesual-purple-hover: #7118b2;
 .icon-twitter:before {
 	content: "\e603";
 	color: #2dabdf;
-	font-size: 30px;
+	font-size: 50px;
 }
 
 .icon-star:before {
@@ -137,9 +137,7 @@ button:focus { outline: none; }
 	border: 2px solid #fff;
 	font-size: 18px;
 
-	&:hover, &:active, &:focus {
-		border: 2px solid #d0d0d0;
-	}
+	&:hover, &:active, &:focus { border: 2px solid #d0d0d0; }
 }
 
 .base-button {
@@ -165,11 +163,9 @@ button:focus { outline: none; }
 }
 
 .input-error {
-	border-color: #f00;
+	border-color: #fd5b5b !important;
 
-	&:active, &:focus {
-		border: 2px solid #d0d0d0;
-	}
+	&:active, &:focus { border: 2px solid #d0d0d0; }
 }
 
 .row {
@@ -451,6 +447,28 @@ button:focus { outline: none; }
 
 .telegraphic h2 { margin-bottom: 50px; }
 
+footer.base-section-padding {
+  padding: 80px 0 300px;
+
+  .sign-up {
+    margin: 40px 0 150px;
+
+    .base-input { border: 2px solid #d0d0d0; }
+  }
+
+  i {
+    position: relative;
+    top: 15px;
+    margin: 0 -3px 0;
+  }
+
+  a {
+    color: $wesual-purple;
+
+    &:hover { color: lighten($wesual-purple-hover, 10%); }
+  }
+}
+
 .slider {
 	width: 100%;
 }
@@ -464,7 +482,6 @@ button:focus { outline: none; }
     @include opacity(0);
     @include transform(translate3d(0, 52.5px, 0) rotateX(40deg) scale(0.825));
     @include transform-origin(50%, 100%);
-    cursor: pointer;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -488,6 +505,7 @@ button:focus { outline: none; }
       position: relative;
       z-index: 2;
       float: left;
+      cursor: pointer;
     }
 
     &.remove {
