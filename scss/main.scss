@@ -18,6 +18,8 @@ $ease-in-out-quint: cubic-bezier(0.860, 0.000, 0.070, 1.000);
 $ease-in-out-expo: cubic-bezier(1.000, 0.000, 0.000, 1.000);
 $ease-in-out-quart: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 
+$break-small: 400px;
+
 /****************************************
 * Icons
 ****************************************/
@@ -86,8 +88,12 @@ $ease-in-out-quart: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 
 %base-font {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 300;
+
+	@media screen and (min-width: $break-small) {
+		font-size: 20px;
+	}	
 }
 
 %header-font {
@@ -100,7 +106,13 @@ html, body { @extend %base-font; }
 
 h1, h2, h3 { @extend %header-font; }
 
-h2 { font-size: 92px; }
+h2 {
+	font-size: 45px;
+
+	@media screen and (min-width: $break-small) {
+		font-size: 92px;
+	}
+}
 
 strong { font-weight: 600; }
 
@@ -161,7 +173,7 @@ button:focus { outline: none; }
 }
 
 .signup-input {
-	width: 360px;
+	max-width: 360px;
 	margin-right: 10px;
 }
 
@@ -490,7 +502,7 @@ button:focus { outline: none; }
 
 .hero-container {
 	margin: 0 auto;
-	width: 650px;
+	max-width: 650px;
 	padding-bottom: 30px;
 
 	p {
