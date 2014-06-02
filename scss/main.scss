@@ -453,6 +453,12 @@ footer.base-section-padding {
     top: 15px;
     margin: 0 -3px 0;
   }
+
+  a {
+    color: $wesual-purple;
+
+    &:hover { color: lighten($wesual-purple-hover, 10%); }
+  }
 }
 
 .slider {

@@ -703,13 +703,21 @@ footer.base-section-padding i {
   top: 15px;
   margin: 0 -3px 0;
 }
+/* line 457, ../../scss/main.scss */
+footer.base-section-padding a {
+  color: #7118b2;
+}
+/* line 460, ../../scss/main.scss */
+footer.base-section-padding a:hover {
+  color: #8e1edf;
+}
 
-/* line 458, ../../scss/main.scss */
+/* line 464, ../../scss/main.scss */
 .slider {
   width: 100%;
 }
 
-/* line 462, ../../scss/main.scss */
+/* line 468, ../../scss/main.scss */
 .slider-viewport {
   -webkit-perspective: 1500;
   -moz-perspective: 1500;
@@ -719,7 +727,7 @@ footer.base-section-padding i {
   position: relative;
   height: 100%;
 }
-/* line 467, ../../scss/main.scss */
+/* line 473, ../../scss/main.scss */
 .slider-viewport li {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -738,12 +746,12 @@ footer.base-section-padding i {
   top: 0;
   left: 0;
 }
-/* line 476, ../../scss/main.scss */
+/* line 482, ../../scss/main.scss */
 .slider-viewport li img {
   display: block;
   width: 100%;
 }
-/* line 481, ../../scss/main.scss */
+/* line 487, ../../scss/main.scss */
 .slider-viewport li.is-next {
   -webkit-transition: all 1000ms ease;
   -moz-transition: all 1000ms ease;
@@ -761,7 +769,7 @@ footer.base-section-padding i {
   -o-transition-delay: 275ms;
   transition-delay: 275ms;
 }
-/* line 488, ../../scss/main.scss */
+/* line 494, ../../scss/main.scss */
 .slider-viewport li.active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -775,7 +783,7 @@ footer.base-section-padding i {
   float: left;
   cursor: pointer;
 }
-/* line 497, ../../scss/main.scss */
+/* line 503, ../../scss/main.scss */
 .slider-viewport li.remove {
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
@@ -790,12 +798,12 @@ footer.base-section-padding i {
   opacity: 0;
 }
 
-/* line 505, ../../scss/main.scss */
+/* line 511, ../../scss/main.scss */
 .slider-pagination {
   text-align: center;
   cursor: default;
 }
-/* line 509, ../../scss/main.scss */
+/* line 515, ../../scss/main.scss */
 .slider-pagination li {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -815,7 +823,7 @@ footer.base-section-padding i {
   cursor: pointer;
   overflow: hidden;
 }
-/* line 521, ../../scss/main.scss */
+/* line 527, ../../scss/main.scss */
 .slider-pagination li.active {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -828,7 +836,7 @@ footer.base-section-padding i {
 /****************************************
 * Misc.
 ****************************************/
-/* line 532, ../../scss/main.scss */
+/* line 538, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
