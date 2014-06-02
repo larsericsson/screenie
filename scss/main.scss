@@ -14,6 +14,9 @@ $wesual-dark-purple: #511180;
 $wesual-gray: #edf1f2;
 $wesual-light-gray: #eff3f6;
 $wesual-purple-hover: #7118b2;
+$ease-in-out-quint: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+$ease-in-out-expo: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+$ease-in-out-quart: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 
 /****************************************
 * Icons
@@ -114,8 +117,8 @@ a {
 /****************************************
 * Framework
 ****************************************/
-::selection { background: rgba(113, 24, 178, 0.025); }
-::-moz-selection { background: rgba(113, 24, 178, 0.025); }
+::selection { background: rgba(113, 24, 178, 0.1); }
+::-moz-selection { background: rgba(113, 24, 178, 0.1); }
 
 * { box-sizing: border-box; }
 
@@ -245,10 +248,10 @@ button:focus { outline: none; }
   .hero-header-first,
   .hero-header-second { @include transform(translate3d(0, 7.5px, 0)); }
 
-  // .hero-tv {
-  //   @include transform(translate3d(35px, 0, 0) scale(0.925) rotateY(-10deg));
-  //   @include transform-origin(100%, 50%);
-  // }
+  .hero-tv {
+    @include transform(translate3d(-50%, 90px, 0) rotateZ(-3deg));
+    @include transform-origin(25%, 50%);
+  }
 
   // Transitions and perspectives for page load
   .hero { @include perspective(1100); }
@@ -269,11 +272,11 @@ button:focus { outline: none; }
     @include transition-delay(1000ms);
   }
 
-  // .hero-tv {
-  //   @include transition(all 1250ms ease);
-  //   @include transition-delay(1000ms);
-  //   -webkit-backface-visibility: hidden;
-  // }
+  .hero-tv {
+    @include transition(all 1100ms $ease-in-out-quart);
+    @include transition-delay(1200ms);
+    -webkit-backface-visibility: hidden;
+  }
 
   &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
     // Active states on page load
@@ -286,7 +289,7 @@ button:focus { outline: none; }
     .hero-header-first,
     .hero-header-second { @include transform(translate3d(0, 0, 0)); }
 
-    //.hero-tv { @include transform(translate3d(0, 0, 0) scale(1) rotateY(0deg)); }
+    .hero-tv { @include transform(translate3d(-50%,  0, 0) rotateZ(0deg)); }
   }
 
   .features {
@@ -320,6 +323,108 @@ button:focus { outline: none; }
 
       h2,
       .feature { @include transform(translate3d(0, 0, 0)); }
+    }
+  }
+
+  .telegraphic {
+    // Telegraphic section state on page load
+    h2, .slider {
+      @include opacity(0);
+      @include transform(translate3d(0, 15px, 0));
+    }
+
+    // Transitions and perspectives Telegraphic section
+    h2, .slider {
+      @include transition(all 750ms ease);
+      @include transition-delay(100ms);
+    }
+
+    .slider { @include transition-delay(300ms); }
+  }
+
+  // Telegraphic section active states
+  &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
+    .telegraphic.active {
+      h2, .slider {
+        @include opacity(1);
+        @include transform(translate3d(0, 0, 0));
+      }
+    }
+  }
+
+  // Customizable section active states
+  &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
+    .customizable.active {
+      h2,
+      .macbook { @include opacity(1); }
+
+      h2,
+      .macbook { @include transform(translate3d(0, 0, 0)); }
+    }
+  }
+
+  .customizable {
+    // Customizable section state on page load
+    h2, .macbook {
+      @include opacity(0);
+      @include transform(translate3d(0, 15px, 0));
+    }
+
+    // Transitions and perspectives Customizable section
+    h2, .macbook {
+      @include transition(all 750ms ease);
+      @include transition-delay(100ms);
+    }
+
+    .macbook { @include transition-delay(300ms); }
+  }
+
+  // Customizable section active states
+  &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
+    .customizable.active {
+      h2, .macbook {
+        @include opacity(1);
+        @include transform(translate3d(0, 0, 0));
+      }
+    }
+  }
+
+  // Customizable section active states
+  &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
+    footer.active {
+      h2,
+      p,
+      .sign-up { @include opacity(1); }
+
+      h2,
+      p
+      .sign-up { @include transform(translate3d(0, 0, 0)); }
+    }
+  }
+
+  footer {
+    // Customizable section state on page load
+    h2, p, .sign-up {
+      @include opacity(0);
+      @include transform(translate3d(0, 15px, 0));
+    }
+
+    // Transitions and perspectives Customizable section
+    h2, p, .sign-up {
+      @include transition(all 750ms ease);
+      @include transition-delay(100ms);
+    }
+
+    .macbook { @include transition-delay(300ms); }
+  }
+
+  // Customizable section active states
+  &.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active {
+    footer.active {
+      h2, p, .sign-up {
+        @include opacity(1);
+        @include transform(translate3d(0, 0, 0));
+      }
     }
   }
 }
@@ -445,7 +550,9 @@ button:focus { outline: none; }
 	margin: 0 auto 30px;
 }
 
-.telegraphic h2 { margin-bottom: 50px; }
+.telegraphic {
+  h2 { margin-bottom: 50px; }
+}
 
 footer.base-section-padding {
   padding: 80px 0 300px;

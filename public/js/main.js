@@ -1,7 +1,7 @@
 var wesual = wesual || {};
 
 wesual = {
-  $sections: $('section'),
+  $sections: $('section, footer'),
 
   sectionOffsets: [],
 
@@ -15,12 +15,17 @@ wesual = {
 	},
 
   bindEvents: function() {
-    var self = this;
+    var self = this, forceTimeout = 2100;
+
+    if ($(window).scrollTop() > 1000) forceTimeout = 18;
 
     setTimeout(function() {
       $(window).on('scroll', $.proxy(self.onScroll, self));
-      $(window).trigger('scroll');
-    }, 2000);
+
+      setTimeout(function() {
+        $(window).trigger('scroll');
+      }, 25);
+    }, forceTimeout);
   },
 
   getSectionOffsets: function() {
@@ -32,7 +37,7 @@ wesual = {
   },
 
   onScroll: function(e) {
-    var tweakOffset = 250,
+    var tweakOffset = 300,
         viewportBottom = $(window).scrollTop() + $(window).innerHeight() - tweakOffset;
 
     for (var i = 0; i <= this.sectionOffsets.length; ++i) {
