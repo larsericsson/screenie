@@ -137,7 +137,7 @@ button:focus { outline: none; }
 	border: 2px solid #fff;
 	font-size: 18px;
 
-	&:hover { border: 2px solid #d0d0d0; }
+	&:hover, &:active, &:focus { border: 2px solid #d0d0d0; }
 }
 
 .base-button {
@@ -164,6 +164,8 @@ button:focus { outline: none; }
 
 .input-error {
 	border-color: #fd5b5b !important;
+
+	&:active, &:focus { border: 2px solid #d0d0d0; }
 }
 
 .row {

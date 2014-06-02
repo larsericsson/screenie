@@ -240,7 +240,7 @@ button:focus {
   font-size: 18px;
 }
 /* line 140, ../../scss/main.scss */
-.base-input:hover {
+.base-input:hover, .base-input:active, .base-input:focus {
   border: 2px solid #d0d0d0;
 }
 
@@ -272,77 +272,81 @@ button:focus {
 .input-error {
   border-color: #fd5b5b !important;
 }
+/* line 168, ../../scss/main.scss */
+.input-error:active, .input-error:focus {
+  border: 2px solid #d0d0d0;
+}
 
-/* line 169, ../../scss/main.scss */
+/* line 171, ../../scss/main.scss */
 .row {
   width: 100%;
 }
 
-/* line 173, ../../scss/main.scss */
+/* line 175, ../../scss/main.scss */
 .purple {
   color: #7118b2;
 }
 
-/* line 175, ../../scss/main.scss */
+/* line 177, ../../scss/main.scss */
 .grey-background {
   background: #edf1f2;
   color: #000;
 }
 
-/* line 180, ../../scss/main.scss */
+/* line 182, ../../scss/main.scss */
 .light-gray-background {
   background: #eff3f6;
   color: #000;
 }
 
-/* line 185, ../../scss/main.scss */
+/* line 187, ../../scss/main.scss */
 .dark-background {
   background: #000;
   color: #fff;
 }
 
-/* line 190, ../../scss/main.scss */
+/* line 192, ../../scss/main.scss */
 .purple-background {
   background: #7118b2;
   color: #fff;
 }
-/* line 194, ../../scss/main.scss */
+/* line 196, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 195, ../../scss/main.scss */
+/* line 197, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 198, ../../scss/main.scss */
+/* line 200, ../../scss/main.scss */
 .container {
   text-align: center;
   max-width: 980px;
   margin: 0 auto;
 }
 
-/* line 204, ../../scss/main.scss */
+/* line 206, ../../scss/main.scss */
 .header-padding {
   padding: 28px;
 }
 
-/* line 208, ../../scss/main.scss */
+/* line 210, ../../scss/main.scss */
 .hero-padding {
   padding: 30px 28px 100px;
 }
 
-/* line 212, ../../scss/main.scss */
+/* line 214, ../../scss/main.scss */
 .base-section-padding {
   text-align: center;
   padding: 110px 0 135px;
 }
-/* line 216, ../../scss/main.scss */
+/* line 218, ../../scss/main.scss */
 .base-section-padding.telegraphic {
   padding-bottom: 80px;
 }
 
-/* line 221, ../../scss/main.scss */
+/* line 223, ../../scss/main.scss */
 .logo {
   margin: 0 auto;
   text-indent: -9999px;
@@ -356,7 +360,7 @@ button:focus {
 /****************************************
 * Intro animations
 ****************************************/
-/* line 241, ../../scss/main.scss */
+/* line 243, ../../scss/main.scss */
 .js .hero-header-first,
 .js .hero-header-second,
 .js .hero-container p,
@@ -365,7 +369,7 @@ button:focus {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 244, ../../scss/main.scss */
+/* line 246, ../../scss/main.scss */
 .js .hero-header-first,
 .js .hero-header-second {
   -webkit-transform: translate3d(0, 7.5px, 0);
@@ -374,7 +378,7 @@ button:focus {
   -o-transform: translate3d(0, 7.5px, 0);
   transform: translate3d(0, 7.5px, 0);
 }
-/* line 246, ../../scss/main.scss */
+/* line 248, ../../scss/main.scss */
 .js .hero-tv {
   -webkit-transform: translate3d(35px, 0, 0) scale(0.925) rotateY(-10deg);
   -moz-transform: translate3d(35px, 0, 0) scale(0.925) rotateY(-10deg);
@@ -387,7 +391,7 @@ button:focus {
   -o-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
 }
-/* line 252, ../../scss/main.scss */
+/* line 254, ../../scss/main.scss */
 .js .hero {
   -webkit-perspective: 1100;
   -moz-perspective: 1100;
@@ -395,7 +399,7 @@ button:focus {
   -o-perspective: 1100;
   perspective: 1100;
 }
-/* line 254, ../../scss/main.scss */
+/* line 256, ../../scss/main.scss */
 .js .hero-header-first {
   -webkit-transition: all 700ms ease;
   -moz-transition: all 700ms ease;
@@ -406,7 +410,7 @@ button:focus {
   -o-transition-delay: 300ms;
   transition-delay: 300ms;
 }
-/* line 259, ../../scss/main.scss */
+/* line 261, ../../scss/main.scss */
 .js .hero-header-second {
   -webkit-transition: all 700ms ease;
   -moz-transition: all 700ms ease;
@@ -417,7 +421,7 @@ button:focus {
   -o-transition-delay: 600ms;
   transition-delay: 600ms;
 }
-/* line 265, ../../scss/main.scss */
+/* line 267, ../../scss/main.scss */
 .js .hero-container p,
 .js .hero-container .sign-up {
   -webkit-transition: opacity 1000ms ease;
@@ -429,7 +433,7 @@ button:focus {
   -o-transition-delay: 1000ms;
   transition-delay: 1000ms;
 }
-/* line 270, ../../scss/main.scss */
+/* line 272, ../../scss/main.scss */
 .js .hero-tv {
   -webkit-transition: all 1250ms ease;
   -moz-transition: all 1250ms ease;
@@ -441,7 +445,7 @@ button:focus {
   transition-delay: 1000ms;
   -webkit-backface-visibility: hidden;
 }
-/* line 282, ../../scss/main.scss */
+/* line 284, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-header-first,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-header-second,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-container p,
@@ -450,7 +454,7 @@ button:focus {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 285, ../../scss/main.scss */
+/* line 287, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-header-first,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-header-second {
   -webkit-transform: translate3d(0, 0, 0);
@@ -459,7 +463,7 @@ button:focus {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 287, ../../scss/main.scss */
+/* line 289, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-tv {
   -webkit-transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
   -moz-transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
@@ -467,13 +471,13 @@ button:focus {
   -o-transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
   transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
 }
-/* line 293, ../../scss/main.scss */
+/* line 295, ../../scss/main.scss */
 .js .features h2,
 .js .features .feature {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 296, ../../scss/main.scss */
+/* line 298, ../../scss/main.scss */
 .js .features h2,
 .js .features .feature {
   -webkit-transform: translate3d(0, 15px, 0);
@@ -482,7 +486,7 @@ button:focus {
   -o-transform: translate3d(0, 15px, 0);
   transform: translate3d(0, 15px, 0);
 }
-/* line 299, ../../scss/main.scss */
+/* line 301, ../../scss/main.scss */
 .js .features h2 {
   -webkit-transition: all 750ms ease;
   -moz-transition: all 750ms ease;
@@ -493,41 +497,41 @@ button:focus {
   -o-transition-delay: 100ms;
   transition-delay: 100ms;
 }
-/* line 304, ../../scss/main.scss */
+/* line 306, ../../scss/main.scss */
 .js .features .feature {
   -webkit-transition: all 750ms ease;
   -moz-transition: all 750ms ease;
   -o-transition: all 750ms ease;
   transition: all 750ms ease;
 }
-/* line 306, ../../scss/main.scss */
+/* line 308, ../../scss/main.scss */
 .js .features .feature-first {
   -webkit-transition-delay: 200ms;
   -moz-transition-delay: 200ms;
   -o-transition-delay: 200ms;
   transition-delay: 200ms;
 }
-/* line 308, ../../scss/main.scss */
+/* line 310, ../../scss/main.scss */
 .js .features .feature-second {
   -webkit-transition-delay: 400ms;
   -moz-transition-delay: 400ms;
   -o-transition-delay: 400ms;
   transition-delay: 400ms;
 }
-/* line 310, ../../scss/main.scss */
+/* line 312, ../../scss/main.scss */
 .js .features .feature-third {
   -webkit-transition-delay: 600ms;
   -moz-transition-delay: 600ms;
   -o-transition-delay: 600ms;
   transition-delay: 600ms;
 }
-/* line 317, ../../scss/main.scss */
+/* line 319, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .features.active h2,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .features.active .feature {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 320, ../../scss/main.scss */
+/* line 322, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .features.active h2,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .features.active .feature {
   -webkit-transform: translate3d(0, 0, 0);
@@ -540,23 +544,23 @@ button:focus {
 /****************************************
 * Index
 ****************************************/
-/* line 328, ../../scss/main.scss */
+/* line 330, ../../scss/main.scss */
 .menu-header {
   position: relative;
   z-index: 10;
 }
 
-/* line 334, ../../scss/main.scss */
+/* line 336, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin: 5px 0 0 15px;
 }
-/* line 338, ../../scss/main.scss */
+/* line 340, ../../scss/main.scss */
 .menu li a {
   position: relative;
   color: #7118b2;
 }
-/* line 343, ../../scss/main.scss */
+/* line 345, ../../scss/main.scss */
 .menu li a:after {
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -577,11 +581,11 @@ button:focus {
   background: #7118b2;
   content: '';
 }
-/* line 356, ../../scss/main.scss */
+/* line 358, ../../scss/main.scss */
 .menu li a:hover {
   color: #7118b2;
 }
-/* line 359, ../../scss/main.scss */
+/* line 361, ../../scss/main.scss */
 .menu li a:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
@@ -592,34 +596,34 @@ button:focus {
   transform: translate3d(0, 2px, 0);
 }
 
-/* line 367, ../../scss/main.scss */
+/* line 369, ../../scss/main.scss */
 .relative {
   position: relative;
 }
 
-/* line 371, ../../scss/main.scss */
+/* line 373, ../../scss/main.scss */
 .hero-container {
   margin: 0 auto;
   width: 650px;
 }
-/* line 375, ../../scss/main.scss */
+/* line 377, ../../scss/main.scss */
 .hero-container p {
   max-width: 570px;
 }
 
-/* line 380, ../../scss/main.scss */
+/* line 382, ../../scss/main.scss */
 .hero-tv {
   margin-top: 30px;
   width: 676px;
 }
 
-/* line 385, ../../scss/main.scss */
+/* line 387, ../../scss/main.scss */
 .macbook {
   position: relative;
   width: 828px;
   margin: 50px auto 0;
 }
-/* line 390, ../../scss/main.scss */
+/* line 392, ../../scss/main.scss */
 .macbook .macbook-viewport {
   position: absolute;
   z-index: 2;
@@ -629,19 +633,19 @@ button:focus {
   left: 12.1%;
   overflow: hidden;
 }
-/* line 400, ../../scss/main.scss */
+/* line 402, ../../scss/main.scss */
 .macbook img {
   position: relative;
   z-index: 1;
   width: 100%;
 }
 
-/* line 407, ../../scss/main.scss */
+/* line 409, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 411, ../../scss/main.scss */
+/* line 413, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
@@ -649,22 +653,22 @@ button:focus {
   min-width: 300px;
   margin-top: 70px;
 }
-/* line 418, ../../scss/main.scss */
+/* line 420, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
-/* line 420, ../../scss/main.scss */
+/* line 422, ../../scss/main.scss */
 .feature i {
   font-size: 90px;
   margin-bottom: 65px;
 }
-/* line 425, ../../scss/main.scss */
+/* line 427, ../../scss/main.scss */
 .feature p {
   margin: 0 auto;
   max-width: 275px;
 }
 
-/* line 431, ../../scss/main.scss */
+/* line 433, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -676,36 +680,36 @@ button:focus {
   margin: 0 auto 30px;
 }
 
-/* line 438, ../../scss/main.scss */
+/* line 440, ../../scss/main.scss */
 .telegraphic h2 {
   margin-bottom: 50px;
 }
 
-/* line 440, ../../scss/main.scss */
+/* line 442, ../../scss/main.scss */
 footer.base-section-padding {
   padding: 80px 0 300px;
 }
-/* line 443, ../../scss/main.scss */
+/* line 445, ../../scss/main.scss */
 footer.base-section-padding .sign-up {
   margin: 40px 0 150px;
 }
-/* line 446, ../../scss/main.scss */
+/* line 448, ../../scss/main.scss */
 footer.base-section-padding .sign-up .base-input {
   border: 2px solid #d0d0d0;
 }
-/* line 449, ../../scss/main.scss */
+/* line 451, ../../scss/main.scss */
 footer.base-section-padding i {
   position: relative;
   top: 15px;
   margin: 0 -3px 0;
 }
 
-/* line 456, ../../scss/main.scss */
+/* line 458, ../../scss/main.scss */
 .slider {
   width: 100%;
 }
 
-/* line 460, ../../scss/main.scss */
+/* line 462, ../../scss/main.scss */
 .slider-viewport {
   -webkit-perspective: 1500;
   -moz-perspective: 1500;
@@ -715,7 +719,7 @@ footer.base-section-padding i {
   position: relative;
   height: 100%;
 }
-/* line 465, ../../scss/main.scss */
+/* line 467, ../../scss/main.scss */
 .slider-viewport li {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -734,12 +738,12 @@ footer.base-section-padding i {
   top: 0;
   left: 0;
 }
-/* line 474, ../../scss/main.scss */
+/* line 476, ../../scss/main.scss */
 .slider-viewport li img {
   display: block;
   width: 100%;
 }
-/* line 479, ../../scss/main.scss */
+/* line 481, ../../scss/main.scss */
 .slider-viewport li.is-next {
   -webkit-transition: all 1000ms ease;
   -moz-transition: all 1000ms ease;
@@ -757,7 +761,7 @@ footer.base-section-padding i {
   -o-transition-delay: 275ms;
   transition-delay: 275ms;
 }
-/* line 486, ../../scss/main.scss */
+/* line 488, ../../scss/main.scss */
 .slider-viewport li.active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -771,7 +775,7 @@ footer.base-section-padding i {
   float: left;
   cursor: pointer;
 }
-/* line 495, ../../scss/main.scss */
+/* line 497, ../../scss/main.scss */
 .slider-viewport li.remove {
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
@@ -786,12 +790,12 @@ footer.base-section-padding i {
   opacity: 0;
 }
 
-/* line 503, ../../scss/main.scss */
+/* line 505, ../../scss/main.scss */
 .slider-pagination {
   text-align: center;
   cursor: default;
 }
-/* line 507, ../../scss/main.scss */
+/* line 509, ../../scss/main.scss */
 .slider-pagination li {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -811,7 +815,7 @@ footer.base-section-padding i {
   cursor: pointer;
   overflow: hidden;
 }
-/* line 519, ../../scss/main.scss */
+/* line 521, ../../scss/main.scss */
 .slider-pagination li.active {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -824,7 +828,7 @@ footer.base-section-padding i {
 /****************************************
 * Misc.
 ****************************************/
-/* line 530, ../../scss/main.scss */
+/* line 532, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }

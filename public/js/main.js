@@ -124,11 +124,11 @@ wesual.mailChimpForm = {
   onFormPost: function(e) {
     e.preventDefault();
 
-
     var $emailInput = $(e.target).find('input[name="EMAIL"]');
     var parser = document.createElement('a');
     parser.href = $('#mc-embedded-subscribe-form').attr('action');
     parser.pathname += '-json';
+
     $.ajax(parser.href, {
       'dataType': 'jsonp',
       'jsonp': 'c',
