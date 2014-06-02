@@ -245,7 +245,11 @@ button:focus { outline: none; }
 
 .base-section-padding {
 	text-align: center;
-	padding: 110px 0 135px;
+	padding: 80px 0 80px;
+
+	@media screen and (min-width: $break-small) {
+		padding: 110px 0 135px;
+	}
 
   &.telegraphic {
     padding-bottom: 80px;
@@ -529,8 +533,12 @@ button:focus { outline: none; }
 
 .macbook {
 	position: relative;
-	max-width: 828px;
-	margin: 50px auto 0;
+	max-width: 828;
+	margin: 30px auto 0;
+
+	@media screen and (min-width: $break-small) {
+		margin: 50px auto 0;
+	}
 
 	.macbook-viewport {
 		position: absolute;
@@ -558,7 +566,11 @@ button:focus { outline: none; }
 	text-align: center;
 	width: 32.5%;
 	min-width: 300px;
-	margin-top: 70px;
+	margin-top: 40px;	
+
+	@media screen and (min-width: $break-small) {
+		margin-top: 70px;
+	}
 
 	strong { margin-bottom: 10px; }
 
