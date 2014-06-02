@@ -185,12 +185,16 @@ wesual.slider = {
   },
 
   updatePagination: function(index) {
-    this.$pagination.children().eq(index).addClass('active');
+    if (index > this.$slides.length - 1) index = 0;
+
     this.$pagination.find('.active').removeClass('active');
+    this.$pagination.children().eq(index).addClass('active');
   },
 
   showNextSlide: function() {
     var currentIndex = this.$slides.filter('.active').index();
+
+    if (this.inTransition) return false;
 
     this.goToSlideIndex(currentIndex + 1);
 
@@ -201,6 +205,8 @@ wesual.slider = {
     var self = this;
 
     this.inTransition = true;
+
+    if (index > this.$slides.length - 1) index = 0;
 
     this.currentIndex = index;
 
