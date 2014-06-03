@@ -15,7 +15,7 @@ wesual = {
 	},
 
 	bindEvents: function() {
-		var self = this, forceTimeout = 2100;
+		var self = this, forceTimeout = 2200;
 
 		if ($(window).scrollTop() > 1000) forceTimeout = 18;
 
@@ -42,6 +42,10 @@ wesual = {
 
 		for (var i = 0; i <= this.sectionOffsets.length; ++i) {
 			if (viewportBottom >= this.sectionOffsets[i]) {
+				if (this.$sections.not('.active').first().hasClass('telegraphic')) {
+					this.slider.startAutoSlide();
+				}
+
 				this.$sections.not('.active').first().addClass('active');
 				this.sectionOffsets.shift();
 				break;
@@ -170,8 +174,13 @@ wesual.slider = {
 	},
 
 	bindEvents: function() {
+		var self = this;
+
 		this.$pagination.on('click', 'li', $.proxy(this.onPaginationClick, this));
-		this.$slides.add('.slider-glare').on('click', $.proxy(this.showNextSlide, this));
+		this.$slides.add('.slider-glare').on('click', function() {
+			clearInterval(self.autoSlide);
+			self.showNextSlide.call(self);
+		});
 	},
 
 	buildPagination: function() {
@@ -184,11 +193,21 @@ wesual.slider = {
 		this.$pagination.children(':first').addClass('active');
 	},
 
+	startAutoSlide: function() {
+		var self = this;
+
+		this.autoSlide = setInterval(function() {
+			self.showNextSlide();
+		}, 5000);
+	},
+
 	onPaginationClick: function(e) {
 		var $this = $(e.currentTarget),
 				index = $this.index();
 
 		if (this.currentIndex === index || this.inTransition) return false;
+
+		clearInterval(this.autoSlide);
 
 		this.goToSlideIndex(index);
 
