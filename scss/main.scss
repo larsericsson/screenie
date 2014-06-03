@@ -304,7 +304,7 @@ button:focus { outline: none; }
   .hero-header-second { @include transform(translate3d(0, 7.5px, 0)); }
 
   .hero-tv {
-    @include transform(translate3d(-50%, 90px, 0) rotateZ(-3deg));
+    @include transform(translate3d(-50%, 30px, 0));
     @include transform-origin(25%, 50%);
   }
 
@@ -328,8 +328,8 @@ button:focus { outline: none; }
   }
 
   .hero-tv {
-    @include transition(all 1100ms $ease-in-out-quart);
-    @include transition-delay(1200ms);
+    @include transition(all 1500ms ease);
+    @include transition-delay(1400ms);
     -webkit-backface-visibility: hidden;
   }
 
@@ -344,7 +344,7 @@ button:focus { outline: none; }
     .hero-header-first,
     .hero-header-second { @include transform(translate3d(0, 0, 0)); }
 
-    .hero-tv { @include transform(translate3d(-50%,  0, 0) rotateZ(0deg)); }
+    .hero-tv { @include transform(translate3d(-50%,  0, 0)); }
   }
 
   .features {
@@ -558,7 +558,7 @@ button:focus { outline: none; }
 
 .macbook {
 	position: relative;
-	max-width: 828px;
+	max-width: 938px;
 	margin: 30px auto 0;
 
 	@media screen and (min-width: $break-small) {
@@ -693,7 +693,7 @@ footer.base-section-padding {
     cursor: pointer;
 
     img {
-      @include transition(all 1000ms ease);
+      @include transition(all 2000ms ease);
       @include opacity(0);
       @include transform-origin(50%, 100%);
       display: block;
