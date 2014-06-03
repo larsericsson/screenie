@@ -683,38 +683,46 @@ footer.base-section-padding {
 }
 
 .slider-viewport {
-  position: relative;
-  height: 100%;
+	position: relative;
+	padding-bottom: 60%;
+	@media screen and (min-width: $break-small) {
+		padding-bottom: 0;
+	}
+	
+	height: 100%;
 
-  li {
-    position: absolute;
-    width: 737px;
-    z-index: 1;
-    top: 52px;
-    left: 52px;
-    overflow: hidden;
-    cursor: pointer;
+	li {
+		position: absolute;
 
-    img {
-      @include transition(all 1000ms ease);
-      @include opacity(0);
-      @include transform-origin(50%, 100%);
-      display: block;
-      width: 100%;
-      pointer-events: none;
-    }
+		@media screen and (min-width: $break-small) {
+			width: 737px;
+			top: 52px;
+			left: 52px;
+		}
+		z-index: 1;
+		overflow: hidden;
+		cursor: pointer;
 
-    &.active img {
-      @include opacity(1);
-      position: relative;
-      z-index: 2;
-      float: left;
-    }
+		img {
+			@include transition(all 1000ms ease);
+			@include opacity(0);
+			@include transform-origin(50%, 100%);
+			display: block;
+			width: 100%;
+			pointer-events: none;
+		}
 
-    &.remove img {
-      z-index: 1;
-    }
-  }
+		&.active img {
+			@include opacity(1);
+			position: relative;
+			z-index: 2;
+			float: left;
+		}
+
+		&.remove img {
+			z-index: 1;
+		}
+	}
 }
 
 .slider-pagination {

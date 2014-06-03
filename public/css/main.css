@@ -1020,19 +1020,31 @@ footer.base-section-padding a:hover {
 /* line 685, ../../scss/main.scss */
 .slider-viewport {
   position: relative;
+  padding-bottom: 60%;
   height: 100%;
 }
-/* line 689, ../../scss/main.scss */
+@media screen and (min-width: 400px) {
+  /* line 685, ../../scss/main.scss */
+  .slider-viewport {
+    padding-bottom: 0;
+  }
+}
+/* line 694, ../../scss/main.scss */
 .slider-viewport li {
   position: absolute;
-  width: 737px;
   z-index: 1;
-  top: 52px;
-  left: 52px;
   overflow: hidden;
   cursor: pointer;
 }
-/* line 698, ../../scss/main.scss */
+@media screen and (min-width: 400px) {
+  /* line 694, ../../scss/main.scss */
+  .slider-viewport li {
+    width: 737px;
+    top: 52px;
+    left: 52px;
+  }
+}
+/* line 706, ../../scss/main.scss */
 .slider-viewport li img {
   -webkit-transition: all 1000ms ease;
   -moz-transition: all 1000ms ease;
@@ -1049,7 +1061,7 @@ footer.base-section-padding a:hover {
   width: 100%;
   pointer-events: none;
 }
-/* line 707, ../../scss/main.scss */
+/* line 715, ../../scss/main.scss */
 .slider-viewport li.active img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -1057,17 +1069,17 @@ footer.base-section-padding a:hover {
   z-index: 2;
   float: left;
 }
-/* line 714, ../../scss/main.scss */
+/* line 722, ../../scss/main.scss */
 .slider-viewport li.remove img {
   z-index: 1;
 }
 
-/* line 720, ../../scss/main.scss */
+/* line 728, ../../scss/main.scss */
 .slider-pagination {
   text-align: center;
   cursor: default;
 }
-/* line 724, ../../scss/main.scss */
+/* line 732, ../../scss/main.scss */
 .slider-pagination li {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1087,7 +1099,7 @@ footer.base-section-padding a:hover {
   cursor: pointer;
   overflow: hidden;
 }
-/* line 736, ../../scss/main.scss */
+/* line 744, ../../scss/main.scss */
 .slider-pagination li.active {
   background: #fff;
 }
@@ -1095,7 +1107,7 @@ footer.base-section-padding a:hover {
 /****************************************
 * Misc.
 ****************************************/
-/* line 744, ../../scss/main.scss */
+/* line 752, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
