@@ -570,17 +570,17 @@ button:focus { outline: none; }
 	width: 100%;
 	max-width: 994px;
 	margin: 30px auto 0;
-  padding: 0 20px 0;
+	padding: 0 20px 0;
 
 	@media screen and (min-width: $break-small) {
 		margin: 50px auto 0;
-    padding: 0;
+		padding: 0;
 	}
 }
 
 .customizable.active .macbook {
-  @include transform(rotateX(10deg));
-  @include transform-origin(50%, 100%);
+	@include transform(rotateX(10deg));
+	@include transform-origin(50%, 100%);
 }
 
 .features {
