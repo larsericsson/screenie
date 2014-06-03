@@ -1,4 +1,4 @@
-/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.8.7-p374/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -411,7 +411,7 @@ button:focus {
 @media screen and (min-width: 400px) {
   /* line 266, ../../scss/main.scss */
   .base-section-padding {
-    padding: 110px 0 135px;
+    padding: 100px 0 130px;
   }
 }
 /* line 274, ../../scss/main.scss */
@@ -853,7 +853,7 @@ button:focus {
 /* line 554, ../../scss/main.scss */
 .macbook {
   position: relative;
-  max-width: 828;
+  max-width: 828px;
   margin: 30px auto 0;
 }
 @media screen and (min-width: 400px) {
@@ -866,25 +866,42 @@ button:focus {
 .macbook .macbook-viewport {
   position: absolute;
   z-index: 2;
-  width: 75.8%;
-  height: 72.8%;
-  top: 14.5%;
-  left: 12.1%;
+  width: 626px;
+  height: 392px;
+  top: 58px;
+  left: 101px;
   overflow: hidden;
 }
+<<<<<<< HEAD
 /* line 573, ../../scss/main.scss */
+=======
+/* line 552, ../../scss/main.scss */
+.macbook .macbook-viewport img {
+  width: 75%;
+  pointer-events: none;
+}
+/* line 558, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .macbook img {
   position: relative;
   z-index: 1;
   width: 100%;
 }
 
+<<<<<<< HEAD
 /* line 580, ../../scss/main.scss */
+=======
+/* line 565, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .features {
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* line 584, ../../scss/main.scss */
+=======
+/* line 569, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .feature {
   display: inline-block;
   text-align: center;
@@ -893,34 +910,58 @@ button:focus {
   margin-top: 40px;
 }
 @media screen and (min-width: 400px) {
+<<<<<<< HEAD
   /* line 584, ../../scss/main.scss */
+=======
+  /* line 569, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
   .feature {
     margin-top: 70px;
   }
 }
+<<<<<<< HEAD
 /* line 595, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
 /* line 597, ../../scss/main.scss */
+=======
+/* line 580, ../../scss/main.scss */
+.feature strong {
+  margin-bottom: 10px;
+}
+/* line 582, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .feature i {
   font-size: 70px;
   margin-bottom: 15px;
 }
 @media screen and (min-width: 400px) {
+<<<<<<< HEAD
   /* line 597, ../../scss/main.scss */
+=======
+  /* line 582, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
   .feature i {
     font-size: 90px;
     margin-bottom: 65px;
   }
 }
+<<<<<<< HEAD
 /* line 607, ../../scss/main.scss */
+=======
+/* line 592, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .feature p {
   margin: 0 auto;
   max-width: 275px;
 }
 
+<<<<<<< HEAD
 /* line 613, ../../scss/main.scss */
+=======
+/* line 598, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -932,11 +973,16 @@ button:focus {
   margin: 0 auto 30px;
 }
 
+<<<<<<< HEAD
 /* line 621, ../../scss/main.scss */
+=======
+/* line 606, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .telegraphic h2 {
   margin-bottom: 50px;
 }
 
+<<<<<<< HEAD
 /* line 624, ../../scss/main.scss */
 footer.base-section-padding {
   padding: 80px 0 300px;
@@ -950,26 +996,57 @@ footer.base-section-padding .sign-up .base-input {
   border: 2px solid #d0d0d0;
 }
 /* line 633, ../../scss/main.scss */
+=======
+/* line 609, ../../scss/main.scss */
+footer.base-section-padding {
+  padding: 80px 0 300px;
+}
+/* line 612, ../../scss/main.scss */
+footer.base-section-padding .sign-up {
+  margin: 40px 0 150px;
+}
+/* line 615, ../../scss/main.scss */
+footer.base-section-padding .sign-up .base-input {
+  border: 2px solid #d0d0d0;
+}
+/* line 618, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 footer.base-section-padding i {
   position: relative;
   top: 15px;
   margin: 0 -3px 0;
 }
+<<<<<<< HEAD
 /* line 639, ../../scss/main.scss */
 footer.base-section-padding a {
   color: #7118b2;
 }
 /* line 642, ../../scss/main.scss */
+=======
+/* line 624, ../../scss/main.scss */
+footer.base-section-padding a {
+  color: #7118b2;
+}
+/* line 627, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 footer.base-section-padding a:hover {
   color: #8e1edf;
 }
 
+<<<<<<< HEAD
 /* line 646, ../../scss/main.scss */
+=======
+/* line 631, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .slider {
   width: 100%;
 }
 
+<<<<<<< HEAD
 /* line 650, ../../scss/main.scss */
+=======
+/* line 635, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .slider-viewport {
   -webkit-perspective: 1500;
   -moz-perspective: 1500;
@@ -979,7 +1056,11 @@ footer.base-section-padding a:hover {
   position: relative;
   height: 100%;
 }
+<<<<<<< HEAD
 /* line 655, ../../scss/main.scss */
+=======
+/* line 640, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .slider-viewport li {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -998,12 +1079,20 @@ footer.base-section-padding a:hover {
   top: 0;
   left: 0;
 }
+<<<<<<< HEAD
 /* line 664, ../../scss/main.scss */
+=======
+/* line 649, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .slider-viewport li img {
   display: block;
   width: 100%;
 }
+<<<<<<< HEAD
 /* line 669, ../../scss/main.scss */
+=======
+/* line 654, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .slider-viewport li.is-next {
   -webkit-transition: all 1000ms ease;
   -moz-transition: all 1000ms ease;
@@ -1021,7 +1110,11 @@ footer.base-section-padding a:hover {
   -o-transition-delay: 275ms;
   transition-delay: 275ms;
 }
+<<<<<<< HEAD
 /* line 676, ../../scss/main.scss */
+=======
+/* line 661, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .slider-viewport li.active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -1035,7 +1128,11 @@ footer.base-section-padding a:hover {
   float: left;
   cursor: pointer;
 }
+<<<<<<< HEAD
 /* line 685, ../../scss/main.scss */
+=======
+/* line 670, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .slider-viewport li.remove {
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
@@ -1050,12 +1147,20 @@ footer.base-section-padding a:hover {
   opacity: 0;
 }
 
+<<<<<<< HEAD
 /* line 693, ../../scss/main.scss */
+=======
+/* line 678, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .slider-pagination {
   text-align: center;
   cursor: default;
 }
+<<<<<<< HEAD
 /* line 697, ../../scss/main.scss */
+=======
+/* line 682, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .slider-pagination li {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1075,7 +1180,11 @@ footer.base-section-padding a:hover {
   cursor: pointer;
   overflow: hidden;
 }
+<<<<<<< HEAD
 /* line 709, ../../scss/main.scss */
+=======
+/* line 694, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 .slider-pagination li.active {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -1088,7 +1197,11 @@ footer.base-section-padding a:hover {
 /****************************************
 * Misc.
 ****************************************/
+<<<<<<< HEAD
 /* line 720, ../../scss/main.scss */
+=======
+/* line 705, ../../scss/main.scss */
+>>>>>>> 960e56d89ccd77461c4826791df08ed6a3b9c6e7
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }

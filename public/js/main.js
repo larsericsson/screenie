@@ -57,7 +57,8 @@ wesual = {
 wesual.preloader = {
   images: [
     'img/tv.png',
-    'img/mbp.png',
+    'img/mbp.jpg',
+    'img/mbp-contents.jpg',
     'img/slide-1.jpg',
     'img/slide-2.jpg',
     'img/slide-3.jpg',
