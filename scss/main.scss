@@ -564,27 +564,6 @@ button:focus { outline: none; }
 	@media screen and (min-width: $break-small) {
 		margin: 50px auto 0;
 	}
-
-	.macbook-viewport {
-		position: absolute;
-		z-index: 2;
-		width: 626px;
-		height: 392px;
-		top: 58px;
-		left: 101px;
-		overflow: hidden;
-
-		img {
-			width: 75%;
-			pointer-events: none;
-	    }
-	}
-
-	img {
-		position: relative;
-		z-index: 1;
-		width: 100%;
-	}
 }
 
 .features {
