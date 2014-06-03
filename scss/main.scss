@@ -534,12 +534,10 @@ button:focus { outline: none; }
 
 .hero-container {
 	margin: 0 auto;
-	max-width: 650px;
 	padding-bottom: 30px;
 
 	p {
-		max-width: 570px;
-    margin-bottom: 35px;
+    	margin-bottom: 35px;
 	}
 }
 
@@ -558,7 +556,7 @@ button:focus { outline: none; }
 
 .macbook {
 	position: relative;
-	max-width: 938px;
+	max-width: 994px;
 	margin: 30px auto 0;
 
 	@media screen and (min-width: $break-small) {
@@ -661,12 +659,17 @@ footer.base-section-padding {
 }
 
 .slider {
-  height: 530px;
-  width: 850px;
-  margin: 0 auto;
-  background-image: url('../img/tv.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+	width: 100%;
+
+	@media screen and (min-width: $break-small) {
+		height: 530px;
+		width: 850px;
+		background-image: url('/img/tv.png');
+	}
+
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .slider-glare {
