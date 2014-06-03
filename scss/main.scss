@@ -188,6 +188,7 @@ button:focus { outline: none; }
 	margin-bottom: 10px;
 
 	@media screen and (min-width: $break-small) {
+    width: 360px;
 		margin-bottom: 0;
 		margin-right: 10px;
 	}
@@ -264,16 +265,16 @@ button:focus { outline: none; }
 	padding: 30px 28px 230px;
 
 	@media screen and (min-width: $break-small) {
-		padding: 30px 28px 430px;
+		padding: 30px 28px 460px;
 	}
 }
 
 .base-section-padding {
 	text-align: center;
-	padding: 80px 0 80px;
+	padding: 90px 0 80px;
 
 	@media screen and (min-width: $break-small) {
-		padding: 80px 0 125px;
+		padding: 90px 0 125px;
 	}
 }
 
@@ -538,6 +539,7 @@ button:focus { outline: none; }
 
 	p {
 		max-width: 570px;
+    margin-bottom: 35px;
 	}
 }
 
@@ -664,7 +666,7 @@ footer.base-section-padding {
 	@media screen and (min-width: $break-small) {
 		height: 530px;
 		width: 850px;
-		background-image: url('/img/tv-new.png');
+		background-image: url('/img/tv.png');
 	}
 
 	margin: 0 auto;
@@ -683,7 +685,6 @@ footer.base-section-padding {
 }
 
 .slider-viewport {
-  @include perspective(1500);
   position: relative;
   height: 100%;
 
@@ -697,11 +698,12 @@ footer.base-section-padding {
     cursor: pointer;
 
     img {
-      @include transition(all 2000ms ease);
+      @include transition(all 1000ms ease);
       @include opacity(0);
       @include transform-origin(50%, 100%);
       display: block;
       width: 100%;
+      pointer-events: none;
     }
 
     &.active img {
@@ -712,9 +714,7 @@ footer.base-section-padding {
     }
 
     &.remove img {
-      @include transition(all 600ms ease);
-      @include opacity(0);
-      @include transition-delay(2000ms);
+      z-index: 1;
     }
   }
 }

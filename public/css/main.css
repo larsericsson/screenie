@@ -300,27 +300,28 @@ button:focus {
 @media screen and (min-width: 400px) {
   /* line 186, ../../scss/main.scss */
   .signup-input {
+    width: 360px;
     margin-bottom: 0;
     margin-right: 10px;
   }
 }
 
-/* line 196, ../../scss/main.scss */
+/* line 197, ../../scss/main.scss */
 .input-error {
   border-color: #fd5b5b !important;
 }
-/* line 199, ../../scss/main.scss */
+/* line 200, ../../scss/main.scss */
 .input-error:active, .input-error:focus {
   border: 2px solid #d0d0d0;
 }
 
-/* line 202, ../../scss/main.scss */
+/* line 203, ../../scss/main.scss */
 .success-msg-container {
   padding-top: 22px;
   padding-bottom: 24px;
 }
 
-/* line 207, ../../scss/main.scss */
+/* line 208, ../../scss/main.scss */
 .success-msg {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -333,95 +334,95 @@ button:focus {
   font-size: 18px;
 }
 
-/* line 215, ../../scss/main.scss */
+/* line 216, ../../scss/main.scss */
 .row {
   width: 100%;
 }
 
-/* line 219, ../../scss/main.scss */
+/* line 220, ../../scss/main.scss */
 .support-logos {
   width: 100%;
   max-width: 800px;
 }
 
-/* line 224, ../../scss/main.scss */
+/* line 225, ../../scss/main.scss */
 .support-copy {
   margin: 30px 0 30px;
 }
 
-/* line 228, ../../scss/main.scss */
+/* line 229, ../../scss/main.scss */
 .purple {
   color: #7118b2;
 }
 
-/* line 230, ../../scss/main.scss */
+/* line 231, ../../scss/main.scss */
 .grey-background {
   background: #edf1f2;
   color: #000;
 }
 
-/* line 235, ../../scss/main.scss */
+/* line 236, ../../scss/main.scss */
 .light-gray-background {
   background: #eff3f6;
   color: #000;
 }
 
-/* line 240, ../../scss/main.scss */
+/* line 241, ../../scss/main.scss */
 .dark-background {
   background: #000;
   color: #fff;
 }
 
-/* line 245, ../../scss/main.scss */
+/* line 246, ../../scss/main.scss */
 .purple-background {
   background: #7118b2;
   color: #fff;
 }
-/* line 249, ../../scss/main.scss */
+/* line 250, ../../scss/main.scss */
 .purple-background a {
   color: #fff;
 }
-/* line 250, ../../scss/main.scss */
+/* line 251, ../../scss/main.scss */
 .purple-background a:hover {
   color: #000;
 }
 
-/* line 253, ../../scss/main.scss */
+/* line 254, ../../scss/main.scss */
 .container {
   text-align: center;
   max-width: 980px;
   margin: 0 auto;
 }
 
-/* line 259, ../../scss/main.scss */
+/* line 260, ../../scss/main.scss */
 .header-padding {
   padding: 28px;
 }
 
-/* line 263, ../../scss/main.scss */
+/* line 264, ../../scss/main.scss */
 .hero-padding {
   padding: 30px 28px 230px;
 }
 @media screen and (min-width: 400px) {
-  /* line 263, ../../scss/main.scss */
+  /* line 264, ../../scss/main.scss */
   .hero-padding {
-    padding: 30px 28px 430px;
+    padding: 30px 28px 460px;
   }
 }
 
-/* line 271, ../../scss/main.scss */
+/* line 272, ../../scss/main.scss */
 .base-section-padding {
   text-align: center;
-  padding: 80px 0 80px;
+  padding: 90px 0 80px;
 }
 @media screen and (min-width: 400px) {
-  /* line 271, ../../scss/main.scss */
+  /* line 272, ../../scss/main.scss */
   .base-section-padding {
-    padding: 80px 0 125px;
+    padding: 90px 0 125px;
   }
 }
 
-/* line 280, ../../scss/main.scss */
+/* line 281, ../../scss/main.scss */
 .logo {
   margin: 0 auto;
   text-indent: -9999px;
@@ -435,7 +436,7 @@ button:focus {
 /****************************************
 * Intro animations
 ****************************************/
-/* line 300, ../../scss/main.scss */
+/* line 301, ../../scss/main.scss */
 .js .hero-header-first,
 .js .hero-header-second,
 .js .hero-container p,
@@ -444,7 +445,7 @@ button:focus {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 303, ../../scss/main.scss */
+/* line 304, ../../scss/main.scss */
 .js .hero-header-first,
 .js .hero-header-second {
   -webkit-transform: translate3d(0, 7.5px, 0);
@@ -453,7 +454,7 @@ button:focus {
   -o-transform: translate3d(0, 7.5px, 0);
   transform: translate3d(0, 7.5px, 0);
 }
-/* line 305, ../../scss/main.scss */
+/* line 306, ../../scss/main.scss */
 .js .hero-tv {
   -webkit-transform: translate3d(-50%, 90px, 0) rotateZ(-3deg);
   -moz-transform: translate3d(-50%, 90px, 0) rotateZ(-3deg);
@@ -466,7 +467,7 @@ button:focus {
   -o-transform-origin: 25% 50%;
   transform-origin: 25% 50%;
 }
-/* line 311, ../../scss/main.scss */
+/* line 312, ../../scss/main.scss */
 .js .hero {
   -webkit-perspective: 1100;
   -moz-perspective: 1100;
@@ -474,7 +475,7 @@ button:focus {
   -o-perspective: 1100;
   perspective: 1100;
 }
-/* line 313, ../../scss/main.scss */
+/* line 314, ../../scss/main.scss */
 .js .hero-header-first {
   -webkit-transition: all 700ms ease;
   -moz-transition: all 700ms ease;
@@ -485,7 +486,7 @@ button:focus {
   -o-transition-delay: 300ms;
   transition-delay: 300ms;
 }
-/* line 318, ../../scss/main.scss */
+/* line 319, ../../scss/main.scss */
 .js .hero-header-second {
   -webkit-transition: all 700ms ease;
   -moz-transition: all 700ms ease;
@@ -496,7 +497,7 @@ button:focus {
   -o-transition-delay: 600ms;
   transition-delay: 600ms;
 }
-/* line 324, ../../scss/main.scss */
+/* line 325, ../../scss/main.scss */
 .js .hero-container p,
 .js .hero-container .sign-up {
   -webkit-transition: opacity 1000ms ease;
@@ -508,7 +509,7 @@ button:focus {
   -o-transition-delay: 1000ms;
   transition-delay: 1000ms;
 }
-/* line 329, ../../scss/main.scss */
+/* line 330, ../../scss/main.scss */
 .js .hero-tv {
   -webkit-transition: all 1100ms cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition: all 1100ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -520,7 +521,7 @@ button:focus {
   transition-delay: 1200ms;
   -webkit-backface-visibility: hidden;
 }
-/* line 341, ../../scss/main.scss */
+/* line 342, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-header-first,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-header-second,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-container p,
@@ -529,7 +530,7 @@ button:focus {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 344, ../../scss/main.scss */
+/* line 345, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-header-first,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-header-second {
   -webkit-transform: translate3d(0, 0, 0);
@@ -538,7 +539,7 @@ button:focus {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 346, ../../scss/main.scss */
+/* line 347, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .hero-tv {
   -webkit-transform: translate3d(-50%, 0, 0) rotateZ(0deg);
   -moz-transform: translate3d(-50%, 0, 0) rotateZ(0deg);
@@ -546,13 +547,13 @@ button:focus {
   -o-transform: translate3d(-50%, 0, 0) rotateZ(0deg);
   transform: translate3d(-50%, 0, 0) rotateZ(0deg);
 }
-/* line 352, ../../scss/main.scss */
+/* line 353, ../../scss/main.scss */
 .js .features h2,
 .js .features .feature {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 355, ../../scss/main.scss */
+/* line 356, ../../scss/main.scss */
 .js .features h2,
 .js .features .feature {
   -webkit-transform: translate3d(0, 15px, 0);
@@ -561,7 +562,7 @@ button:focus {
   -o-transform: translate3d(0, 15px, 0);
   transform: translate3d(0, 15px, 0);
 }
-/* line 358, ../../scss/main.scss */
+/* line 359, ../../scss/main.scss */
 .js .features h2 {
   -webkit-transition: all 750ms ease;
   -moz-transition: all 750ms ease;
@@ -572,41 +573,41 @@ button:focus {
   -o-transition-delay: 100ms;
   transition-delay: 100ms;
 }
-/* line 363, ../../scss/main.scss */
+/* line 364, ../../scss/main.scss */
 .js .features .feature {
   -webkit-transition: all 750ms ease;
   -moz-transition: all 750ms ease;
   -o-transition: all 750ms ease;
   transition: all 750ms ease;
 }
-/* line 365, ../../scss/main.scss */
+/* line 366, ../../scss/main.scss */
 .js .features .feature-first {
   -webkit-transition-delay: 200ms;
   -moz-transition-delay: 200ms;
   -o-transition-delay: 200ms;
   transition-delay: 200ms;
 }
-/* line 367, ../../scss/main.scss */
+/* line 368, ../../scss/main.scss */
 .js .features .feature-second {
   -webkit-transition-delay: 400ms;
   -moz-transition-delay: 400ms;
   -o-transition-delay: 400ms;
   transition-delay: 400ms;
 }
-/* line 369, ../../scss/main.scss */
+/* line 370, ../../scss/main.scss */
 .js .features .feature-third {
   -webkit-transition-delay: 600ms;
   -moz-transition-delay: 600ms;
   -o-transition-delay: 600ms;
   transition-delay: 600ms;
 }
-/* line 376, ../../scss/main.scss */
+/* line 377, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .features.active h2,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .features.active .feature {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 379, ../../scss/main.scss */
+/* line 380, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .features.active h2,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .features.active .feature {
   -webkit-transform: translate3d(0, 0, 0);
@@ -615,7 +616,7 @@ button:focus {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 385, ../../scss/main.scss */
+/* line 386, ../../scss/main.scss */
 .js .telegraphic h2, .js .telegraphic .slider {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -625,7 +626,7 @@ button:focus {
   -o-transform: translate3d(0, 15px, 0);
   transform: translate3d(0, 15px, 0);
 }
-/* line 390, ../../scss/main.scss */
+/* line 391, ../../scss/main.scss */
 .js .telegraphic .slider {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -633,7 +634,7 @@ button:focus {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 393, ../../scss/main.scss */
+/* line 394, ../../scss/main.scss */
 .js .telegraphic h2, .js .telegraphic .slider {
   -webkit-transition: all 750ms ease;
   -moz-transition: all 750ms ease;
@@ -644,14 +645,14 @@ button:focus {
   -o-transition-delay: 100ms;
   transition-delay: 100ms;
 }
-/* line 398, ../../scss/main.scss */
+/* line 399, ../../scss/main.scss */
 .js .telegraphic .slider {
   -webkit-transition-delay: 300ms;
   -moz-transition-delay: 300ms;
   -o-transition-delay: 300ms;
   transition-delay: 300ms;
 }
-/* line 404, ../../scss/main.scss */
+/* line 405, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .telegraphic.active h2, .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .telegraphic.active .slider {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -661,13 +662,13 @@ button:focus {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 415, ../../scss/main.scss */
+/* line 416, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .customizable.active h2,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .customizable.active .macbook {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 418, ../../scss/main.scss */
+/* line 419, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .customizable.active h2,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .customizable.active .macbook {
   -webkit-transform: translate3d(0, 0, 0);
@@ -676,7 +677,7 @@ button:focus {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 424, ../../scss/main.scss */
+/* line 425, ../../scss/main.scss */
 .js .customizable h2, .js .customizable .macbook {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -686,7 +687,7 @@ button:focus {
   -o-transform: translate3d(0, 15px, 0);
   transform: translate3d(0, 15px, 0);
 }
-/* line 430, ../../scss/main.scss */
+/* line 431, ../../scss/main.scss */
 .js .customizable h2, .js .customizable .macbook {
   -webkit-transition: all 750ms ease;
   -moz-transition: all 750ms ease;
@@ -697,14 +698,14 @@ button:focus {
   -o-transition-delay: 100ms;
   transition-delay: 100ms;
 }
-/* line 435, ../../scss/main.scss */
+/* line 436, ../../scss/main.scss */
 .js .customizable .macbook {
   -webkit-transition-delay: 300ms;
   -moz-transition-delay: 300ms;
   -o-transition-delay: 300ms;
   transition-delay: 300ms;
 }
-/* line 441, ../../scss/main.scss */
+/* line 442, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .customizable.active h2, .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active .customizable.active .macbook {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -714,14 +715,14 @@ button:focus {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 453, ../../scss/main.scss */
+/* line 454, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active footer.active h2,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active footer.active p,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active footer.active .sign-up {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 457, ../../scss/main.scss */
+/* line 458, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active footer.active h2,
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active footer.active p
 .sign-up {
@@ -731,7 +732,7 @@ button:focus {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 463, ../../scss/main.scss */
+/* line 464, ../../scss/main.scss */
 .js footer h2, .js footer p, .js footer .sign-up {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -741,7 +742,7 @@ button:focus {
   -o-transform: translate3d(0, 15px, 0);
   transform: translate3d(0, 15px, 0);
 }
-/* line 469, ../../scss/main.scss */
+/* line 470, ../../scss/main.scss */
 .js footer h2, .js footer p, .js footer .sign-up {
   -webkit-transition: all 750ms ease;
   -moz-transition: all 750ms ease;
@@ -752,14 +753,14 @@ button:focus {
   -o-transition-delay: 100ms;
   transition-delay: 100ms;
 }
-/* line 474, ../../scss/main.scss */
+/* line 475, ../../scss/main.scss */
 .js footer .macbook {
   -webkit-transition-delay: 300ms;
   -moz-transition-delay: 300ms;
   -o-transition-delay: 300ms;
   transition-delay: 300ms;
 }
-/* line 480, ../../scss/main.scss */
+/* line 481, ../../scss/main.scss */
 .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active footer.active h2, .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active footer.active p, .js.wf-opensans-n4-active.wf-grumpyblack24-n4-active.wf-active footer.active .sign-up {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -773,23 +774,23 @@ button:focus {
 /****************************************
 * Index
 ****************************************/
-/* line 491, ../../scss/main.scss */
+/* line 492, ../../scss/main.scss */
 .menu-header {
   position: relative;
   z-index: 10;
 }
 
-/* line 497, ../../scss/main.scss */
+/* line 498, ../../scss/main.scss */
 .menu li {
   display: inline-block;
   margin: 5px 0 0 15px;
 }
-/* line 501, ../../scss/main.scss */
+/* line 502, ../../scss/main.scss */
 .menu li a {
   position: relative;
   color: #7118b2;
 }
-/* line 506, ../../scss/main.scss */
+/* line 507, ../../scss/main.scss */
 .menu li a:after {
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -810,11 +811,11 @@ button:focus {
   background: #7118b2;
   content: '';
 }
-/* line 519, ../../scss/main.scss */
+/* line 520, ../../scss/main.scss */
 .menu li a:hover {
   color: #7118b2;
 }
-/* line 522, ../../scss/main.scss */
+/* line 523, ../../scss/main.scss */
 .menu li a:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
@@ -825,29 +826,30 @@ button:focus {
   transform: translate3d(0, 2px, 0);
 }
 
-/* line 530, ../../scss/main.scss */
+/* line 531, ../../scss/main.scss */
 .relative {
   position: relative;
 }
 
-/* line 534, ../../scss/main.scss */
+/* line 535, ../../scss/main.scss */
 .hero-container {
   margin: 0 auto;
   max-width: 650px;
   padding-bottom: 30px;
 }
-/* line 539, ../../scss/main.scss */
+/* line 540, ../../scss/main.scss */
 .hero-container p {
   max-width: 570px;
+  margin-bottom: 35px;
 }
 
-/* line 544, ../../scss/main.scss */
+/* line 546, ../../scss/main.scss */
 .on-top {
   z-index: 99;
   position: relative;
 }
 
-/* line 549, ../../scss/main.scss */
+/* line 551, ../../scss/main.scss */
 .hero-tv {
   width: 100%;
   max-width: 829px;
@@ -860,19 +862,19 @@ button:focus {
   transform: translateX(-50%);
 }
 
-/* line 557, ../../scss/main.scss */
+/* line 559, ../../scss/main.scss */
 .macbook {
   position: relative;
   max-width: 994px;
   margin: 30px auto 0;
 }
 @media screen and (min-width: 400px) {
-  /* line 557, ../../scss/main.scss */
+  /* line 559, ../../scss/main.scss */
   .macbook {
     margin: 50px auto 0;
   }
 }
-/* line 566, ../../scss/main.scss */
+/* line 568, ../../scss/main.scss */
 .macbook .macbook-viewport {
   position: absolute;
   z-index: 2;
@@ -882,24 +884,24 @@ button:focus {
   left: 101px;
   overflow: hidden;
 }
-/* line 575, ../../scss/main.scss */
+/* line 577, ../../scss/main.scss */
 .macbook .macbook-viewport img {
   width: 75%;
   pointer-events: none;
 }
-/* line 581, ../../scss/main.scss */
+/* line 583, ../../scss/main.scss */
 .macbook img {
   position: relative;
   z-index: 1;
   width: 100%;
 }
 
-/* line 588, ../../scss/main.scss */
+/* line 590, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 592, ../../scss/main.scss */
+/* line 594, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
@@ -908,34 +910,34 @@ button:focus {
   margin-top: 40px;
 }
 @media screen and (min-width: 400px) {
-  /* line 592, ../../scss/main.scss */
+  /* line 594, ../../scss/main.scss */
   .feature {
     margin-top: 70px;
   }
 }
-/* line 603, ../../scss/main.scss */
+/* line 605, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
-/* line 605, ../../scss/main.scss */
+/* line 607, ../../scss/main.scss */
 .feature i {
   font-size: 70px;
   margin-bottom: 15px;
 }
 @media screen and (min-width: 400px) {
-  /* line 605, ../../scss/main.scss */
+  /* line 607, ../../scss/main.scss */
   .feature i {
     font-size: 90px;
     margin-bottom: 65px;
   }
 }
-/* line 615, ../../scss/main.scss */
+/* line 617, ../../scss/main.scss */
 .feature p {
   margin: 0 auto;
   max-width: 275px;
 }
 
-/* line 621, ../../scss/main.scss */
+/* line 623, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -947,50 +949,50 @@ button:focus {
   margin: 0 auto 30px;
 }
 
-/* line 628, ../../scss/main.scss */
+/* line 630, ../../scss/main.scss */
 .telegraphic {
   padding-bottom: 95px;
   background-image: url("../img/telegraphic-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 634, ../../scss/main.scss */
+/* line 636, ../../scss/main.scss */
 .telegraphic h2 {
   margin-bottom: 20px;
 }
-/* line 636, ../../scss/main.scss */
+/* line 638, ../../scss/main.scss */
 .telegraphic .container {
   margin: 0 auto 50px;
 }
 
-/* line 639, ../../scss/main.scss */
+/* line 641, ../../scss/main.scss */
 footer.base-section-padding {
   padding: 80px 0 300px;
 }
-/* line 642, ../../scss/main.scss */
+/* line 644, ../../scss/main.scss */
 footer.base-section-padding .sign-up {
   margin: 40px 0 150px;
 }
-/* line 645, ../../scss/main.scss */
+/* line 647, ../../scss/main.scss */
 footer.base-section-padding .sign-up .base-input {
   border: 2px solid #d0d0d0;
 }
-/* line 648, ../../scss/main.scss */
+/* line 650, ../../scss/main.scss */
 footer.base-section-padding i {
   position: relative;
   top: 15px;
   margin: 0 -3px 0;
 }
-/* line 654, ../../scss/main.scss */
+/* line 656, ../../scss/main.scss */
 footer.base-section-padding a {
   color: #7118b2;
 }
-/* line 657, ../../scss/main.scss */
+/* line 659, ../../scss/main.scss */
 footer.base-section-padding a:hover {
   color: #8e1edf;
 }
 
-/* line 661, ../../scss/main.scss */
+/* line 663, ../../scss/main.scss */
 .slider {
   width: 100%;
   margin: 0 auto;
@@ -998,15 +1000,15 @@ footer.base-section-padding a:hover {
   background-size: cover;
 }
 @media screen and (min-width: 400px) {
-  /* line 661, ../../scss/main.scss */
+  /* line 663, ../../scss/main.scss */
   .slider {
     height: 530px;
     width: 850px;
-    background-image: url("/img/tv-new.png");
+    background-image: url("/img/tv.png");
   }
 }
 
-/* line 675, ../../scss/main.scss */
+/* line 677, ../../scss/main.scss */
 .slider-glare {
   display: block;
   position: absolute;
@@ -1017,17 +1019,12 @@ footer.base-section-padding a:hover {
   cursor: pointer;
 }
 
-/* line 685, ../../scss/main.scss */
+/* line 687, ../../scss/main.scss */
 .slider-viewport {
-  -webkit-perspective: 1500;
-  -moz-perspective: 1500;
-  -ms-perspective: 1500;
-  -o-perspective: 1500;
-  perspective: 1500;
   position: relative;
   height: 100%;
 }
-/* line 690, ../../scss/main.scss */
+/* line 691, ../../scss/main.scss */
 .slider-viewport li {
   position: absolute;
   width: 737px;
@@ -1037,12 +1034,12 @@ footer.base-section-padding a:hover {
   overflow: hidden;
   cursor: pointer;
 }
-/* line 699, ../../scss/main.scss */
+/* line 700, ../../scss/main.scss */
 .slider-viewport li img {
-  -webkit-transition: all 2000ms ease;
-  -moz-transition: all 2000ms ease;
-  -o-transition: all 2000ms ease;
-  transition: all 2000ms ease;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transform-origin: 50% 100%;
@@ -1052,8 +1049,9 @@ footer.base-section-padding a:hover {
   transform-origin: 50% 100%;
   display: block;
   width: 100%;
+  pointer-events: none;
 }
-/* line 707, ../../scss/main.scss */
+/* line 709, ../../scss/main.scss */
 .slider-viewport li.active img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -1061,18 +1059,9 @@ footer.base-section-padding a:hover {
   z-index: 2;
   float: left;
 }
-/* line 714, ../../scss/main.scss */
+/* line 716, ../../scss/main.scss */
 .slider-viewport li.remove img {
-  -webkit-transition: all 600ms ease;
-  -moz-transition: all 600ms ease;
-  -o-transition: all 600ms ease;
-  transition: all 600ms ease;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -webkit-transition-delay: 2000ms;
-  -moz-transition-delay: 2000ms;
-  -o-transition-delay: 2000ms;
-  transition-delay: 2000ms;
+  z-index: 1;
 }
 
 /* line 722, ../../scss/main.scss */
