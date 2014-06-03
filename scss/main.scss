@@ -93,7 +93,7 @@ $break-small: 400px;
 
 	@media screen and (min-width: $break-small) {
 		font-size: 20px;
-	}	
+	}
 }
 
 %header-font {
@@ -241,7 +241,7 @@ button:focus { outline: none; }
 
 .base-section-padding {
 	text-align: center;
-	padding: 110px 0 135px;
+	padding: 90px 0 125px;
 
   &.telegraphic {
     padding-bottom: 80px;
@@ -525,16 +525,21 @@ button:focus { outline: none; }
 .macbook {
   position: relative;
   width: 828px;
-	margin: 50px auto 0;
+	margin: 30px auto 0;
 
   .macbook-viewport {
     position: absolute;
     z-index: 2;
-    width: 75.8%;
-    height: 72.8%;
-    top: 14.5%;
-    left: 12.1%;
+    width: 626px;
+    height: 392px;
+    top: 58px;
+    left: 101px;
     overflow: hidden;
+
+    img {
+      width: 75%;
+      pointer-events: none;
+    }
   }
 
   img {
