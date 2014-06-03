@@ -63,7 +63,8 @@ wesual.preloader = {
     'img/slide-2.jpg',
     'img/slide-3.jpg',
     'img/slide-4.jpg',
-    'img/slide-5.jpg'
+    'img/slide-5.jpg',
+    'img/telegraphic-bg.jpg'
   ],
 
   init: function() {
@@ -212,21 +213,14 @@ wesual.slider = {
   goToSlideIndex: function(index) {
     var self = this;
 
-    this.inTransition = true;
-
     if (index > this.$slides.length - 1) index = 0;
 
     this.currentIndex = index;
 
     this.$slides.filter('.active').addClass('remove');
     this.$slides.eq(index).addClass('is-next');
-
-    setTimeout(function() {
-      self.$slides.eq(index).addClass('active').removeClass('is-next');
-      self.$slides.filter('.remove').removeClass('active remove');
-
-      self.inTransition = false;
-    }, 1200);
+    this.$slides.eq(index).addClass('active').removeClass('is-next');
+    this.$slides.filter('.remove').removeClass('active remove');
   }
 };
 
