@@ -556,6 +556,7 @@ button:focus { outline: none; }
 
 .macbook {
 	position: relative;
+	width: 100%;
 	max-width: 994px;
 	margin: 30px auto 0;
 
@@ -566,16 +567,16 @@ button:focus { outline: none; }
 	.macbook-viewport {
 		position: absolute;
 		z-index: 2;
-    width: 626px;
-    height: 392px;
-    top: 58px;
-    left: 101px;
+		width: 626px;
+		height: 392px;
+		top: 58px;
+		left: 101px;
 		overflow: hidden;
 
-    img {
-      width: 75%;
-      pointer-events: none;
-    }
+		img {
+			width: 75%;
+			pointer-events: none;
+	    }
 	}
 
 	img {
@@ -683,17 +684,13 @@ footer.base-section-padding {
 }
 
 .slider-viewport {
-  position: relative;
-  height: 100%;
+	position: relative;
+	padding-bottom: 60%;
+	@media screen and (min-width: $break-small) {
+		padding-bottom: 0;
+	}
 
-  li {
-    position: absolute;
-    width: 737px;
-    z-index: 1;
-    top: 52px;
-    left: 52px;
-    overflow: hidden;
-    cursor: pointer;
+	height: 100%;
 
     img {
       @include transition(all 2000ms ease);
@@ -704,17 +701,38 @@ footer.base-section-padding {
       pointer-events: none;
     }
 
-    &.active img {
-      @include opacity(1);
-      position: relative;
-      z-index: 2;
-      float: left;
-    }
+	li {
+		position: absolute;
 
-    &.remove img {
-      z-index: 1;
-    }
-  }
+		@media screen and (min-width: $break-small) {
+			width: 737px;
+			top: 52px;
+			left: 52px;
+		}
+		z-index: 1;
+		overflow: hidden;
+		cursor: pointer;
+
+		img {
+			@include transition(all 1000ms ease);
+			@include opacity(0);
+			@include transform-origin(50%, 100%);
+			display: block;
+			width: 100%;
+			pointer-events: none;
+		}
+
+		&.active img {
+			@include opacity(1);
+			position: relative;
+			z-index: 2;
+			float: left;
+		}
+
+		&.remove img {
+			z-index: 1;
+		}
+	}
 }
 
 .slider-pagination {
