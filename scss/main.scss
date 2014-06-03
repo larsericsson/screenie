@@ -556,6 +556,7 @@ button:focus { outline: none; }
 
 .macbook {
 	position: relative;
+	width: 100%;
 	max-width: 994px;
 	margin: 30px auto 0;
 
@@ -566,16 +567,16 @@ button:focus { outline: none; }
 	.macbook-viewport {
 		position: absolute;
 		z-index: 2;
-    width: 626px;
-    height: 392px;
-    top: 58px;
-    left: 101px;
+		width: 626px;
+		height: 392px;
+		top: 58px;
+		left: 101px;
 		overflow: hidden;
 
-    img {
-      width: 75%;
-      pointer-events: none;
-    }
+		img {
+			width: 75%;
+			pointer-events: none;
+	    }
 	}
 
 	img {
@@ -688,7 +689,7 @@ footer.base-section-padding {
 	@media screen and (min-width: $break-small) {
 		padding-bottom: 0;
 	}
-	
+
 	height: 100%;
 
 	li {
