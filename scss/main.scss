@@ -556,7 +556,7 @@ button:focus { outline: none; }
 
 .macbook {
 	position: relative;
-	max-width: 828px;
+	max-width: 994px;
 	margin: 30px auto 0;
 
 	@media screen and (min-width: $break-small) {
@@ -659,12 +659,17 @@ footer.base-section-padding {
 }
 
 .slider {
-  height: 530px;
-  width: 850px;
-  margin: 0 auto;
-  background-image: url('../img/tv-new.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+	width: 100%;
+
+	@media screen and (min-width: $break-small) {
+		height: 530px;
+		width: 850px;
+		background-image: url('/img/tv-new.png');
+	}
+
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .slider-glare {
