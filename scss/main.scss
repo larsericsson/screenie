@@ -363,11 +363,11 @@ button:focus { outline: none; }
 
     // Transitions and perspectives Features section
     h2 {
-      @include transition(all 750ms ease);
+      @include transition(all 600ms ease);
       @include transition-delay(100ms);
     }
 
-    .feature { @include transition(all 750ms ease); }
+    .feature { @include transition(all 600ms ease); }
 
     .feature-first { @include transition-delay(200ms); }
 
@@ -398,7 +398,7 @@ button:focus { outline: none; }
 
     // Transitions and perspectives Telegraphic section
     h2, .slider {
-      @include transition(all 750ms ease);
+      @include transition(all 600ms ease);
       @include transition-delay(100ms);
     }
 
@@ -435,7 +435,7 @@ button:focus { outline: none; }
 
     // Transitions and perspectives Customizable section
     h2, .macbook {
-      @include transition(all 750ms ease);
+      @include transition(all 600ms ease);
       @include transition-delay(100ms);
     }
 
@@ -474,7 +474,7 @@ button:focus { outline: none; }
 
     // Transitions and perspectives Customizable section
     h2, p, .sign-up {
-      @include transition(all 750ms ease);
+      @include transition(all 600ms ease);
       @include transition-delay(100ms);
     }
 
@@ -576,11 +576,6 @@ button:focus { outline: none; }
 		margin: 50px auto 0;
 		padding: 0;
 	}
-}
-
-.customizable.active .macbook {
-	@include transform(rotateX(10deg));
-	@include transform-origin(50%, 100%);
 }
 
 .features {

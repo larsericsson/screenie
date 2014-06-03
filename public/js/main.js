@@ -42,7 +42,7 @@ wesual = {
 	},
 
 	onScroll: function(e) {
-		var tweakOffset = 300,
+		var tweakOffset = 250,
 				viewportBottom = $(window).scrollTop() + $(window).innerHeight() - tweakOffset;
 
 		for (var i = 0; i <= this.sectionOffsets.length; ++i) {
