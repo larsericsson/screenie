@@ -543,11 +543,12 @@ button:focus { outline: none; }
 	padding-bottom: 30px;
 
 	p {
-    	margin-bottom: 30px;
+  	margin: 0 auto 30px;
+    max-width: 600px;
 
-      @media screen and (min-width: $break-small) {
-        margin-bottom: 35px;
-      }
+    @media screen and (min-width: $break-small) {
+      margin: 0 auto 35px;
+    }
 	}
 }
 

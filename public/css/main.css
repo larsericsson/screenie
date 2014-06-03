@@ -846,22 +846,23 @@ button:focus {
 }
 /* line 545, ../../scss/main.scss */
 .hero-container p {
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  max-width: 600px;
 }
 @media screen and (min-width: 400px) {
   /* line 545, ../../scss/main.scss */
   .hero-container p {
-    margin-bottom: 35px;
+    margin: 0 auto 35px;
   }
 }
 
-/* line 554, ../../scss/main.scss */
+/* line 555, ../../scss/main.scss */
 .on-top {
   z-index: 99;
   position: relative;
 }
 
-/* line 559, ../../scss/main.scss */
+/* line 560, ../../scss/main.scss */
 .hero-tv {
   width: 100%;
   max-width: 829px;
@@ -874,7 +875,7 @@ button:focus {
   transform: translateX(-50%);
 }
 
-/* line 567, ../../scss/main.scss */
+/* line 568, ../../scss/main.scss */
 .macbook {
   position: relative;
   width: 100%;
@@ -883,14 +884,14 @@ button:focus {
   padding: 0 20px 0;
 }
 @media screen and (min-width: 400px) {
-  /* line 567, ../../scss/main.scss */
+  /* line 568, ../../scss/main.scss */
   .macbook {
     margin: 50px auto 0;
     padding: 0;
   }
 }
 
-/* line 580, ../../scss/main.scss */
+/* line 581, ../../scss/main.scss */
 .customizable.active .macbook {
   -webkit-transform: rotateX(10deg);
   -moz-transform: rotateX(10deg);
@@ -904,12 +905,12 @@ button:focus {
   transform-origin: 50% 100%;
 }
 
-/* line 585, ../../scss/main.scss */
+/* line 586, ../../scss/main.scss */
 .features {
   text-align: center;
 }
 
-/* line 589, ../../scss/main.scss */
+/* line 590, ../../scss/main.scss */
 .feature {
   display: inline-block;
   text-align: center;
@@ -918,34 +919,34 @@ button:focus {
   margin-top: 40px;
 }
 @media screen and (min-width: 400px) {
-  /* line 589, ../../scss/main.scss */
+  /* line 590, ../../scss/main.scss */
   .feature {
     margin-top: 70px;
   }
 }
-/* line 600, ../../scss/main.scss */
+/* line 601, ../../scss/main.scss */
 .feature strong {
   margin-bottom: 10px;
 }
-/* line 602, ../../scss/main.scss */
+/* line 603, ../../scss/main.scss */
 .feature i {
   font-size: 70px;
   margin-bottom: 15px;
 }
 @media screen and (min-width: 400px) {
-  /* line 602, ../../scss/main.scss */
+  /* line 603, ../../scss/main.scss */
   .feature i {
     font-size: 90px;
     margin-bottom: 65px;
   }
 }
-/* line 612, ../../scss/main.scss */
+/* line 613, ../../scss/main.scss */
 .feature p {
   margin: 0 auto;
   max-width: 275px;
 }
 
-/* line 618, ../../scss/main.scss */
+/* line 619, ../../scss/main.scss */
 .feature-bubble {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -957,68 +958,68 @@ button:focus {
   margin: 0 auto 30px;
 }
 
-/* line 625, ../../scss/main.scss */
+/* line 626, ../../scss/main.scss */
 .telegraphic {
   padding-bottom: 25px;
   background-image: url("../img/telegraphic-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 631, ../../scss/main.scss */
+/* line 632, ../../scss/main.scss */
 .telegraphic h2 {
   margin-bottom: 20px;
 }
-/* line 633, ../../scss/main.scss */
+/* line 634, ../../scss/main.scss */
 .telegraphic .container {
   margin: 0 auto 50px;
 }
 @media screen and (min-width: 400px) {
-  /* line 625, ../../scss/main.scss */
+  /* line 626, ../../scss/main.scss */
   .telegraphic {
     padding-bottom: 85px;
   }
 }
 
-/* line 640, ../../scss/main.scss */
+/* line 641, ../../scss/main.scss */
 footer.base-section-padding {
   padding: 70px 0 40px;
 }
 @media screen and (min-width: 400px) {
-  /* line 640, ../../scss/main.scss */
+  /* line 641, ../../scss/main.scss */
   footer.base-section-padding {
     padding: 80px 0 300px;
   }
 }
-/* line 647, ../../scss/main.scss */
+/* line 648, ../../scss/main.scss */
 footer.base-section-padding .sign-up {
   margin: 40px 0 30px;
 }
 @media screen and (min-width: 400px) {
-  /* line 647, ../../scss/main.scss */
+  /* line 648, ../../scss/main.scss */
   footer.base-section-padding .sign-up {
     margin: 40px 0 150px;
   }
 }
-/* line 654, ../../scss/main.scss */
+/* line 655, ../../scss/main.scss */
 footer.base-section-padding .sign-up .base-input {
   border: 2px solid #d0d0d0;
 }
-/* line 657, ../../scss/main.scss */
+/* line 658, ../../scss/main.scss */
 footer.base-section-padding i {
   position: relative;
   top: 15px;
   margin: 0 -3px 0;
 }
-/* line 663, ../../scss/main.scss */
+/* line 664, ../../scss/main.scss */
 footer.base-section-padding a {
   color: #7118b2;
 }
-/* line 666, ../../scss/main.scss */
+/* line 667, ../../scss/main.scss */
 footer.base-section-padding a:hover {
   color: #8e1edf;
 }
 
-/* line 670, ../../scss/main.scss */
+/* line 671, ../../scss/main.scss */
 .slider {
   width: 100%;
   margin: 0 auto;
@@ -1026,7 +1027,7 @@ footer.base-section-padding a:hover {
   background-size: cover;
 }
 @media screen and (min-width: 400px) {
-  /* line 670, ../../scss/main.scss */
+  /* line 671, ../../scss/main.scss */
   .slider {
     height: 530px;
     width: 850px;
@@ -1034,7 +1035,7 @@ footer.base-section-padding a:hover {
   }
 }
 
-/* line 684, ../../scss/main.scss */
+/* line 685, ../../scss/main.scss */
 .slider-glare {
   display: block;
   position: absolute;
@@ -1045,19 +1046,19 @@ footer.base-section-padding a:hover {
   cursor: pointer;
 }
 
-/* line 694, ../../scss/main.scss */
+/* line 695, ../../scss/main.scss */
 .slider-viewport {
   position: relative;
   padding-bottom: 60%;
   height: 100%;
 }
 @media screen and (min-width: 400px) {
-  /* line 694, ../../scss/main.scss */
+  /* line 695, ../../scss/main.scss */
   .slider-viewport {
     padding-bottom: 0;
   }
 }
-/* line 703, ../../scss/main.scss */
+/* line 704, ../../scss/main.scss */
 .slider-viewport img {
   -webkit-transition: all 2000ms ease;
   -moz-transition: all 2000ms ease;
@@ -1074,7 +1075,7 @@ footer.base-section-padding a:hover {
   width: 100%;
   pointer-events: none;
 }
-/* line 712, ../../scss/main.scss */
+/* line 713, ../../scss/main.scss */
 .slider-viewport li {
   position: absolute;
   z-index: 1;
@@ -1082,14 +1083,14 @@ footer.base-section-padding a:hover {
   cursor: pointer;
 }
 @media screen and (min-width: 400px) {
-  /* line 712, ../../scss/main.scss */
+  /* line 713, ../../scss/main.scss */
   .slider-viewport li {
     width: 737px;
     top: 52px;
     left: 52px;
   }
 }
-/* line 724, ../../scss/main.scss */
+/* line 725, ../../scss/main.scss */
 .slider-viewport li img {
   -webkit-transition: all 1000ms ease;
   -moz-transition: all 1000ms ease;
@@ -1106,7 +1107,7 @@ footer.base-section-padding a:hover {
   width: 100%;
   pointer-events: none;
 }
-/* line 733, ../../scss/main.scss */
+/* line 734, ../../scss/main.scss */
 .slider-viewport li.active img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -1114,17 +1115,17 @@ footer.base-section-padding a:hover {
   z-index: 2;
   float: left;
 }
-/* line 740, ../../scss/main.scss */
+/* line 741, ../../scss/main.scss */
 .slider-viewport li.remove img {
   z-index: 1;
 }
 
-/* line 746, ../../scss/main.scss */
+/* line 747, ../../scss/main.scss */
 .slider-pagination {
   text-align: center;
   cursor: default;
 }
-/* line 750, ../../scss/main.scss */
+/* line 751, ../../scss/main.scss */
 .slider-pagination li {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1144,7 +1145,7 @@ footer.base-section-padding a:hover {
   cursor: pointer;
   overflow: hidden;
 }
-/* line 762, ../../scss/main.scss */
+/* line 763, ../../scss/main.scss */
 .slider-pagination li.active {
   background: #fff;
 }
@@ -1152,7 +1153,7 @@ footer.base-section-padding a:hover {
 /****************************************
 * Misc.
 ****************************************/
-/* line 770, ../../scss/main.scss */
+/* line 771, ../../scss/main.scss */
 #mfPreviewBar, #mfPreviewBarShow {
   display: none !important;
 }
