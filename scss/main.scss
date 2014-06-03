@@ -144,13 +144,21 @@ button:focus { outline: none; }
 	@extend %base-font;
 	@include appearance(none);
 	@include transition(all 150ms ease);
-	padding: 17px;
 	border: none;
+	padding: 8px;
+
+	@media screen and (min-width: $break-small) {
+		padding: 17px;
+	}
 }
 
 .base-input {
 	border: 2px solid #fff;
-	font-size: 18px;
+	font-size: 14px;
+
+	@media screen and (min-width: $break-small) {
+		font-size: 18px;
+	}
 
 	&:hover, &:active, &:focus { border: 2px solid #d0d0d0; }
 }
@@ -159,11 +167,18 @@ button:focus { outline: none; }
 	cursor: pointer;
 	background: $wesual-purple;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: 600;
-	padding: 17px 36px 16px;
+	padding: 8px 10px 8px;
 	color: #fff;
 	border: 3px solid $wesual-purple;
+	width: 195px;
+
+	@media screen and (min-width: $break-small) {
+		width: auto;
+		font-size: 16px;
+		padding: 17px 36px 16px;
+	}
 
 	&:hover {
 		color: #fff;
@@ -174,7 +189,12 @@ button:focus { outline: none; }
 
 .signup-input {
 	max-width: 360px;
-	margin-right: 10px;
+	margin-bottom: 10px;
+
+	@media screen and (min-width: $break-small) {
+		margin-bottom: 0;
+		margin-right: 10px;
+	}
 }
 
 .input-error {
