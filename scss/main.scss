@@ -236,12 +236,20 @@ button:focus { outline: none; }
 }
 
 .hero-padding {
-	padding: 30px 28px 430px;
+	padding: 30px 28px 230px;
+
+	@media screen and (min-width: $break-small) {
+		padding: 30px 28px 430px;
+	}
 }
 
 .base-section-padding {
 	text-align: center;
-	padding: 90px 0 125px;
+	padding: 80px 0 80px;
+
+	@media screen and (min-width: $break-small) {
+		padding: 100px 0 130px;
+	}
 
   &.telegraphic {
     padding-bottom: 80px;
@@ -516,37 +524,42 @@ button:focus { outline: none; }
 }
 
 .hero-tv {
-	width: 829px;
+	width: 100%;
+	max-width: 829px;
 	position: absolute;
 	left: 50%;
 	@include transform(translateX(-50%));
 }
 
 .macbook {
-  position: relative;
-  width: 828px;
+	position: relative;
+	max-width: 828px;
 	margin: 30px auto 0;
 
-  .macbook-viewport {
-    position: absolute;
-    z-index: 2;
+	@media screen and (min-width: $break-small) {
+		margin: 50px auto 0;
+	}
+
+	.macbook-viewport {
+		position: absolute;
+		z-index: 2;
     width: 626px;
     height: 392px;
     top: 58px;
     left: 101px;
-    overflow: hidden;
+		overflow: hidden;
 
     img {
       width: 75%;
       pointer-events: none;
     }
-  }
+	}
 
-  img {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-  }
+	img {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+	}
 }
 
 .features {
@@ -558,13 +571,22 @@ button:focus { outline: none; }
 	text-align: center;
 	width: 32.5%;
 	min-width: 300px;
-	margin-top: 70px;
+	margin-top: 40px;
+
+	@media screen and (min-width: $break-small) {
+		margin-top: 70px;
+	}
 
 	strong { margin-bottom: 10px; }
 
 	i {
-		font-size: 90px;
-		margin-bottom: 65px;
+		font-size: 70px;
+		margin-bottom: 15px;
+
+		@media screen and (min-width: $break-small) {
+			font-size: 90px;
+			margin-bottom: 65px;
+		}
 	}
 
 	p {
