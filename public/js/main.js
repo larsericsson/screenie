@@ -169,7 +169,7 @@ wesual.slider = {
 
   bindEvents: function() {
     this.$pagination.on('click', 'li', $.proxy(this.onPaginationClick, this));
-    this.$slides.on('click', $.proxy(this.showNextSlide, this));
+    this.$slides.add('.slider-glare').on('click', $.proxy(this.showNextSlide, this));
   },
 
   buildPagination: function() {
