@@ -17,12 +17,17 @@ wesual = {
 	bindEvents: function() {
 		var self = this, forceTimeout = 2200;
 
-		if ($(window).scrollTop() > 1000) forceTimeout = 18;
+		console.log($(window).scrollTop());
+
+		if ($(window).scrollTop() > 400) forceTimeout = 18;
 
 		setTimeout(function() {
 			$(window).on('scroll', $.proxy(self.onScroll, self));
 
 			setTimeout(function() {
+				$(window).trigger('scroll');
+				$(window).trigger('scroll');
+				$(window).trigger('scroll');
 				$(window).trigger('scroll');
 			}, 25);
 		}, forceTimeout);
@@ -63,8 +68,7 @@ wesual.preloader = {
 		'img/tv.png',
 		'img/tv-top.jpg',
 		'img/tv-glare.png',
-		'img/mbp.jpg',
-		'img/mbp-contents.jpg',
+		'img/mbp.png',
 		'img/slide-1.jpg',
 		'img/slide-2.jpg',
 		'img/slide-3.jpg',
