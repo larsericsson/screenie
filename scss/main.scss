@@ -141,7 +141,7 @@ button:focus { outline: none; }
 	@include appearance(none);
 	@include transition(all 150ms ease);
 	border: none;
-	padding: 8px;
+	padding: 9px;
 
 	@media screen and (min-width: $break-small) {
 		padding: 17px;
@@ -185,6 +185,7 @@ button:focus { outline: none; }
 
 .signup-input {
 	max-width: 360px;
+  min-width: 195px;
 	margin-bottom: 10px;
 
 	@media screen and (min-width: $break-small) {
@@ -255,6 +256,11 @@ button:focus { outline: none; }
 	text-align: center;
 	max-width: 980px;
 	margin: 0 auto;
+  width: 92.5%;
+
+  @media screen and (min-width: $break-small) {
+    width: auto;
+  }
 }
 
 .header-padding {
@@ -262,7 +268,7 @@ button:focus { outline: none; }
 }
 
 .hero-padding {
-	padding: 30px 28px 230px;
+	padding: 30px 15px 160px;
 
 	@media screen and (min-width: $break-small) {
 		padding: 30px 28px 460px;
@@ -271,7 +277,7 @@ button:focus { outline: none; }
 
 .base-section-padding {
 	text-align: center;
-	padding: 90px 0 80px;
+	padding: 70px 0 70px;
 
 	@media screen and (min-width: $break-small) {
 		padding: 90px 0 125px;
@@ -537,7 +543,11 @@ button:focus { outline: none; }
 	padding-bottom: 30px;
 
 	p {
-    	margin-bottom: 35px;
+    	margin-bottom: 30px;
+
+      @media screen and (min-width: $break-small) {
+        margin-bottom: 35px;
+      }
 	}
 }
 
@@ -559,31 +569,17 @@ button:focus { outline: none; }
 	width: 100%;
 	max-width: 994px;
 	margin: 30px auto 0;
+  padding: 0 20px 0;
 
 	@media screen and (min-width: $break-small) {
 		margin: 50px auto 0;
+    padding: 0;
 	}
+}
 
-	.macbook-viewport {
-		position: absolute;
-		z-index: 2;
-		width: 626px;
-		height: 392px;
-		top: 58px;
-		left: 101px;
-		overflow: hidden;
-
-		img {
-			width: 75%;
-			pointer-events: none;
-	    }
-	}
-
-	img {
-		position: relative;
-		z-index: 1;
-		width: 100%;
-	}
+.customizable.active .macbook {
+  @include transform(rotateX(10deg));
+  @include transform-origin(50%, 100%);
 }
 
 .features {
@@ -627,7 +623,7 @@ button:focus { outline: none; }
 }
 
 .telegraphic {
-  padding-bottom: 95px;
+  padding-bottom: 25px;
   background-image: url('../img/telegraphic-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -635,13 +631,25 @@ button:focus { outline: none; }
   h2 { margin-bottom: 20px; }
 
   .container { margin: 0 auto 50px; }
+
+  @media screen and (min-width: $break-small) {
+    padding-bottom: 85px;
+  }
 }
 
 footer.base-section-padding {
-  padding: 80px 0 300px;
+  padding: 70px 0 40px;
+
+  @media screen and (min-width: $break-small) {
+    padding: 80px 0 300px;
+  }
 
   .sign-up {
-    margin: 40px 0 150px;
+    margin: 40px 0 30px;
+
+    @media screen and (min-width: $break-small) {
+      margin: 40px 0 150px;
+    }
 
     .base-input { border: 2px solid #d0d0d0; }
   }
