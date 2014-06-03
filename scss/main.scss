@@ -537,7 +537,8 @@ button:focus { outline: none; }
 	padding-bottom: 30px;
 
 	p {
-    	margin-bottom: 35px;
+    	margin: 0 auto 35px;
+    	max-width: 600px;
 	}
 }
 
